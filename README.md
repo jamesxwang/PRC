@@ -52,7 +52,7 @@
     WHB使用NPM管理第三方包    
 
     在控制台中运行：
-
+        npm install -g node-gyp  
         npm install
 
     注意1：由于中国网络环境恶劣，下载NPM上的包速度很慢，建议使用淘宝NPM镜像[CNPM][8]。CNPM的安装方法请参考[官网使用说明][9]。CNPM v4.2.0在Windows系统上有Bug（参考[#97](https://github.com/cnpm/cnpm/issues/97)），Windows用户请勿使用该版本，虽然官方说已经修复，但我在Windows上使用CNPM安装需要node-gyp编译的包时仍然会报错。我也不建议使用CNPM v3.4.1，因为其内置的NPM版本过旧。推荐`npm install --registry=https://registry.npm.taobao.org -d`这种直接使用镜像仓库的方式安装。（加入 -d 是为了显示安装过程中的详细信息，我个人经常用这种方法来判断安装过程是否因为网络或其他问题卡住了）。
