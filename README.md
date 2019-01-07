@@ -44,11 +44,9 @@
 
     在控制台中运行：
 
-        git clone --depth=1 https://github.com/panteng/wechat-h5-boilerplate.git <your-project-name>
+        git clone https://github.com/cn-wx/PRC.git <your-project-name>
         cd <your-project-name>
         
-    或者你也可以直接在[Release](https://github.com/panteng/wechat-h5-boilerplate/releases)页面下载WHB的源码压缩包。
-
 2. **安装第三方包**
 
     WHB使用NPM管理第三方包    
@@ -88,10 +86,6 @@
 ## Lisence
 [MIT][22]
 
-
-  [1]: https://raw.githubusercontent.com/panteng/wechat-h5-boilerplate/master/demo.jpg
-  [2]: https://panteng.github.io/wechat-h5-boilerplate/
-  [3]: https://raw.githubusercontent.com/panteng/wechat-h5-boilerplate/master/QR-Code.png
   [4]: https://github.com/nolimits4web/swiper/
   [5]: https://github.com/daneden/animate.css
   [6]: https://github.com/jquery/jquery
