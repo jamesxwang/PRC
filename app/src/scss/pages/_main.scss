@@ -12,4 +12,32 @@
         margin: 0 auto;
         text-align: center;
     }
+    .leShang,
+    .leXiang,
+    .leHuo,
+    .leXue {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .leShang {
+        top: 20rem;
+        left: 2rem;
+    }
+    .leXiang {
+        top: 20rem;
+        left: 18rem;
+    }
+    .leHuo {
+        top: 30rem;
+        left: 2rem;
+    }
+    .leXue {
+        top: 30rem;
+        left: 18rem;
+    }
 }
