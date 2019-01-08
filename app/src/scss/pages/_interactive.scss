@@ -1,5 +1,5 @@
 .interactive {
-    background-color: rgb(02, 52, 102);
+    background-image: url('../images/interactive_background.png');
     .item-text,
     .turntable {
         width: 18rem;
@@ -15,5 +15,11 @@
     }
     .turntable {
         top: 20rem;
+    }
+    .logo {
+        background-image: url('../images/logo.png');
+        width: 18rem;
+        position: relative;
+        // z-index: 98;
     }
 }
