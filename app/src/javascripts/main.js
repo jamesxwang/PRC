@@ -17,7 +17,16 @@
         'images/github-1.png',
         'images/github-2.png',
         'images/github-3.png',
-        'images/loading.svg'
+        'images/loading.svg',
+        'images/interactive_hint1.png',
+        'images/interactive_hint2.png',
+        'images/interactive_arrow1.png',
+        'images/interactive_arrow2.png',
+        'images/interactive_big_logo.png',
+        'images/interactive_door.png',
+        'images/interactive_neon.png',
+        'images/logo.png',
+        'images/music.png',
     ];
     // add images to imageLoader
     for(var i = 0; i < fileList.length; i++){
