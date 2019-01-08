@@ -5,6 +5,42 @@
     // load dependencies
     var animationControl = require('./animation-control.js');
 
+    var loader = new PxLoader(),
+    fileList = [
+        'images/favicon.png',
+        'images/github-1.png',
+        'images/github-2.png',
+        'images/github-3.png',
+        'images/loading.svg'
+    ];
+    //把图片载入加载器
+    for(var i = 0; i < fileList.length; i++){
+        var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
+
+        pxImage.imageNumber = i + 1;
+        loader.add(pxImage);
+    }
+    //当加载完成时
+    loader.addCompletionListener(function(){
+        console.log("预加载图片："+fileList.length+"张");
+        // BGM.play();
+        // __isAnimate=false;
+        $(".loading-overlay").slideUp();
+    });
+
+    //loading 进度监听
+    loader.addProgressListener(function(e){
+        var percent = Math.round( (e.completedCount / e.totalCount) * 100); //正序, 1-100
+        console.log(percent);
+        $(".loadingProgress2").css({
+            "width":percent+"%"
+        });
+        $(".progressNumb").html(percent + "%");
+
+    });
+
+    // hide loading animation since everything is ready
+    loader.start();
 
     $(document).ready(function () {
         var bgMusic = $('audio').get(0);
@@ -21,41 +57,41 @@
                 $(this).addClass('paused');
             }
         });
-        var loader = new PxLoader(),
-            fileList = [
-                'images/favicon.png',
-                'images/github-1.png',
-                'images/github-2.png',
-                'images/github-3.png',
-                'images/loading.svg'
-            ];
-        //把图片载入加载器
-        for(var i = 0; i < fileList.length; i++){
-            var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
+        // var loader = new PxLoader(),
+        //     fileList = [
+        //         'images/favicon.png',
+        //         'images/github-1.png',
+        //         'images/github-2.png',
+        //         'images/github-3.png',
+        //         'images/loading.svg'
+        //     ];
+        // //把图片载入加载器
+        // for(var i = 0; i < fileList.length; i++){
+        //     var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
 
-            pxImage.imageNumber = i + 1;
-            loader.add(pxImage);
-        }
-        //当加载完成时
-        loader.addCompletionListener(function(){
-            console.log("预加载图片："+fileList.length+"张");
-            // BGM.play();
-            // __isAnimate=false;
-            $(".loading-overlay").slideUp();
-        });
+        //     pxImage.imageNumber = i + 1;
+        //     loader.add(pxImage);
+        // }
+        // //当加载完成时
+        // loader.addCompletionListener(function(){
+        //     console.log("预加载图片："+fileList.length+"张");
+        //     // BGM.play();
+        //     // __isAnimate=false;
+        //     $(".loading-overlay").slideUp();
+        // });
 
-        //loading 进度监听
-        loader.addProgressListener(function(e){
-            var percent = Math.round( (e.completedCount / e.totalCount) * 100); //正序, 1-100
-            $(".loadingProgress2").css({
-                "width":percent+"%"
-            });
-            $(".progressNumb").html(percent + "%");
+        // //loading 进度监听
+        // loader.addProgressListener(function(e){
+        //     var percent = Math.round( (e.completedCount / e.totalCount) * 100); //正序, 1-100
+        //     $(".loadingProgress2").css({
+        //         "width":percent+"%"
+        //     });
+        //     $(".progressNumb").html(percent + "%");
 
-        });
+        // });
 
-        // hide loading animation since everything is ready
-        loader.start();
+        // // hide loading animation since everything is ready
+        // loader.start();
 
         // init Swiper
         new Swiper('.swiper-container', {
