@@ -1,6 +1,7 @@
 .interactive {
     background-color: rgb(02, 52, 102);
-    .item-text {
+    .item-text,
+    .turntable {
         width: 18rem;
         color: #fff;
         font-size: 1.2rem;
@@ -11,5 +12,8 @@
         right: 0;
         margin: 0 auto;
         text-align: center;
+    }
+    .turntable {
+        top: 20rem;
     }
 }

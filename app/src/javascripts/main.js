@@ -4,6 +4,12 @@
     var BASE_PATH = 'http://localhost:3000/';
     // load dependencies
     var animationControl = require('./animation-control.js');
+    var interactive = require('./interactive.js');
+    var main_page = require('./main_page.js');
+    var le_shang = require('./le_shang.js');
+    var le_xiang = require('./le_xiang.js');
+    var le_huo = require('./le_huo.js');
+    var le_xue = require('./le_xue.js');
 
     var loader = new PxLoader(),
     fileList = [
@@ -23,8 +29,6 @@
     // onLoadComplete
     loader.addCompletionListener(function(){
         console.log("预加载图片："+fileList.length+"张");
-        // BGM.play();
-        // __isAnimate=false;
         $(".loading-overlay").slideUp();
     });
 
@@ -79,6 +83,8 @@
                 slideShadows: false     // do disable shadows for better performance
             },
             onInit: function (swiper) {
+                interactive.init();
+                main_page.init();
                 animationControl.initAnimationItems();  // get items ready for animations
                 animationControl.playAnimation(swiper); // play animations of the first slide
             },
