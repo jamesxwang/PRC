@@ -47,17 +47,44 @@
             width: 100%;
             opacity: 0;
         }
-        // .circle_1,.circle_2,.circle_3 {
-        //      display: none;
-        // }
-        // .circle_1 {
-        //     animation-delay: 2s;
-        // }
-        // .circle_2 {
-        //     animation-delay: 3s;
-        // }
-        // .circle_3 {
-        //     animation-delay: 4s;
-        // }
     }
+    .popup2 {
+        background-image: url('/images/le_shang_popup2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 80%;
+        height: 15%;
+        position: relative;
+        top: 4%;
+        margin: 5% auto;
+        z-index: 3;
+        display: none;
+    }
+    .coins_wrapper {
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        overflow:auto;
+        z-index: 8;
+        .coins {
+            background-image: url('/images/le_shang_coins.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            position:absolute;
+            bottom:0px;
+            width:100%;
+            height:auto;
+            text-align:center;
+            background:#ccc;
+            overflow:hidden;
+            z-index: 9;
+        }
+    }
+    
 }

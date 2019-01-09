@@ -4,11 +4,11 @@ module.exports = {
     init: function() {
         var self = this;
 
-        self.circleAnimation();
+        self.initAnimation();
 
           
     },
-    circleAnimation() {
+    initAnimation() {
         var animationEnd = (function(el) {
             var animations = {
                 animation: 'animationend',
@@ -40,10 +40,12 @@ module.exports = {
                         $('.circle_3 img').css('opacity','100');
                         $circle3.classList.remove('jackInTheBox');
                         $circle3.classList.add('flash');
+                        setTimeout(() => {
+                            $('.popup2').css('display','block');
+                        }, 2000);
                     },1000);
                 },1000);
-            },2000);
-           
+            },500);
         });
     }
 }
