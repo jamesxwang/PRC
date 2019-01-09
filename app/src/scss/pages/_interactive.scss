@@ -31,10 +31,10 @@
         left: 0;
         top: 0;
         position: absolute;
-        z-index: 3
+        z-index: 3;
     }
     .logo {
-        background-image: url('../images/logo.png');
+        background-image: url('/images/logo.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -51,7 +51,7 @@
         width: 96%;
         height: 81%;
         margin: 0 auto;
-        background-image: url('../images/interactive_neon.png');
+        background-image: url('/images/interactive_neon.png');
         background-repeat: no-repeat;
         background-size:100% 100%;
         border: 0;
@@ -62,7 +62,7 @@
     }
     .left_door,
     .right_door {
-        background-image: url('../images/interactive_door.png');
+        background-image: url('/images/interactive_door.png');
         background-repeat:no-repeat;
         background-size:100% 100%;
         -moz-background-size:100% 100%;
@@ -81,7 +81,7 @@
         left: 50%;
     }
     .rotate {
-        background-image: url('../images/interactive_big_logo.png');
+        background-image: url('/images/interactive_big_logo.png');
         background-repeat:no-repeat;
         background-size: contain;
         position: relative;
@@ -96,10 +96,11 @@
         transform-origin: center;
     }
     .hint_1 {
-        background-image: url('../images/interactive_hint1.png');
+        background-image: url('/images/interactive_hint1.png');
         position: relative;
         width: 60%;
         height: 15%;
+        top: 3%;
         background-repeat:no-repeat;
         background-size: contain;
         z-index: 5;
@@ -108,7 +109,7 @@
         -webkit-animation:blink 2s infinite;
     }
     .hint_2 {
-        background-image: url('../images/interactive_hint2.png');
+        background-image: url('/images/interactive_hint2.png');
         position: relative;
         width: 40%;
         height: 20%;
@@ -127,16 +128,16 @@
         height: 15%;
         background-repeat:no-repeat;
         background-size: contain;
-        z-index: 5;
         margin: 0 auto;
+        z-index: 6;
     }
     .arrow_blue {
-        background-image: url('../images/interactive_arrow2.png');
+        background-image: url('/images/interactive_arrow2.png');
         top: 20%;
     }
     .arrow_pink {
-        background-image: url('../images/interactive_arrow1.png');
-        top: 0;
+        background-image: url('/images/interactive_arrow1.png');
+        top: 6%;
     }
     @keyframes blink{
         0%{
