@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var BASE_PATH = 'http://localhost:3000/';
+    var BASE_PATH = '/images/';
     // load dependencies
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
@@ -12,20 +12,24 @@
 
     var loader = new PxLoader(),
     fileList = [
-        'images/favicon.png',
-        'images/github-1.png',
-        'images/github-2.png',
-        'images/github-3.png',
-        'images/loading.svg',
-        'images/interactive_hint1.png',
-        'images/interactive_hint2.png',
-        'images/interactive_arrow1.png',
-        'images/interactive_arrow2.png',
-        'images/interactive_big_logo.png',
-        'images/interactive_door.png',
-        'images/interactive_neon.png',
-        'images/logo.png',
-        'images/music.png',
+        'loading.svg',
+        'interactive_hint1.png',
+        'interactive_hint2.png',
+        'interactive_arrow1.png',
+        'interactive_arrow2.png',
+        'interactive_big_logo.png',
+        'interactive_door.png',
+        'interactive_neon.png',
+        'logo.png',
+        'logo2.png',
+        'music.png',
+        'hand.png',
+        'main_page_logo1.png',
+        'main_page_logo2.png',
+        'main_page_shang.png',
+        'main_page_xiang.png',
+        'main_page_huo.png',
+        'main_page_xue.png'
     ];
     // add images to imageLoader
     for(var i = 0; i < fileList.length; i++){
@@ -77,49 +81,5 @@
         // init
         interactive.init();
         main_page.init();
-
-        // init Swiper
-        // new Swiper('.swiper-container', {
-            // mousewheelControl: true,
-            // effect: 'coverflow',    // slide, fade, coverflow or flip
-            // speed: 400,
-            // direction: 'vertical',
-            // fade: {
-            //     crossFade: false
-            // },
-            // coverflow: {
-            //     rotate: 100,
-            //     stretch: 0,
-            //     depth: 300,
-            //     modifier: 1,
-            //     slideShadows: false     // do disable shadows for better performance
-            // },
-            // flip: {
-            //     limitRotation: true,
-            //     slideShadows: false     // do disable shadows for better performance
-            // },
-            // onInit: function (swiper) {
-            //     interactive.init();
-            //     main_page.init();
-                // animationControl.initAnimationItems();  // get items ready for animations
-                // animationControl.playAnimation(swiper); // play animations of the first slide
-            // },
-            // onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
-            //     if (swiper.activeIndex === swiper.slides.length - 1) {
-            //         $upArrow.hide();
-            //     } else {
-            //         $upArrow.show();
-            //     }
-            // },
-            // onTransitionEnd: function (swiper) {       // play animations of the current slide
-            //     animationControl.playAnimation(swiper);
-            // },
-            // onTouchStart: function (swiper, event) {    // mobile devices don't allow audios to play automatically, it has to be triggered by a user event(click / touch).
-            //     if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
-            //         bgMusic.play();
-            //     }
-            // }
-        // });
-
     });
 })();
