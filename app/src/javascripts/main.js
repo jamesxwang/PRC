@@ -29,7 +29,17 @@
         'main_page_shang.png',
         'main_page_xiang.png',
         'main_page_huo.png',
-        'main_page_xue.png'
+        'main_page_xue.png',
+        'leshang_circle1.png',
+        'leshang_circle2.png',
+        'leshang_circle3.png',
+        'leshang_coins.png',
+        'leshang_girl.png',
+        'leshang_hand.png',
+        'leshang_header.png',
+        'leshang_popup1.png',
+        'leshang_popup2.png',
+        'leshang_single_coin.png',
     ];
     // add images to imageLoader
     for(var i = 0; i < fileList.length; i++){
@@ -81,5 +91,6 @@
         // init
         interactive.init();
         main_page.init();
+        le_shang.init();
     });
 })();

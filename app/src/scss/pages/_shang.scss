@@ -1,15 +1,63 @@
 .shang {
-    background-color: rgb(02, 52, 102);
-    .item-text {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        position: absolute;
-        top: 24rem;
-        left: 0;
-        right: 0;
+    .header {
+        background-image: url('/images/le_shang_header.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 80%;
+        height: 15%;
+        position: relative;
+        top: 4%;
         margin: 0 auto;
+        z-index: 3;
+    }
+    .popup1 {
+        background-image: url('/images/le_shang_popup1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 80%;
+        height: 15%;
+        position: relative;
+        top: 4%;
+        margin: 0 auto;
+        z-index: 3;
+    }
+    .circleBox {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 80%;
+        height: 15%;
+        position: relative;
+        top: 4%;
+        margin: 0 auto;
+        z-index: 3;
+        display: grid;
         text-align: center;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 80%;
+        .circle_1>img,.circle_2>img,.circle_3>img {
+            width: 100%;
+            opacity: 0;
+        }
+        // .circle_1,.circle_2,.circle_3 {
+        //      display: none;
+        // }
+        // .circle_1 {
+        //     animation-delay: 2s;
+        // }
+        // .circle_2 {
+        //     animation-delay: 3s;
+        // }
+        // .circle_3 {
+        //     animation-delay: 4s;
+        // }
     }
 }
