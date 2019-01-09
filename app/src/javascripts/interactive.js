@@ -1,18 +1,37 @@
 var $ = require('jquery');
+var $ = require('jquery');
 
 module.exports = {
     init: function() {
-        // click 改为旋转开启，如果酒杯对齐则进入首页
-        $('.turntable').on('click', function() {
+        var self = this;
+        var angle = -25;
+        self.setRotate(angle);
 
-            // 有滑动效果
-            $('.interactive').slideUp();
-            $('.interactive').css('display','block');
-            $('.main').css('display','block');
-
-            // 无滑动效果
-            // $('.interactive').hide();
-            // $('.main').show();
+        new AlloyFinger('.rotate', {
+            rotate: function (evt) {
+                angle += Math.round(evt.angle);
+                self.setRotate(angle);
+            }
         });
+    },
+    setRotate(angle) {
+        $('.rotate').css('transform','rotate('+angle+'deg)');
+        $('.rotate').css('-moz-transform','transform','rotate('+angle+'deg)');
+        $('.rotate').css('-webkit-transform','transform','rotate('+angle+'deg)');
+        if (angle>=(-3) && angle<=3) {
+            this.openDoor();
+        }
+    },
+    openDoor() {
+        //TODO: add door animation
+
+
+        setTimeout(() => {
+            this.gotoMainPage();
+        }, 1);
+    },
+    gotoMainPage() {
+        $('.interactive').hide();
+        $('.main').show();
     }
 }
