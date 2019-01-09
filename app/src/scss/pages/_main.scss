@@ -21,6 +21,7 @@
             width: 10rem;
             height: 11.36rem;
             margin: 0;
+            animation-duration: 2s;
         }
         .leShang > img,.leXiang > img,.leHuo > img,.leXue > img {
             width: 100%;
@@ -30,18 +31,22 @@
         .leShang {
             top: 30%;
             left: 6%;
+            animation-delay: 1s;
         }
         .leXiang {
             top: 30%;
             left: 50%;
+            animation-delay: 6s;
         }
         .leHuo {
             top: 60%;
             left: 6%;
+            animation-delay: 16s;
         }
         .leXue {
             top: 60%;
             left: 50%;
+            animation-delay: 11s;
         }
     }
     

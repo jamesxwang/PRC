@@ -5,8 +5,16 @@ module.exports = {
         var self = this;
         var angle = -25;
         self.setRotate(angle);
-        self.initTouchEvents(angle);
 
+        // 单指旋转
+        self.initTouchEvents(angle);
+        
+        /****************************
+         *       for develop        *
+         ****************************/ 
+        this.gotoMainPage();
+
+        // 双指旋转
         // new AlloyFinger('.rotate', {
         //     rotate: function (evt) {
         //         angle += Math.round(evt.angle);
