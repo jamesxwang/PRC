@@ -10,7 +10,8 @@ module.exports = {
         new AlloyFinger('.rotate', {
             rotate: function (evt) {
                 angle += Math.round(evt.angle);
-                self.setRotate(angle);
+                if (angle>-80)
+                    self.setRotate(angle);
             }
         });
     },
@@ -18,12 +19,15 @@ module.exports = {
         $('.rotate').css('transform','rotate('+angle+'deg)');
         $('.rotate').css('-moz-transform','transform','rotate('+angle+'deg)');
         $('.rotate').css('-webkit-transform','transform','rotate('+angle+'deg)');
-        if (angle>=(-3) && angle<=3) {
+        if (angle>=0) {
+            $('.rotate').css('transform','rotate(0deg)');
+            $('.rotate').css('-moz-transform','transform','rotate(0deg)');
+            $('.rotate').css('-webkit-transform','transform','rotate(0deg)');
             this.openDoor();
         }
     },
     openDoor() {
-        //TODO: add door animation
+        // TODO: add door animation
 
 
         setTimeout(() => {
