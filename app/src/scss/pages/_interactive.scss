@@ -81,13 +81,17 @@
     }
     .rotate {
         background-image: url('../images/interactive_big_logo.png');
-        position: fixed;
-        width: 70%;
-        height: 70%;
         background-repeat:no-repeat;
         background-size: contain;
-        z-index: 5;
+        position: fixed;
+        width: 70%;
+        height: 50%;
+        float: left;
         margin: 52% 16%;
+        z-index: 5;
+        -webkit-transform: rotate(-25deg);
+        -moz-transform:rotate(-25deg);
+        transform: rotate(-25deg);
     }
     .hint_1 {
         background-image: url('../images/interactive_hint1.png');
@@ -99,6 +103,8 @@
         z-index: 5;
         margin: 150% 20%;
         margin-bottom: 0;
+        animation:blink 2s infinite;
+        -webkit-animation:blink 2s infinite;
     }
     .hint_2 {
         background-image: url('../images/interactive_hint2.png');
