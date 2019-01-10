@@ -1,5 +1,5 @@
-# PRC China  
-> 「薪酬福利体系H5方案-乐生活club」
+# Pernod Richard China  
+> 「保力乐加 - 薪酬福利体系H5方案 - 乐生活club」
 
 ## 目录
 
@@ -9,10 +9,13 @@
  - [发布流程](#发布流程)
 
 ## 依赖列表
-1. [Swiper][4] --> 用于实现页面的整屏滚动
-2. [Animate.css][5] --> 用于提供CSS动画
-3. [jQuery][6] --> 用于操作DOM
-4. [Normalize.css][7] --> 用于CSS Reset
+1. [Swiper][1] --> 用于实现页面的整屏滚动
+2. [Animate.css][2] --> 用于提供CSS动画
+3. [jQuery][3] --> 用于操作DOM
+4. [Normalize.css][4] --> 用于CSS Reset
+5. [PxLoader][5] --> 用于初始加载图片资源
+6. [Soundmanager2][6] --> 用于加载音频资源
+7. [AlloyFinger][7] --> 超小web手势库
 
 ## 项目结构
 
@@ -51,7 +54,7 @@
 
     WHB使用NPM管理第三方包    
 
-    在控制台中运行：
+    在控制台中运行： 
         npm install -g node-gyp  
         npm install
 
@@ -86,22 +89,15 @@
 ## Lisence
 [MIT][22]
 
-  [4]: https://github.com/nolimits4web/swiper/
-  [5]: https://github.com/daneden/animate.css
-  [6]: https://github.com/jquery/jquery
-  [7]: https://github.com/necolas/normalize.css
+  [1]: https://github.com/nolimits4web/swiper/
+  [2]: https://github.com/daneden/animate.css
+  [3]: https://github.com/jquery/jquery
+  [4]: https://github.com/necolas/normalize.css
+  [5]: https://github.com/thinkpixellab/PxLoader
+  [6]: https://github.com/scottschiller/SoundManager2
+  [7]: https://github.com/AlloyTeam/AlloyFinger
   [8]: http://npm.taobao.org/
   [9]: http://npm.taobao.org/
   [10]: https://github.com/nodejs/node-gyp
   [11]: https://github.com/nodejs/node-gyp#installation
-  [12]: http://loading.io/
-  [13]: http://tobiasahlin.com/spinkit/
-  [14]: http://projects.lukehaas.me/css-loaders/
-  [15]: http://idangero.us/swiper/api
-  [16]: https://daneden.github.io/animate.css/
-  [17]: https://icomoon.io/#icon-font
-  [18]: https://tinypng.com/
-  [19]: http://spritegen.website-performance.org/
-  [20]: http://www.spritecow.com/
-  [21]: http://www.adobe.com/products/audition.html
   [22]: http://opensource.org/licenses/mit-license.html
