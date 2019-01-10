@@ -44,7 +44,7 @@ body {
     display: none;
 }
 @media screen and (max-height: 560px) {
-    #orientLayer { display: block; }
+    //#orientLayer { display: block; }
 }
 @media screen and (min-aspect-ratio: 13/11) {
     #orientLayer { display: block; }
