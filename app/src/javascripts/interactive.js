@@ -12,7 +12,7 @@ module.exports = {
         /****************************
          *       for develop        *
          ****************************/ 
-        //this.gotoMainPage();
+        this.gotoMainPage();
 
         // 双指旋转
         // new AlloyFinger('.rotate', {
