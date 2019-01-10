@@ -14,24 +14,6 @@
      ***********************************************/
     var loader = new PxLoader();
 
-    // Sound
-    var $btnMusic = $('#btn-music');
-    var bgMusic = $('audio').get(0);
-    soundManager.url = 'soundManager2/';
-    soundManager.flashVersion = 9;
-    soundManager.useHighPerformance = true;
-    soundManager.flashLoadTimeout = 500;
-    soundManager.audioFormats.mp3.required = false;
-    soundManager.ontimeout(function(status) { 
-        soundManager.useHTML5Audio = true; 
-        soundManager.preferFlash = false; 
-        soundManager.reboot(); 
-    });
-    soundManager.onready(function() { 
-        $btnMusic.show(); 
-    });
-    loader.addSound('bg_music','/audios/background.mp3');
-
     // Images
     var BASE_PATH = '/images/';
     var fileList = [
@@ -89,14 +71,30 @@
         $(".loadingProgress2").css({"width":percent+"%"});
         $(".progressNumb").html(percent + "%");
     });
-    loader.start();
+
+    // Sound
+    var $btnMusic = $('#btn-music');
+    var bgMusic = $('audio').get(0);
+    soundManager.url = 'soundManager2/';
+    soundManager.flashVersion = 9;
+    soundManager.useHighPerformance = true;
+    soundManager.flashLoadTimeout = 500;
+    soundManager.audioFormats.mp3.required = false;
+    soundManager.ontimeout(function(status) { 
+        soundManager.useHTML5Audio = true; 
+        soundManager.preferFlash = false; 
+        soundManager.reboot(); 
+    });
+    soundManager.onready(function() {
+        loader.addSound('bg_music','/audios/background.mp3');
+        $btnMusic.show();
+        if (!$btnMusic.hasClass('paused') && bgMusic.paused)
+            bgMusic.play();
+        loader.start();
+    });
     /***********************************************/
 
     $(document).ready(function () {
-        // autoplay bg music
-        if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
-            bgMusic.play();
-        }
         // init
         interactive.init();
         main_page.init();
