@@ -22,23 +22,16 @@
     <!-- inject:css -->
     <!-- endinject -->
 </head>
-<script>
-    document.onreadystatechange = completeLoading;
-    function completeLoading() {
-        if (document.readyState =="complete")
-            document.getElementsByClassName('loading-overlay').style.display='none';
-        else
-            document.getElementsByClassName('loading-overlay').style.display='block';
-        }
-</script>
 <body>
 <div class="loading-overlay">
-    <div class="loading"></div>
+    <div class="loading-wrapper">
+        <div class="loading"></div>
+    </div>
+    <div class="progressNumb" style="font-size: 16.4063px; line-height: 16.4063px;">0%</div>
     <div class="ProgressWrap">
         <div class="loadingProgress1 overlay"></div>
         <div class="loadingProgress2 overlay" style="width: 100%;"></div>
     </div>
-    <div class="progressNumb" style="font-size: 16.4063px; line-height: 16.4063px;">0%</div>
 </div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -77,26 +70,31 @@
             <span class="page1">
                 <div class="popup1 animated flash"></div>
                 <div class="circleBox">
-                    <div class="circle_1 animated jackInTheBox"><img src="/images/le_shang_circle1.png" alt="市场数据"></div>
-                    <div class="circle_2 animated jackInTheBox"><img src="/images/le_shang_circle2.png" alt="业务进展"></div>
-                    <div class="circle_3 animated jackInTheBox"><img src="/images/le_shang_circle3.png" alt="员工绩效"></div>
+                    <div class="circle_1 animated flash"><img src="/images/le_shang_circle1.png" alt="市场数据"></div>
+                    <div class="circle_2 animated flash"><img src="/images/le_shang_circle2.png" alt="业务进展"></div>
+                    <div class="circle_3 animated flash"><img src="/images/le_shang_circle3.png" alt="员工绩效"></div>
                 </div>
                 <div class="popup2 animated flash"></div>
             </span>
             <span class="page2" style="display:none">
-                <p style="margin:0 auto;top:50%;color:#fff;position:absolute">2</p>
+                <div class="popup1 animated flash"></div>
+                <div class="text animated bounceIn"></div>
+                <div class="arrow animated flash"></div>
+                <div class="coinBars animated lightSpeedIn"></div>
             </span>
             <span class="page3" style="display:none">
-                <p style="margin:0 auto;top:50%;color:#fff;position:absolute">3</p>
+                <div class="popup1"></div>
+                <div class="text"></div>
+                <p style="margin:0 auto;top:50%;left:50%;color:#fff;position:absolute">第三页</p>
             </span>
             <span class="page4" style="display:none">
-                <p style="margin:0 auto;top:50%;color:#fff;position:absolute">4</p>
+                <p style="margin:0 auto;top:50%;left:50%;color:#fff;position:absolute">第四页</p>
             </span>
             <span class="page5" style="display:none">
-                <p style="margin:0 auto;top:50%;color:#fff;position:absolute">5</p>
+                <p style="margin:0 auto;top:50%;left:50%;color:#fff;position:absolute">第五页</p>
             </span>
             <span class="page6" style="display:none">
-                <p style="margin:0 auto;top:50%;color:#fff;position:absolute">6</p>
+                <p style="margin:0 auto;top:50%;left:50%;color:#fff;position:absolute">第六页</p>
             </span>
             <div class="coins_wrapper">
                 <div class="coins"></div>
@@ -107,7 +105,18 @@
         </div>
         <div class="swiper-slide dark_background xiang" style="display:none">
             <div class="logo"></div>
-            <p class="item-text">乐享页</p>
+            <div class="scene"></div>
+            <div class="big_logo_wrapper">
+                <div class="bigLogo"></div>
+            </div>
+            <div class="popup1 animated flash"></div>
+            <div class="grid">
+                <div class="popup2 animated flash"></div>
+                <div class="popup3 animated flash"></div>
+                <div class="popup4 animated flash"></div>
+            </div>
+            <div class="bubble"></div>
+            <div class="clown"></div>
         </div>
         <div class="swiper-slide dark_background huo" style="display:none">
             <div class="logo"></div>

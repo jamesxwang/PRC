@@ -45,6 +45,13 @@
         'le_shang_popup1.png',
         'le_shang_popup2.png',
         'le_shang_single_coin.png',
+        'le_xiang_big_logo.png',
+        'le_xiang_popup1.png',
+        'le_xiang_popup2.png',
+        'le_xiang_popup3.png',
+        'le_xiang_popup4.png',
+        'le_xiang_scene.png',
+
     ];
     for(var i = 0; i < fileList.length; i++){
         var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
@@ -99,6 +106,7 @@
         interactive.init();
         main_page.init();
         le_shang.init();
+        le_xiang.init();
     });
 
 })();

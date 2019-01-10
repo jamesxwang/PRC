@@ -1,15 +1,84 @@
 .xiang {
-    background-color: rgb(02, 52, 102);
-    .item-text {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
+    .scene {
+        background: url('/images/le_xiang_scene.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 24rem;
+        top: 0;
         left: 0;
         right: 0;
+    }
+    .big_logo_wrapper {
+        width: 100%;
+        height: 18%;
+        top: 8%;
+        position: fixed;
+        .bigLogo {
+            background: url('/images/le_xiang_big_logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+    .popup1 {
+        width: 50%;
+        height: 17%;
+        position: relative;
+        top: 26%;
+        background: url('/images/le_xiang_popup1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
         margin: 0 auto;
+    }
+    .grid {
+        top: 26%;
+        width: 45%;
+        height: 20%;
+        display: grid;
         text-align: center;
+        position: relative;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        margin: 0 auto;
+        background-size: cover;
+        
+        .popup2 {
+            background: url('/images/le_xiang_popup2.png');
+            margin-left: 0%;
+        }
+        .popup3 {
+            background: url('/images/le_xiang_popup3.png');
+        }
+        .popup4 {
+            background: url('/images/le_xiang_popup4.png');
+        }
+        .popup2,.popup3,.popup4 {
+            display: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .clown {
+        background: url('/images/le_xiang_clown.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 42%;
+        height: 31%;
+        bottom: 0;
+        position: absolute;
+        margin: 0 30% 0 30%;
+    }
+    .bubble {
+        background: url('/images/le_xiang_bubble1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 34%;
+        position: absolute;
+        bottom: 0;
     }
 }

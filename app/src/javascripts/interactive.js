@@ -6,15 +6,21 @@ module.exports = {
         var angle = -25;
         self.setRotate(angle);
 
-        // 单指旋转
+        // [单指旋转] Rotate with one finger
+        // *** FIX ME ***
         self.initTouchEvents(angle);
         
         /****************************
          *       for develop        *
          ****************************/ 
         // this.gotoMainPage();
+        // $('.interactive').hide();
+        // $('.shang').show();
+        // $('.page1').hide();
+        // $('.page2').show();
+        /****************************/ 
 
-        // 双指旋转
+        // [双指旋转] Rotate with two fingers
         // new AlloyFinger('.rotate', {
         //     rotate: function (evt) {
         //         angle += Math.round(evt.angle);

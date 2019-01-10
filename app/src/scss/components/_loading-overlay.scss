@@ -1,11 +1,20 @@
 @charset "UTF-8";
-
-.loading{
-    width: 36.84%;
-    padding-bottom: 19.125%;
-    margin: 49% auto 0;
-    background:url('../images/loading.svg') top center no-repeat;
+.loading-wrapper {
+    margin: 50% auto 0;
+    height: 25%;
+    width: 50%;
+    background:url('../images/loading_light.png') top center no-repeat;
     background-size:contain;
+    animation:blink 2s infinite;
+    -webkit-animation:blink 2s infinite;
+}
+.loading{
+    width: 70%;
+    height: 70%;
+    padding-bottom: 19.125%;
+    background:url('../images/loading_man.png') top center no-repeat;
+    background-size:contain;
+    margin: 15% auto;
 }
 .ProgressWrap{
     position: relative;
@@ -46,14 +55,4 @@
     height: 100%;
     background-color: rgb(02, 52, 102);
     z-index: 9999;
-    img {
-        width: 10rem;
-        height: 10rem;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
 }
