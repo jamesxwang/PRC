@@ -17,11 +17,12 @@
         height: 100%;
         .leShang,.leXiang,.leHuo,.leXue {
             position: absolute;
+            background-size: contain;
             bottom: 0;
             width: 10rem;
             height: 11.36rem;
             margin: 0;
-            animation-duration: 2s;
+            animation-duration: 1s;
         }
         .leShang > img,.leXiang > img,.leHuo > img,.leXue > img {
             width: 100%;
@@ -36,17 +37,17 @@
         .leXiang {
             top: 30%;
             left: 50%;
-            animation-delay: 6s;
-        }
-        .leHuo {
-            top: 60%;
-            left: 6%;
-            animation-delay: 16s;
+            animation-delay: 2s;
         }
         .leXue {
             top: 60%;
             left: 50%;
-            animation-delay: 11s;
+            animation-delay: 3s;
+        }
+        .leHuo {
+            top: 60%;
+            left: 6%;
+            animation-delay: 4s;
         }
     }
     
