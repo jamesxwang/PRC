@@ -22,7 +22,15 @@
     <!-- inject:css -->
     <!-- endinject -->
 </head>
-
+<script>
+    document.onreadystatechange = completeLoading;
+    function completeLoading() {
+        if (document.readyState =="complete")
+            document.getElementsByClassName('loading-overlay').style.display='none';
+        else
+            document.getElementsByClassName('loading-overlay').style.display='block';
+        }
+</script>
 <body>
 <div class="loading-overlay">
     <div class="loading"></div>
