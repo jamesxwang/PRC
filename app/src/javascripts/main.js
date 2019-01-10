@@ -1,7 +1,6 @@
 (function () {
     'use strict';
 
-    var BASE_PATH = '/images/';
     // load dependencies
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
@@ -10,8 +9,32 @@
     var le_huo = require('./le_huo.js');
     var le_xue = require('./le_xue.js');
 
-    var loader = new PxLoader(),
-    fileList = [
+    /***********************************************
+     *                   Loader                    *
+     ***********************************************/
+    var loader = new PxLoader();
+
+    // Sound
+    var $btnMusic = $('#btn-music');
+    var bgMusic = $('audio').get(0);
+    soundManager.url = 'soundManager2/';
+    soundManager.flashVersion = 9;
+    soundManager.useHighPerformance = true;
+    soundManager.flashLoadTimeout = 500;
+    soundManager.audioFormats.mp3.required = false;
+    soundManager.ontimeout(function(status) { 
+        soundManager.useHTML5Audio = true; 
+        soundManager.preferFlash = false; 
+        soundManager.reboot(); 
+    });
+    soundManager.onready(function() { 
+        $btnMusic.show(); 
+    });
+    loader.addSound('bg_music','/audios/background.mp3');
+
+    // Images
+    var BASE_PATH = '/images/';
+    var fileList = [
         'loading.svg',
         'interactive_hint1.png',
         'interactive_hint2.png',
@@ -30,55 +53,30 @@
         'main_page_xiang.png',
         'main_page_huo.png',
         'main_page_xue.png',
-        'leshang_circle1.png',
-        'leshang_circle2.png',
-        'leshang_circle3.png',
-        'leshang_coins.png',
-        'leshang_girl.png',
-        'leshang_hand.png',
-        'leshang_header.png',
-        'leshang_popup1.png',
-        'leshang_popup2.png',
-        'leshang_single_coin.png',
+        'le_shang_circle1.png',
+        'le_shang_circle2.png',
+        'le_shang_circle3.png',
+        'le_shang_coins.png',
+        'le_shang_girl.png',
+        'le_shang_hand.png',
+        'le_shang_header.png',
+        'le_shang_popup1.png',
+        'le_shang_popup2.png',
+        'le_shang_single_coin.png',
     ];
-    // add images to imageLoader
     for(var i = 0; i < fileList.length; i++){
         var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
-
         pxImage.imageNumber = i + 1;
         loader.add(pxImage);
     }
-    // onLoadComplete
     loader.addCompletionListener(function(){
         console.log("预加载图片："+fileList.length+"张");
         $(".loading-overlay").slideUp();
     });
-
-    //loading 进度监听
     loader.addProgressListener(function(e){
-        var percent = Math.round( (e.completedCount / e.totalCount) * 100); //正序, 1-100
-        // console.log(percent);
-        $(".loadingProgress2").css({
-            "width":percent+"%"
-        });
-        $(".progressNumb").html(percent + "%");
-
-    });
-
-    // hide loading animation since everything is ready
-    loader.start();
-
-    $(document).ready(function () {
         var bgMusic = $('audio').get(0);
-        var $btnMusic = $('.btn-music');
-
-        // autoplay bg music
-        if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
-            bgMusic.play();
-        }
-
-        // background music control
-        $btnMusic.click(function () {
+        $btnMusic.addClass('ready');
+        $btnMusic.click(function() {
             if (bgMusic.paused) {
                 bgMusic.play();
                 $(this).removeClass('paused');
@@ -87,10 +85,22 @@
                 $(this).addClass('paused');
             }
         });
+        var percent = Math.round( (e.completedCount / e.totalCount) * 100);
+        $(".loadingProgress2").css({"width":percent+"%"});
+        $(".progressNumb").html(percent + "%");
+    });
+    loader.start();
+    /***********************************************/
 
+    $(document).ready(function () {
+        // autoplay bg music
+        if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
+            bgMusic.play();
+        }
         // init
         interactive.init();
         main_page.init();
         le_shang.init();
     });
+
 })();

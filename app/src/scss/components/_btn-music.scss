@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.btn-music {
+#btn-music {
     background-image: url('../images/music.png');
     background-size: contain;
     background-color: transparent;
@@ -13,7 +13,7 @@
     z-index: 999;
     animation: btnMusicAni 3s infinite linear;
 }
-.btn-music.paused {
+#btn-music.paused {
     opacity: 0.4;
     animation: none;
 }
