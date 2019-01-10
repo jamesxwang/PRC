@@ -95,12 +95,12 @@ module.exports = {
         }
     },
     openDoor() {
-        // TODO: add door animation
-
+        $('.left_door').addClass('slideOutLeft');
+        $('.right_door').addClass('slideOutRight');
 
         setTimeout(() => {
             this.gotoMainPage();
-        }, 1);
+        }, 1500);
     },
     gotoMainPage() {
         $('.interactive').hide();
