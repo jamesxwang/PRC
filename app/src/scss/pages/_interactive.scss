@@ -1,6 +1,6 @@
 .interactive {
     .screenshot {
-        background-color: #f00;
+        background-color: #000;
     }
     .doorBox {
         width: 84%;
@@ -137,18 +137,83 @@
         background-image: url('/images/interactive_arrow1.png');
         top: 6%;
     }
+    .endNeon {
+        width: 70%;
+        height: 50%;
+        position: absolute;
+        margin: 0 15% 0 15%;
+        top: 30%;
+        background-image: url('/images/interactive_end_neon.png');
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: none;
+        z-index: 99;
+    }
+    .endText {
+        width: 40%;
+        height: 15%;
+        position: absolute;
+        margin: 0 30% 0 30%;
+        top: 75%;
+        background-image: url('/images/interactive_text.png');
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: none;
+        z-index: 99;
+    }
 }
 .scaleOut {
     animation-timing-function: linear;
     animation-name: scaleOut;
     animation-duration: 1s;
 }
+.scaleIn {
+    animation-timing-function: linear;
+    animation-name: scaleIn;
+    animation-duration: 1s;
+}
+@keyframes scaleIn {
+    from {
+        transform: scale(4) translate3d(0,70px,0);
+    }
+    80% {
+        transform: scale(1) translate3d(0,0px,0);
+    }
+    100% {
+        transform: scale(1) translate3d(0,0px,0);
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes scaleIn {
+    from {
+        transform: scale(4) translate3d(0,70px,0);
+    }
+    80% {
+        transform: scale(1) translate3d(0,0px,0);
+    }
+    100% {
+        transform: scale(1) translate3d(0,0px,0);
+        visibility: hidden;
+    }
+}
 @keyframes scaleOut {
     from {
         transform: scale(1) translate3d(0,0px,0);
     }
     80% {
-        transform: scale(4) translate3d(0, 70px, 0);
+        transform: scale(4) translate3d(0,70px,0);
+    }
+    100% {
+        transform: scale(4) translate3d(0,70px,0);
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes scaleOut {
+    from {
+        transform: scale(1) translate3d(0,0px,0);
+    }
+    80% {
+        transform: scale(4) translate3d(0,70px,0);
     }
     100% {
         transform: scale(4) translate3d(0,70px,0);
