@@ -54,7 +54,8 @@
 
     WHB使用NPM管理第三方包    
 
-    在控制台中运行： 
+    在控制台中运行：
+    
         npm install -g node-gyp  
         npm install
 
