@@ -68,5 +68,8 @@ module.exports = {
 
             $('.xue').show();
         });
+        $('.end').on('click', function() {
+            alert('end');
+        })
     }
 }

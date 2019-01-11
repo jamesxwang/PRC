@@ -57,8 +57,6 @@
         border: 0;
         padding: 0;
         position: relative;
-        animation:blink 0.8s infinite;
-        -webkit-animation:blink 0.8s infinite;
     }
     .left_door,
     .right_door {
@@ -139,27 +137,43 @@
         background-image: url('/images/interactive_arrow1.png');
         top: 6%;
     }
-    @keyframes blink{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 100;
-        }
-        100%{
-            opacity: 0;
-        }
+}
+.scaleOut {
+    animation-timing-function: linear;
+    animation-name: scaleOut;
+    animation-duration: 1s;
+}
+@keyframes scaleOut {
+    from {
+        transform: scale(1) translate3d(0,0px,0);
     }
-    @-webkit-keyframes blink{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 100;
-        }
-        100%{
-            opacity: 0;
-        }
+    80% {
+        transform: scale(4) translate3d(0, 70px, 0);
     }
-    
+    100% {
+        transform: scale(4) translate3d(0,70px,0);
+        visibility: hidden;
+    }
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-webkit-keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
 }

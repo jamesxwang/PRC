@@ -6,21 +6,11 @@ module.exports = {
         var angle = -25;
         self.setRotate(angle);
 
-        // [单指旋转] Rotate with one finger
+        // [单指旋转]-[Rotate with one finger]
         // *** FIX ME ***
         self.initTouchEvents(angle);
-        
-        /****************************
-         *       for develop        *
-         ****************************/ 
-        // this.gotoMainPage();
-        // $('.interactive').hide();
-        // $('.xue').show();
-        // $('.page1').show();
-        // $('.page2').show();
-        /****************************/ 
 
-        // [双指旋转] Rotate with two fingers
+        // [双指旋转]-[Rotate with two fingers]
         // new AlloyFinger('.rotate', {
         //     rotate: function (evt) {
         //         angle += Math.round(evt.angle);
@@ -28,6 +18,19 @@ module.exports = {
         //             self.setRotate(angle);
         //     }
         // });
+
+        /****************************
+         *       for develop        *
+         ****************************/ 
+        // self.gotoMainPage();
+
+        // $('.interactive').hide();
+        // $('.xiang').show();
+        // $('.page1').hide();
+        // $('.page6').show();
+        /****************************/ 
+
+        
     },
     initTouchEvents(angle) {
         var self = this;
@@ -101,13 +104,35 @@ module.exports = {
         }
     },
     openDoor() {
+        var self = this;
+        var animationEnd = (function(el) {
+            var animations = {
+                animation: 'animationend',
+                OAnimation: 'oAnimationEnd',
+                MozAnimation: 'mozAnimationEnd',
+                WebkitAnimation: 'webkitAnimationEnd',
+            };
+            for (var t in animations) {
+                if (el.style[t] !== undefined) {
+                    return animations[t];
+                }
+            }
+        })(document.createElement('div'));
+
         $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
-
-        setTimeout(() => {
-            this.gotoMainPage();
-        }, 1500);
+        $('.right_door').one(animationEnd, function() {
+            $('.interactive').addClass('scaleOut');
+        });
+        
+        $('.interactive').one(animationEnd, function() {
+            $('.interactive').removeClass('scaleOut');
+            setTimeout(() => {
+                self.gotoMainPage();
+            }, 1500);
+        });
+        
     },
     gotoMainPage() {
         $('.interactive').hide();

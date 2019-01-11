@@ -104,16 +104,200 @@
             z-index: 3;
             display: none;
         }
-        .coinBars {
-            background-image: url('/images/le_shang_coin_bars.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+        .coinBar {
             width: 80%;
             height: 25%;
             position: absolute;
             top: 45%;
             margin: 0 10% 0 10%;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 100%;
+            z-index: 3;
+            .bar1 {
+                background-image: url('/images/le_shang_coin_bar1.png');
+            }
+            .bar2 {
+                background-image: url('/images/le_shang_coin_bar2.png');
+            }
+            .bar3 {
+                background-image: url('/images/le_shang_coin_bar3.png');
+            }
+            .bar4 {
+                background-image: url('/images/le_shang_coin_bar4.png');
+            }
+            .bar5 {
+                background-image: url('/images/le_shang_coin_bar5.png');
+            }
+            .bar1,.bar2,.bar3,.bar4,.bar5 {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                animation-duration: .1s;
+                display: none;
+            }
+        }
+    }
+    .page3 {
+        .popup1 {
+            background-image: url('/images/le_shang_popup4.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 80%;
+            height: 15%;
+            position: absolute;
+            top: 20%;
+            margin: 0 10% 0 10%;
+            z-index: 3;
+            display: none;
+        }
+        .text1 {
+            background-image: url('/images/le_shang_text2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 30%;
+            height: 5%;
+            position: absolute;
+            top: 32%;
+            margin: 0 35% 0 35%;
+            z-index: 3;
+            display: none;
+        }
+        .text2 {
+            background-image: url('/images/le_shang_text3.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 25%;
+            height: 5%;
+            position: absolute;
+            top: 35%;
+            margin: 0 37.5% 0 37.5%;
+            z-index: 3;
+            display: none;
+        }
+        .popup2 {
+            background-image: url('/images/le_shang_popup5.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 70%;
+            height: 15%;
+            position: absolute;
+            top: 40%;
+            margin: 0 15% 0 15%;
+            z-index: 3;
+            display: none;
+        }
+        .popup3 {
+            background-image: url('/images/le_shang_popup6.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 70%;
+            height: 15%;
+            position: absolute;
+            top: 50%;
+            margin: 0 15% 0 15%;
+            z-index: 3;
+            display: none;
+        }
+        .popup4 {
+            background-image: url('/images/le_shang_popup7.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 70%;
+            height: 15%;
+            position: absolute;
+            top: 58%;
+            margin: 0 15% 0 15%;
+            z-index: 3;
+            display: none;
+        }
+        .text3 {
+            background-image: url('/images/le_shang_text4.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 30%;
+            height: 15%;
+            position: absolute;
+            top: 70%;
+            margin: 0 35% 0 35%;
+            z-index: 3;
+            display: none;
+        }
+    }
+    .page4 {
+        .popup1 {
+            background-image: url('/images/le_shang_popup8.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 80%;
+            height: 15%;
+            position: absolute;
+            top: 20%;
+            margin: 0 10% 0 10%;
+            z-index: 3;
+            display: none;
+        }
+        .pig {
+            background-image: url('/images/le_shang_pig.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 50%;
+            height: 30%;
+            position: absolute;
+            top: 40%;
+            margin: 0 25% 0 25%;
+            z-index: 3;
+            display: none;
+        }
+    }
+    .page5 {
+        .content {
+            background-image: url('/images/le_shang_content.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 80%;
+            height: 35%;
+            position: absolute;
+            top: 35%;
+            margin: 0 10% 0 10%;
+            z-index: 3;
+            display: none;
+        }
+    }
+    .page6 {
+        .continue {
+            background-image: url('/images/le_shang_continue.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 40%;
+            height: 15%;
+            position: absolute;
+            top: 30%;
+            margin: 0 30% 0 30%;
+            z-index: 3;
+            display: none;
+        }
+        .go {
+            background-image: url('/images/le_shang_go.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 60%;
+            height: 15%;
+            position: absolute;
+            top: 50%;
+            margin: 0 20% 0 20%;
             z-index: 3;
             display: none;
         }
