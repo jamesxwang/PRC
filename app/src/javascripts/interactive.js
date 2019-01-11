@@ -15,8 +15,8 @@ module.exports = {
          ****************************/ 
         // this.gotoMainPage();
         // $('.interactive').hide();
-        // $('.shang').show();
-        // $('.page1').hide();
+        // $('.xue').show();
+        // $('.page1').show();
         // $('.page2').show();
         /****************************/ 
 
@@ -101,6 +101,7 @@ module.exports = {
         }
     },
     openDoor() {
+        $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
 

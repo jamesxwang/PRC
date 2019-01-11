@@ -1,15 +1,179 @@
 .xue {
-    background-color: rgb(02, 52, 102);
-    .item-text {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
+    .header {
+        background-image: url('/images/le_xue_header.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 80%;
+        height: 15%;
         position: absolute;
-        top: 24rem;
-        left: 0;
+        top:8%;
+        margin: 0 10% 0 10%;
+        z-index: 3;
+    }
+    .teacher {
+        background-image: url('/images/le_xue_teacher.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        width: 35%;
+        height: 35%;
+        bottom: 0;
+        position: absolute;
         right: 0;
-        margin: 0 auto;
-        text-align: center;
+        z-index: 2;
+    }
+    .desk {
+        background-image: url('/images/le_xue_desk.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        width: 70%;
+        height: 20%;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+    }
+    .blackboard {
+        background-image: url('/images/le_xue_scene.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        width: 90%;
+        height: 50%;
+        position: absolute;
+        margin: 0 5% 0 5%;
+        top:31%;
+        z-index: 1;
+    }
+    .page1 {
+        .text1 {
+            background-image: url('/images/le_xue_text1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 90%;
+            height: 14%;
+            position: absolute;
+            margin: 0 5% 0 5%;
+            top:20%;
+            z-index: 3;
+        }
+        .pie {
+            background-image: url('/images/le_xue_pie.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 45%;
+            height: 30%;
+            position: absolute;
+            margin: 0 27.5% 0 27.5%;
+            top: 38%;
+            z-index: 2;
+            display:none;
+        }
+        .description1 {
+            background-image: url('/images/le_xue_description1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 40%;
+            height: 12%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 105% 60% 0 15%;
+            z-index: 2;
+            display:none;
+        }
+        .description2 {
+            background-image: url('/images/le_xue_description2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 30%;
+            height: 12%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 61% 60% 0 12%;
+            z-index: 2;
+            display:none;
+        }
+        .description3 {
+            background-image: url('/images/le_xue_description3.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 34%;
+            height: 10%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 63% 60% 0 56%;
+            z-index: 2;
+            display:none;
+        }
+    }
+    .hand {
+        background: url('/images/le_shang_hand.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 5%;
+        position: absolute;
+        bottom: 30%;
+        right: 20%;
+        transform: translate3d(-50%, 0, 0);
+        z-index: 10;
+        animation: downAni 2s infinite linear;
+        display: none;
+    }
+}
+// iPhone X
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .xue {
+        .page1 {
+            .description1 {
+                margin-top: 118%;
+                margin-left: 12%;
+                height: 11%;
+            }
+            .description2 {
+                margin-top: 75%;
+            }
+            .description3 {
+                margin-left: 56%;
+                margin-top: 77%;
+            }
+        }
+        // .teacher {
+        //     bottom: -2%;
+        //     height: 40%;
+        //     width: 40%;
+        // }
+    }
+}
+@keyframes downAni {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) rotateY(180deg);;
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate3d(-50%, -35%, 0) rotateY(180deg);;
+    }
+
+    60% {
+        opacity: 0;
+        transform: translate3d(-50%, -20%, 0) rotateY(180deg);;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, 30%, 0) rotateY(180deg);
     }
 }

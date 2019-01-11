@@ -23,6 +23,7 @@
     <!-- endinject -->
 </head>
 <body>
+<!-- 加载页 -->
 <div class="loading-overlay">
     <div class="loading-wrapper">
         <div class="loading"></div>
@@ -35,6 +36,7 @@
 </div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
+        <!-- 交互页 -->
         <div class="swiper-slide interactive">
             <div class="screenshot">
                 <div class="container">
@@ -54,16 +56,19 @@
                 </div>
             </div>
         </div>
+        <!-- 首页 -->
         <div class="swiper-slide dark_background main" style="display:none">
             <div class="logo"></div>
             <div class="main_page_logo"></div>
             <div class="theme">
-                <div class="leShang animated jackInTheBox"><img src="/images/main_page_shang.png" alt="乐赏"></div>
-                <div class="leXiang animated jackInTheBox"><img src="/images/main_page_xiang.png" alt="乐享"></div>
-                <div class="leHuo animated jackInTheBox"><img src="/images/main_page_huo.png" alt="乐活"></div>
-                <div class="leXue animated jackInTheBox"><img src="/images/main_page_xue.png" alt="乐学"></div>
+                <div class="leShang animated delay-1s"><img src="/images/main_page_shang.png" alt="乐赏"></div>
+                <div class="leXiang animated"><img src="/images/main_page_xiang.png" alt="乐享"></div>
+                <div class="leHuo animated"><img src="/images/main_page_huo.png" alt="乐活"></div>
+                <div class="leXue animated"><img src="/images/main_page_xue.png" alt="乐学"></div>
             </div>
+            <div class="hand"></div>
         </div>
+        <!-- 乐赏 -->
         <div class="swiper-slide dark_background shang" style="display:none">
             <div class="logo"></div>
             <div class="header"></div>
@@ -103,6 +108,7 @@
             <div class="singleCoin"></div>
             <div class="hand"></div>
         </div>
+        <!-- 乐享 -->
         <div class="swiper-slide dark_background xiang" style="display:none">
             <div class="logo"></div>
             <div class="scene"></div>
@@ -118,13 +124,29 @@
             <div class="bubble"></div>
             <div class="clown"></div>
         </div>
+        <!-- 乐活 -->
         <div class="swiper-slide dark_background huo" style="display:none">
             <div class="logo"></div>
-            <p class="item-text">乐活页</p>
         </div>
+        <!-- 乐学 -->
         <div class="swiper-slide dark_background xue" style="display:none">
             <div class="logo"></div>
-            <p class="item-text">乐学页</p>
+            <div class="header"></div>
+            <span class="page1">
+                <div class="text1 animated flash"></div>
+                <div class="pie animated flash"></div>
+                <div class="description1 animated fadeIn"></div>
+                <div class="description2 animated fadeIn"></div>
+                <div class="description3 animated fadeIn"></div>
+            </span>
+            <span class="page2" style="display:none"></span>
+            <span class="page3" style="display:none"></span>
+            <span class="page4" style="display:none"></span>
+            <span class="page5" style="display:none"></span>
+            <div class="teacher"></div>
+            <div class="desk"></div>
+            <div class="blackboard"></div>
+            <div class="hand"></div>
         </div>
     </div>
 </div>
@@ -135,10 +157,6 @@
         <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
     </div>
 </div>
-
-<!-- <button class="up-arrow">
-    <i class="icon-angle-double-up"></i>
-</button> -->
 
 <button id="btn-music"></button>
 

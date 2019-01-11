@@ -32,25 +32,112 @@
         .leShang {
             top: 30%;
             left: 6%;
-            animation-delay: 1s;
         }
         .leXiang {
             top: 30%;
             left: 50%;
-            animation-delay: 2s;
         }
         .leXue {
             top: 60%;
             left: 50%;
-            animation-delay: 3s;
         }
         .leHuo {
             top: 60%;
             left: 6%;
-            animation-delay: 4s;
         }
     }
-    
+    .hand {
+        background: url('/images/main_page_hand.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 5%;
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        z-index: 10;
+        opacity: 0;
+        animation: handAnimate 6s;
+    }
+   
+    @keyframes handAnimate {
+        0% {
+            opacity: 0;
+            transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+        }
+        20% {
+            opacity: 1;
+            transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+        }
+        40% {
+            opacity: 1;            
+            transform: translate(500%,0);
+            -ms-transform: translate(500%,0);
+            -webkit-transform: translate(500%,0);
+        }
+        60% {
+            opacity: 1;
+            transform: translate(500%,550%);
+            -ms-transform: translate(500%,550%);
+            -webkit-transform: translate(500%,550%);
+        }
+        80% {
+            opacity: 1;
+            transform: translate(0,550%);
+            -ms-transform: translate(0,550%);
+            -webkit-transform: translate(0,550%);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(0,550%);
+            -ms-transform: translate(0,550%);
+            -webkit-transform: translate(0,550%);
+        }
+    }
+
+    @-webkit-keyframes handAnimate {
+        0% {
+            opacity: 0;
+            transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+        }
+        20% {
+            opacity: 1;
+            transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+        }
+        40% {
+            opacity: 1;            
+            transform: translate(500%,0);
+            -ms-transform: translate(500%,0);
+            -webkit-transform: translate(500%,0);
+        }
+        60% {
+            opacity: 1;
+            transform: translate(500%,550%);
+            -ms-transform: translate(500%,550%);
+            -webkit-transform: translate(500%,550%);
+        }
+        80% {
+            opacity: 1;
+            transform: translate(0,550%);
+            -ms-transform: translate(0,550%);
+            -webkit-transform: translate(0,550%);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(0,550%);
+            -ms-transform: translate(0,550%);
+            -webkit-transform: translate(0,550%);
+        }
+    }
+
     @keyframes sparkle{
         0%{
             background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
