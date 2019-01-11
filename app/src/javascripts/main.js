@@ -17,7 +17,10 @@
     // Images
     var BASE_PATH = '/images/';
     var fileList = [
-        'loading.svg',
+        'loading_light.png',
+        'loading_man.png',
+        'loading_progress1.png',
+        'loading_progress2.png',
         'interactive_hint1.png',
         'interactive_hint2.png',
         'interactive_arrow1.png',
@@ -28,7 +31,7 @@
         'logo.png',
         'logo2.png',
         'music.png',
-        'hand.png',
+        'main_page_hand.png',
         'main_page_logo1.png',
         'main_page_logo2.png',
         'main_page_shang.png',
@@ -51,6 +54,20 @@
         'le_xiang_popup3.png',
         'le_xiang_popup4.png',
         'le_xiang_scene.png',
+        'le_xue_header.png',
+        'le_xue_desk.png',
+        'le_xue_scene.png',
+        'le_xue_teacher.png',
+        'le_xue_text1.png',
+        'le_xue_description1.png',
+        'le_xue_description2.png',
+        'le_xue_description3.png',
+        'le_xue_pie.png',
+        // 'le_xue_.png',
+        // 'le_xue_.png',
+        // 'le_xue_.png',
+        // 'le_xue_.png',
+        // 'le_xue_.png',
 
     ];
     for(var i = 0; i < fileList.length; i++){
@@ -107,6 +124,7 @@
         main_page.init();
         le_shang.init();
         le_xiang.init();
+        le_xue.init();
     });
 
 })();

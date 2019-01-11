@@ -79,7 +79,8 @@ module.exports = {
         });
     },
     onClickCoins() {
-        $('.shang .coins_wrapper').on('click',function() {
+        $('.shang .coins_wrapper').one('click', function() {
+            $('.shang .hand').css('display','none');
             $('.shang .page1').addClass('done');
             var pageNum = 1;
             for (var i = 1; i <= 6; ++i) {
@@ -93,19 +94,22 @@ module.exports = {
                 case 2:
                 {
                     $('.shang .page2').addClass('done');
-                    $('.shang .coins_wrapper').on('click',null);
+
                     $('.shang .page1 .popup1').removeClass('flash');
+                    $('.shang .page1 .popup2').removeClass('flash');
+
                     $('.shang .page1 .popup1').addClass('bounceOutLeft');
                     $('.shang .page1 .circleBox').addClass('animated bounceOutLeft');
-                    $('.shang .page1 .popup2').removeClass('flash');
                     $('.shang .page1 .popup2').addClass('bounceOutLeft');
-                    $('.shang .page2').show();
+                    setTimeout(() => {
+                        $('.shang .page2').show();
+                        $('.shang .page2 .popup1').css('display','block');
+                    }, 1000);
                     break;
                 }
                 case 3:
                 {
                     $('.shang .page3').addClass('done');
-                    $('.shang .coins_wrapper').on('click',null);
 
                     $('.shang .page2').hide();
                     $('.shang .page3').show();
@@ -114,7 +118,6 @@ module.exports = {
                 case 4:
                 {
                     $('.shang .page4').addClass('done');
-                    $('.shang .coins_wrapper').on('click',null);
 
                     $('.shang .page3').hide();
                     $('.shang .page4').show();
@@ -123,7 +126,6 @@ module.exports = {
                 case 5:
                 {
                     $('.shang .page5').addClass('done');   
-                    $('.shang .coins_wrapper').on('click',null);
 
                     $('.shang .page4').hide();
                     $('.shang .page5').show();
@@ -132,7 +134,6 @@ module.exports = {
                 case 6:
                 {
                     $('.shang .page6').addClass('done');
-                    $('.shang .coins_wrapper').on('click',null);
 
                     $('.shang .page5').hide();
                     $('.shang .page6').show();

@@ -76,6 +76,7 @@
             top: 20%;
             margin: 0 10% 0 10%;
             z-index: 3;
+            display: none;
         }
         .text {
             background-image: url('/images/le_shang_text1.png');
@@ -177,21 +178,21 @@
 @keyframes upAni {
     0% {
         opacity: 0;
-        transform: translate3d(-50%, 30%, 0);
+        transform: translate3d(-50%, -50%, 0);
     }
 
     30% {
         opacity: 1;
-        transform: translate3d(-50%, -20%, 0);
+        transform: translate3d(-50%, -35%, 0);
     }
 
     60% {
         opacity: 0;
-        transform: translate3d(-50%, -35%, 0);
+        transform: translate3d(-50%, -20%, 0);
     }
 
     100% {
         opacity: 0;
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, 30%, 0);
     }
 }
