@@ -9,6 +9,7 @@
         top: 0;
         left: 0;
         right: 0;
+        animation: fade 3s infinite;
     }
     .big_logo_wrapper {
         width: 100%;
@@ -36,7 +37,7 @@
     }
     .grid {
         top: 26%;
-        width: 45%;
+        width: 55%;
         height: 20%;
         display: grid;
         text-align: center;
@@ -44,7 +45,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 33% 33% 33%;
         margin: 0 auto;
-        background-size: cover;
+        background-size: contain;
         
         .popup2 {
             background: url('/images/le_xiang_popup2.png');

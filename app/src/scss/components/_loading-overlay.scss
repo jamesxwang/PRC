@@ -5,8 +5,8 @@
     width: 50%;
     background:url('../images/loading_light.png') top center no-repeat;
     background-size:contain;
-    animation:blink 2s infinite;
-    -webkit-animation:blink 2s infinite;
+    animation:fade 2s infinite;
+    -webkit-animation:fade 2s infinite;
 }
 .loading{
     width: 70%;

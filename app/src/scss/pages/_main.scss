@@ -59,111 +59,143 @@
         opacity: 0;
         animation: handAnimate 6s;
     }
-   
-    @keyframes handAnimate {
-        0% {
-            opacity: 0;
-            transform: translate(0,0);
-            -ms-transform: translate(0,0);
-            -webkit-transform: translate(0,0);
-        }
-        20% {
-            opacity: 1;
-            transform: translate(0,0);
-            -ms-transform: translate(0,0);
-            -webkit-transform: translate(0,0);
-        }
-        40% {
-            opacity: 1;            
-            transform: translate(500%,0);
-            -ms-transform: translate(500%,0);
-            -webkit-transform: translate(500%,0);
-        }
-        60% {
-            opacity: 1;
-            transform: translate(500%,550%);
-            -ms-transform: translate(500%,550%);
-            -webkit-transform: translate(500%,550%);
-        }
-        80% {
-            opacity: 1;
-            transform: translate(0,550%);
-            -ms-transform: translate(0,550%);
-            -webkit-transform: translate(0,550%);
-        }
-        100% {
-            opacity: 0;
-            transform: translate(0,550%);
-            -ms-transform: translate(0,550%);
-            -webkit-transform: translate(0,550%);
-        }
+    .end {
+        background: url('/images/main_page_end.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 3%;
+        position: absolute;
+        bottom: 1%;
+        margin: 0 40% 0 40%;
+        animation: fade 3s infinite;
     }
+    
+}
+@keyframes fade {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+@keyframes sparkle{
+    0%{
+        background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+    50%{
+        background: url('../images/main_page_logo2.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+    100%{
+        background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+}
+@-webkit-keyframes sparkle{
+    0%{
+        background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+    50%{
+        background: url('../images/main_page_logo2.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+    100%{
+        background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
+        background-size: contain;
+    }
+}
+@keyframes handAnimate {
+    0% {
+        opacity: 0;
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+    }
+    40% {
+        opacity: 1;            
+        transform: translate(500%,0);
+        -ms-transform: translate(500%,0);
+        -webkit-transform: translate(500%,0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(500%,550%);
+        -ms-transform: translate(500%,550%);
+        -webkit-transform: translate(500%,550%);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0,550%);
+        -ms-transform: translate(0,550%);
+        -webkit-transform: translate(0,550%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,550%);
+        -ms-transform: translate(0,550%);
+        -webkit-transform: translate(0,550%);
+    }
+}
 
-    @-webkit-keyframes handAnimate {
-        0% {
-            opacity: 0;
-            transform: translate(0,0);
-            -ms-transform: translate(0,0);
-            -webkit-transform: translate(0,0);
-        }
-        20% {
-            opacity: 1;
-            transform: translate(0,0);
-            -ms-transform: translate(0,0);
-            -webkit-transform: translate(0,0);
-        }
-        40% {
-            opacity: 1;            
-            transform: translate(500%,0);
-            -ms-transform: translate(500%,0);
-            -webkit-transform: translate(500%,0);
-        }
-        60% {
-            opacity: 1;
-            transform: translate(500%,550%);
-            -ms-transform: translate(500%,550%);
-            -webkit-transform: translate(500%,550%);
-        }
-        80% {
-            opacity: 1;
-            transform: translate(0,550%);
-            -ms-transform: translate(0,550%);
-            -webkit-transform: translate(0,550%);
-        }
-        100% {
-            opacity: 0;
-            transform: translate(0,550%);
-            -ms-transform: translate(0,550%);
-            -webkit-transform: translate(0,550%);
-        }
+@-webkit-keyframes handAnimate {
+    0% {
+        opacity: 0;
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
     }
-
-    @keyframes sparkle{
-        0%{
-            background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
-        50%{
-            background: url('../images/main_page_logo2.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
-        100%{
-            background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
+    20% {
+        opacity: 1;
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
     }
-    @-webkit-keyframes sparkle{
-        0%{
-            background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
-        50%{
-            background: url('../images/main_page_logo2.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
-        100%{
-            background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
-            background-size: contain;
-        }
+    40% {
+        opacity: 1;            
+        transform: translate(500%,0);
+        -ms-transform: translate(500%,0);
+        -webkit-transform: translate(500%,0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(500%,550%);
+        -ms-transform: translate(500%,550%);
+        -webkit-transform: translate(500%,550%);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0,550%);
+        -ms-transform: translate(0,550%);
+        -webkit-transform: translate(0,550%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,550%);
+        -ms-transform: translate(0,550%);
+        -webkit-transform: translate(0,550%);
     }
 }
