@@ -32,6 +32,8 @@
             'interactive_hint1.png',
             'interactive_hint2.png',
             'interactive_neon.png',
+            'interactive_end_neon.png',
+            'interactive_text.png',
             'logo.png',
             'logo2.png',
             'music.png',
