@@ -11,13 +11,13 @@
     top: 0;
     // position: absolute;
     .logo {
-        background-image: url('../images/logo2.png');
+        background: url('../images/logo2.png') center;
         background-repeat: no-repeat;
         background-size: contain;
-        position: fixed;
-        margin: 0 35% 0 35%;
+        position: absolute;
         width: 30%;
         height: 7%;
+        margin: 0 35% 0 35%;
         top: 1%;
         z-index: 3; 
     }

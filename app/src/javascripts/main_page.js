@@ -69,6 +69,13 @@ module.exports = {
             $('.huo').show();
         });
         $('.leXue').on('click', function() {
+            $('.page1').removeClass('done');
+            $('.page2').removeClass('done');
+            $('.page3').removeClass('done');
+            $('.page4').removeClass('done');
+            $('.page5').removeClass('done');
+            $('.page6').removeClass('done');
+
             $('.main').hide();
             $('.shang').hide();
             $('.xiang').hide();

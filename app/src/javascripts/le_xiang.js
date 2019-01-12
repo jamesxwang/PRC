@@ -150,6 +150,7 @@ module.exports = {
         });
         $('.xiang .page6 .go').on('click', function() {
             $('.xiang').hide();
+            $('.theme .leXiang').removeClass('tada');
             $('.main').show();
         });
     },

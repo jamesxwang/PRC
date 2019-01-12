@@ -1,6 +1,6 @@
 .shang {
     .header {
-        background-image: url('/images/le_shang_header.png');
+        background: url('/images/le_shang_header.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -8,14 +8,14 @@
         padding: 0;
         width: 80%;
         height: 15%;
-        position: absolute;
+        position: fixed;
         top:8%;
         margin: 0 10% 0 10%;
         z-index: 3;
     }
     .page1 {
         .popup1 {
-            background-image: url('/images/le_shang_popup1.png');
+            background: url('/images/le_shang_popup1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -27,29 +27,35 @@
             z-index: 3;
         }
         .circleBox {
-            background-repeat: no-repeat;
-            background-size: contain;
             background-color: transparent;
             padding: 0;
             width: 80%;
             height: 15%;
             position: absolute;
             top: 35%;
-            margin: 0 10% 0 10%;
+            margin: 5% 10% 0 10%;
             z-index: 3;
             display: grid;
             text-align: center;
             grid-template-columns: 33% 33% 33%;
             grid-template-rows: 80%;
-            .circle_1>img,.circle_2>img,.circle_3>img {
-                width: 100%;
-            }
             .circle_1,.circle_2,.circle_3 {
                 display: none;
+                background-repeat: no-repeat!important;
+                background-size: contain!important;
+            }
+            .circle_1 {
+                background: url('/images/le_shang_circle1.png') center;
+            }
+            .circle_2 {
+                background: url('/images/le_shang_circle2.png') center;
+            }
+            .circle_3 {
+                background: url('/images/le_shang_circle3.png') center;
             }
         }
         .popup2 {
-            background-image: url('/images/le_shang_popup2.png');
+            background: url('/images/le_shang_popup2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -57,7 +63,7 @@
             width: 80%;
             height: 15%;
             position: absolute;
-            top: 53%;
+            top: 55%;
             margin: 0 10% 0 10%;
             z-index: 3;
             display: none;
@@ -66,7 +72,7 @@
 
     .page2 {
         .popup1 {
-            background-image: url('/images/le_shang_popup3.png');
+            background: url('/images/le_shang_popup3.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -79,7 +85,7 @@
             display: none;
         }
         .text {
-            background-image: url('/images/le_shang_text1.png');
+            background: url('/images/le_shang_text1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -99,7 +105,7 @@
             width: 62%;
             height: 15%;
             position: absolute;
-            top: 35%;
+            top: 40%;
             margin: 0 19% 0 19%;
             z-index: 3;
             display: none;
@@ -140,7 +146,7 @@
     }
     .page3 {
         .popup1 {
-            background-image: url('/images/le_shang_popup4.png');
+            background: url('/images/le_shang_popup4.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -153,7 +159,7 @@
             display: none;
         }
         .text1 {
-            background-image: url('/images/le_shang_text2.png');
+            background: url('/images/le_shang_text2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -166,7 +172,7 @@
             display: none;
         }
         .text2 {
-            background-image: url('/images/le_shang_text3.png');
+            background: url('/images/le_shang_text3.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -178,44 +184,36 @@
             z-index: 3;
             display: none;
         }
-        .popup2 {
-            background-image: url('/images/le_shang_popup5.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+        .grid {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 26% 20% 20%;
             width: 70%;
-            height: 15%;
-            position: absolute;
+            height: 35%;
             top: 40%;
             margin: 0 15% 0 15%;
-            z-index: 3;
-            display: none;
-        }
-        .popup3 {
-            background-image: url('/images/le_shang_popup6.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 70%;
-            height: 15%;
             position: absolute;
-            top: 50%;
-            margin: 0 15% 0 15%;
+            background-size: cover;
+
             z-index: 3;
-            display: none;
-        }
-        .popup4 {
-            background-image: url('/images/le_shang_popup7.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 70%;
-            height: 15%;
-            position: absolute;
-            top: 58%;
-            margin: 0 15% 0 15%;
-            z-index: 3;
-            display: none;
+            .popup2 {
+                background: url('/images/le_shang_popup5.png') top;
+            }
+            .popup3 {
+                background: url('/images/le_shang_popup6.png') top;
+            }
+            .popup4 {
+                background: url('/images/le_shang_popup7.png') top;
+            }
+            .popup2,.popup3,.popup4 {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: transparent;
+                z-index: 3;
+                display: none;
+                height: 100%;
+                width: 100%;
+            }
         }
         .text3 {
             background-image: url('/images/le_shang_text4.png');
@@ -233,7 +231,7 @@
     }
     .page4 {
         .popup1 {
-            background-image: url('/images/le_shang_popup8.png');
+            background: url('/images/le_shang_popup8.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -246,7 +244,7 @@
             display: none;
         }
         .pig {
-            background-image: url('/images/le_shang_pig.png');
+            background: url('/images/le_shang_pig.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -261,7 +259,7 @@
     }
     .page5 {
         .content {
-            background-image: url('/images/le_shang_content.png');
+            background: url('/images/le_shang_content.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -276,7 +274,7 @@
     }
     .page6 {
         .continue {
-            background-image: url('/images/le_shang_continue.png');
+            background: url('/images/le_shang_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -289,7 +287,7 @@
             display: none;
         }
         .go {
-            background-image: url('/images/le_shang_go.png');
+            background: url('/images/le_shang_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -305,16 +303,15 @@
 
     .coins_wrapper {
         width: 100%;
-        height: 10%;
+        height: 20%;
         bottom: 0;
         position: absolute;
-        background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
         .coins {
-            background-image: url('/images/le_shang_coins.png');
-            background-size: cover;
+            background: url('/images/le_shang_coins.png') bottom;
+            background-size: contain;
             background-repeat: no-repeat;
             bottom: 0;
             width:100%;
@@ -322,7 +319,7 @@
         }
     }
     .girl {
-        background: url('/images/le_shang_girl.png');
+        background: url('/images/le_shang_girl.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
         width: 25%;
@@ -333,22 +330,22 @@
         z-index: 9;
     }
     .singleCoin {
-        background: url('/images/le_shang_single_coin.png');
+        background: url('/images/le_shang_single_coin.png') center;
         background-size: contain;
         background-repeat: no-repeat;
         width: 14%;
-        height: 6%;
+        height: 10%;
         bottom: 8%;
         left: 33%;
         position: absolute;
         z-index: 9;
     }
     .hand {
-        background: url('/images/le_shang_hand.png');
-        background-size: cover;
+        background: url('/images/le_shang_hand.png') center;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
-        height: 5%;
+        height: 10%;
         position: absolute;
         bottom: 10%;
         left: 50%;

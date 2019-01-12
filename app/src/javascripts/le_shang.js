@@ -173,6 +173,7 @@ module.exports = {
         });
         $('.shang .page6 .go').on('click', function() {
             $('.shang').hide();
+            $('.theme .leShang').removeClass('tada');
             $('.main').show();
         });
     },
