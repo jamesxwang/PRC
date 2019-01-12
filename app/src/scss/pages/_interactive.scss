@@ -1,6 +1,13 @@
 .interactive {
     .screenshot {
-        background-color: #000;
+        background-image: url('../images/interactive_background2.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
     }
     .doorBox {
         width: 84%;
