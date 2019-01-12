@@ -101,16 +101,7 @@
         }
         loader.addCompletionListener(function(){
             console.log("预加载图片："+fileList.length+"张");
-            // init
-            interactive.init();
-            main_page.init();
-            le_shang.init();
-            le_xiang.init();
-            le_xue.init();
-            le_huo.init();
-            $(".loading-overlay").slideUp();
-        });
-        loader.addProgressListener(function(e){
+            // autoplay
             var bgMusic = $('audio').get(0);
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
@@ -122,6 +113,16 @@
                     $(this).addClass('paused');
                 }
             });
+            // init
+            interactive.init();
+            main_page.init();
+            le_shang.init();
+            le_xiang.init();
+            le_xue.init();
+            le_huo.init();
+            $(".loading-overlay").slideUp();
+        });
+        loader.addProgressListener(function(e){
             var percent = Math.round( (e.completedCount / e.totalCount) * 100);
             $(".loadingProgress2").css({"width":percent+"%"});
             $(".progressNumb").html(percent + "%");
