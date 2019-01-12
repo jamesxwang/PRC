@@ -27,6 +27,7 @@
             'interactive_arrow1.png',
             'interactive_arrow2.png',
             'interactive_background.png',
+            'interactive_background2.png',
             'interactive_big_logo.png',
             'interactive_door.png',
             'interactive_hint1.png',
