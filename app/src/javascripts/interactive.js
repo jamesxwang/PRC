@@ -22,10 +22,10 @@ module.exports = {
         /****************************
          *       for develop        *
          ****************************/ 
-        // self.gotoMainPage();
+        self.gotoMainPage();
 
-        // $('.interactive').hide();
-        // $('.xiang').show();
+        $('.interactive').hide();
+        $('.xiang').show();
         // $('.page1').hide();
         // $('.page6').show();
         /****************************/ 

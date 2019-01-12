@@ -107,13 +107,11 @@ module.exports = {
         $('.shang .page3 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.shang .page3 .text1').addClass('fadeInDown');
-                $('.shang .page3 .text1').css('display','block');
-            }, 200);
-        });
-        $('.shang .page3 .text1').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.shang .page3 .text2').addClass('fadeInDown');
+
+                $('.shang .page3 .text1').css('display','block');
                 $('.shang .page3 .text2').css('display','block');
+
             }, 200);
         });
         $('.shang .page3 .text2').one(animationEnd, function() {

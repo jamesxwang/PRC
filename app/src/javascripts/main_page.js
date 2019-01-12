@@ -45,11 +45,19 @@ module.exports = {
             $('.shang').show();
         });
         $('.leXiang').on('click', function() {
+            $('.page1').removeClass('done');
+            $('.page2').removeClass('done');
+            $('.page3').removeClass('done');
+            $('.page4').removeClass('done');
+            $('.page5').removeClass('done');
+            $('.page6').removeClass('done');
+
             $('.main').hide();
             $('.shang').hide();
             $('.huo').hide();
             $('.xue').hide();
 
+            $('.xiang .page1 .popup1').css('display','block');
             $('.xiang').show();
         });
         $('.leHuo').on('click', function() {
@@ -78,7 +86,7 @@ module.exports = {
         $('.interactive').removeClass('scaleOut');
         $('.interactive .doorBox .left_door').removeClass('slideOutLeft');
         $('.interactive .doorBox .right_door').removeClass('slideOutRight');
-        $('.interactive').addClass('scaleIn');
+        // $('.interactive').addClass('scaleIn');
         $('.interactive').show();
         this.closeDoor();
     },
