@@ -1,6 +1,6 @@
 .xue {
     .header {
-        background-image: url('/images/le_xue_header.png');
+        background: url('/images/le_xue_header.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -14,7 +14,7 @@
         z-index: 3;
     }
     .teacher {
-        background-image: url('/images/le_xue_teacher.png');
+        background: url('/images/le_xue_teacher.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -22,11 +22,11 @@
         height: 35%;
         bottom: 0;
         position: absolute;
-        right: 0;
+        left: 60%;
         z-index: 2;
     }
     .desk {
-        background-image: url('/images/le_xue_desk.png');
+        background: url('/images/le_xue_desk.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -37,7 +37,7 @@
         left: 0;
     }
     .blackboard {
-        background-image: url('/images/le_xue_scene.png');
+        background: url('/images/le_xue_scene.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -50,7 +50,7 @@
     }
     .page1 {
         .text1 {
-            background-image: url('/images/le_xue_text1.png');
+            background: url('/images/le_xue_text1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -62,7 +62,7 @@
             z-index: 3;
         }
         .pie {
-            background-image: url('/images/le_xue_pie.png');
+            background: url('/images/le_xue_pie.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -74,58 +74,286 @@
             z-index: 2;
             display:none;
         }
-        .description1 {
-            background-image: url('/images/le_xue_description1.png');
+        .grid {
+            top: 35%;
+            height: 45%;
+            width: 80%;
+            display: grid;
+            position: absolute;
+            grid-template-columns: 40% 20% 40%;
+            grid-template-rows: 55% 45%;
+            margin: 0 10% 0 10%;
+            background-size: contain;
+            .description1 {
+                background: url('/images/le_xue_description1.png') right;
+                width: 100%;
+                height: 60%;
+            }
+            .description2 {
+                background: url('/images/le_xue_description2.png');
+                width: 100%;
+                height: 50%;
+            }
+            .description3 {
+                background: url('/images/le_xue_description3.png');
+                width: 100%;
+                height: 40%;
+                margin-top: 10%;
+            }
+            .description1,.description2,.description3 {
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-size: contain;
+                display:none;
+                z-index: 2;
+
+            }
+            .blank1, .blank2, .blank3 {
+                display: none;
+            }
+        }
+    }
+    .page2 {
+        .text1 {
+            background: url('/images/le_xue_text2.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 90%;
+            height: 14%;
+            position: absolute;
+            margin: 0 5% 0 5%;
+            top:20%;
+            z-index: 3;
+            display: none;
+        }
+        .content_wrapper {
+            top: 45%;
+            height: 42%;
+            width: 60%;
+            position: absolute;
+            background-size: contain;
+            margin: 0 20% 0 20%;
+            z-index: 2;
+            .content1 {
+                margin: 0 75% 0 0;
+                background: url('/images/le_xue_content1.png') left;
+            }
+            .content2 {
+                background: url('/images/le_xue_content2.png') top;
+                margin: 0 0 0 31%;
+                top: -19%;
+            }
+            .content3 {
+                background: url('/images/le_xue_content3.png') bottom;
+                margin: 32% 75% 0 18%;
+            }
+            .content4 {
+                background: url('/images/le_xue_content4.png') right;
+                margin: 10% 75% 0 50%;                
+                
+            }
+            .content1,.content2,.content3,.content4 {
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                width: 50%;
+                height: 40%;
+                display: none;
+            }
+        }
+        .text2 {
+            background: url('/images/le_xue_text3.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 25%;
+            height: 14%;
+            position: absolute;
+            margin: 0 60% 0 15%;
+            top:65%;
+            z-index: 3;
+            display: none;
+        }
+    }
+    .page3 {
+        .text1 {
+            background: url('/images/le_xue_text4.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 90%;
+            height: 14%;
+            position: absolute;
+            margin: 0 5% 0 5%;
+            top:20%;
+            z-index: 3;
+            display: none;
+        }
+        .question {
+            background: url('/images/le_xue_question.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 20%;
+            height: 14%;
+            position: absolute;
+            margin: 0 70% 0 10%;
+            top:38%;
+            z-index: 3;
+            display: none;
+        }
+        .grid {
+            width: 58%;
+            height: 15%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 33% 33% 33%;
+            margin: 0 21% 0 21%;
+            top: 45%;
+            z-index: 3;
+            .bullet1 {
+                background: url('/images/le_xue_bullet1.png') left;
+                
+            }
+            .bullet2 {
+                background: url('/images/le_xue_bullet2.png') left;
+                margin-right: 27%;
+            }
+            .bullet3 {
+                background: url('/images/le_xue_bullet3.png') left;
+                margin-right: 21%;
+            }
+            .bullet1, .bullet2, .bullet3 {
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-left: 2%;
+                display: none;
+            }
+        }
+        .no {
+            background: url('/images/le_xue_no.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 50%;
+            height: 15%;
+            position: absolute;
+            top: 57%;
+            margin: 0 25% 0 25%;
+            z-index: 3;
+            display: none;
+        }
+    }
+    .page4 {
+        .grid {
+            width: 62%;
+            height: 38%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 0 17.5% 0 15%;
+            grid-template-rows: 40% 60%;
+            top: 38%;
+            z-index: 3;
+            .content1 {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 28% 17.5% 16.9%;
+                grid-row-gap: .4rem;
+                top: 0;
+                z-index: 3;
+                .title {
+                    background: url('/images/le_xue_title1.png');
+                }
+                .bullet1 {
+                    background: url('/images/le_xue_bullet4.png');
+                }
+                .bullet2 {
+                    background: url('/images/le_xue_bullet5.png');
+                }
+                .title, .bullet1, .bullet2 {
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: none;
+                }
+            }
+            .content2 {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 18.6% 11% 11.4% 11.1% 11%;
+                grid-row-gap: .4rem;
+                top: 0;
+                z-index: 3;
+                .title {
+                    background: url('/images/le_xue_title2.png');
+                }
+                .bullet1 {
+                    background: url('/images/le_xue_bullet6.png');
+                }
+                .bullet2 {
+                    background: url('/images/le_xue_bullet7.png');
+                }
+                .bullet3 {
+                    background: url('/images/le_xue_bullet8.png');
+                }
+                .bullet4 {
+                    background: url('/images/le_xue_bullet9.png');
+                }
+                .title, .bullet1, .bullet2, .bullet3, .bullet4 {
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: none;
+                }
+            }
+        }
+    }
+    .page5 {
+        .continue {
+            background: url('/images/le_xue_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
             width: 40%;
-            height: 12%;
+            height: 15%;
             position: absolute;
-            left: 0;
-            top: 0;
-            margin: 105% 60% 0 15%;
-            z-index: 2;
-            display:none;
+            top: 40%;
+            margin: 0 30% 0 30%;
+            z-index: 3;
+            display: none;
         }
-        .description2 {
-            background-image: url('/images/le_xue_description2.png');
+        .go {
+            background: url('/images/le_xue_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
-            width: 30%;
-            height: 12%;
+            width: 60%;
+            height: 15%;
             position: absolute;
-            left: 0;
-            top: 0;
-            margin: 61% 60% 0 12%;
-            z-index: 2;
-            display:none;
-        }
-        .description3 {
-            background-image: url('/images/le_xue_description3.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 34%;
-            height: 10%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin: 63% 60% 0 56%;
-            z-index: 2;
-            display:none;
+            top: 54%;
+            margin: 0 20% 0 20%;
+            z-index: 3;
+            display: none;
         }
     }
     .hand {
         background: url('/images/le_shang_hand.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
-        height: 5%;
+        height: 10%;
         position: absolute;
-        bottom: 30%;
-        right: 20%;
+        bottom: 20%;
+        right: 24%;
         transform: translate3d(-50%, 0, 0);
         z-index: 10;
         animation: downAni 2s infinite linear;
@@ -136,24 +364,15 @@
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .xue {
         .page1 {
-            .description1 {
-                margin-top: 118%;
-                margin-left: 12%;
-                height: 11%;
-            }
-            .description2 {
-                margin-top: 75%;
-            }
-            .description3 {
-                margin-left: 56%;
-                margin-top: 77%;
+            .grid {
+                .description2 {
+                    margin-top: 27%;
+                }
+                .description3 {
+                    margin-top: 33%;
+                }
             }
         }
-        // .teacher {
-        //     bottom: -2%;
-        //     height: 40%;
-        //     width: 40%;
-        // }
     }
 }
 @keyframes downAni {

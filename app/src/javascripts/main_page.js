@@ -74,7 +74,6 @@ module.exports = {
             $('.page3').removeClass('done');
             $('.page4').removeClass('done');
             $('.page5').removeClass('done');
-            $('.page6').removeClass('done');
 
             $('.main').hide();
             $('.shang').hide();
