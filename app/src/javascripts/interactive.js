@@ -24,8 +24,8 @@ module.exports = {
          ****************************/ 
         self.gotoMainPage();
 
-        $('.interactive').hide();
-        $('.xiang').show();
+        // $('.interactive').hide();
+        // $('.xiang').show();
         // $('.page1').hide();
         // $('.page6').show();
         /****************************/ 
@@ -123,15 +123,18 @@ module.exports = {
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
         $('.right_door').one(animationEnd, function() {
-            $('.interactive').addClass('scaleOut');
-        });
-        
-        $('.interactive').one(animationEnd, function() {
-            $('.interactive').removeClass('scaleOut');
             setTimeout(() => {
                 self.gotoMainPage();
-            }, 1500);
+            }, 1000);
+            // $('.interactive').addClass('scaleOut');
         });
+        
+        // $('.interactive').one(animationEnd, function() {
+        //     $('.interactive').removeClass('scaleOut');
+        //     setTimeout(() => {
+        //         self.gotoMainPage();
+        //     }, 1500);
+        // });
         
     },
     gotoMainPage() {

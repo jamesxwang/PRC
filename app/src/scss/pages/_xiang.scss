@@ -1,6 +1,6 @@
 .xiang {
     .scene {
-        background: url('/images/le_xiang_scene.png');
+        background: url('/images/le_xiang_scene.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -17,7 +17,7 @@
         top: 8%;
         position: fixed;
         .bigLogo {
-            background: url('/images/le_xiang_big_logo.png');
+            background: url('/images/le_xiang_big_logo.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             width: 80%;
@@ -27,7 +27,7 @@
     }
     .page1 {
         .popup1 {
-            background-image: url('/images/le_xiang_popup1.png');
+            background: url('/images/le_xiang_popup1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -51,19 +51,19 @@
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
             .popup2 {
-                background: url('/images/le_xiang_popup2.png');
+                background: url('/images/le_xiang_popup2.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
                 left: 0;
             }
             .popup3 {
-                background: url('/images/le_xiang_popup3.png');
+                background: url('/images/le_xiang_popup3.png') center;
                 right: 0;
                 margin-left: 20%;
                 margin-right: 5%;
             }
             .popup4 {
-                background: url('/images/le_xiang_popup4.png');
+                background: url('/images/le_xiang_popup4.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
             }
@@ -76,7 +76,7 @@
     }
     .page2 {
         .popup1 {
-            background-image: url('/images/le_xiang_popup5.png');
+            background: url('/images/le_xiang_popup5.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -96,17 +96,17 @@
             text-align: center;
             position: absolute;
             grid-template-columns: 100%;
-            grid-template-rows: 33% 50%;
+            grid-template-rows: 33% 40%;
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
             .popup2 {
-                background: url('/images/le_xiang_popup6.png');
+                background: url('/images/le_xiang_popup6.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
                 left: 0;
             }
             .popup3 {
-                background: url('/images/le_xiang_popup7.png');
+                background: url('/images/le_xiang_popup7.png') center;
                 right: 0;
                 margin-left: 20%;
                 margin-right: 5%;
@@ -120,7 +120,7 @@
     }
     .page3 {
         .popup1 {
-            background-image: url('/images/le_xiang_popup8.png');
+            background: url('/images/le_xiang_popup8.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -144,19 +144,19 @@
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
             .popup2 {
-                background: url('/images/le_xiang_popup9.png');
+                background: url('/images/le_xiang_popup9.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
                 left: 0;
             }
             .popup3 {
-                background: url('/images/le_xiang_popup10.png');
+                background: url('/images/le_xiang_popup10.png') center;
                 right: 0;
                 margin-left: 20%;
                 margin-right: 5%;
             }
             .popup4 {
-                background: url('/images/le_xiang_popup11.png');
+                background: url('/images/le_xiang_popup11.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
             }
@@ -170,7 +170,7 @@
     }
     .page4 {
         .popup1 {
-            background-image: url('/images/le_xiang_popup12.png');
+            background: url('/images/le_xiang_popup12.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -189,43 +189,14 @@
             position: absolute;
             top: 42%;
             margin: 0 20% 0 20%;
-            background-image: url('/images/le_xiang_popup13.png');
+            background: url('/images/le_xiang_popup13.png') center;
             background-size: contain;
             background-repeat: no-repeat;
         }
-        // .grid {
-        //     top: 43%;
-        //     width: 58%;
-        //     height: 20%;
-        //     display: grid;
-        //     text-align: center;
-        //     position: absolute;
-        //     grid-template-columns: 100%;
-        //     grid-template-rows: 33% 50%;
-        //     margin: 0 22.5% 0 22.5%;
-        //     background-size: contain;
-        //     .popup2 {
-        //         background: url('/images/le_xiang_popup13.png');
-        //         margin-left: 5%;
-        //         margin-right: 20%;
-        //         left: 0;
-        //     }
-        //     .popup3 {
-        //         background: url('/images/le_xiang_popup7.png');
-        //         right: 0;
-        //         margin-left: 20%;
-        //         margin-right: 5%;
-        //     }
-        //     .popup2,.popup3, {
-        //         display: none;
-        //         background-size: contain;
-        //         background-repeat: no-repeat;
-        //     }
-        // }
     }
     .page5 {
         .popup1 {
-            background-image: url('/images/le_xiang_popup14.png');
+            background: url('/images/le_xiang_popup14.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -249,24 +220,24 @@
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
             .popup2 {
-                background: url('/images/le_xiang_popup15.png');
+                background: url('/images/le_xiang_popup15.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
                 left: 0;
             }
             .popup3 {
-                background: url('/images/le_xiang_popup16.png');
+                background: url('/images/le_xiang_popup16.png') center;
                 right: 0;
                 margin-left: 20%;
                 margin-right: 5%;
             }
             .popup4 {
-                background: url('/images/le_xiang_popup17.png');
+                background: url('/images/le_xiang_popup17.png') center;
                 margin-left: 5%;
                 margin-right: 20%;
             }
             .popup5 {
-                background: url('/images/le_xiang_popup18.png');
+                background: url('/images/le_xiang_popup18.png') center;
                 right: 0;
                 margin-left: 20%;
                 margin-right: 5%;
@@ -280,7 +251,7 @@
     }
     .page6 {
         .continue {
-            background-image: url('/images/le_xiang_continue.png');
+            background: url('/images/le_xiang_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -293,7 +264,7 @@
             display: none;
         }
         .go {
-            background-image: url('/images/le_xiang_go.png');
+            background: url('/images/le_xiang_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -307,7 +278,7 @@
         }
     }
     .clown {
-        background: url('/images/le_xiang_clown.png');
+        background: url('/images/le_xiang_clown.png') center bottom;
         background-size: contain;
         background-repeat: no-repeat;
         width: 42%;
@@ -316,23 +287,31 @@
         position: absolute;
         margin: 0 30% 0 30%;
     }
-    .bubble {
-        background: url('/images/le_xiang_bubble1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
+    .bubble_wrapper {
         width: 100%;
-        height: 34%;
-        position: absolute;
+        height: 38%;
         bottom: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        .bubble {
+            background: url('/images/le_xiang_bubble1.png') bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: 0;
+            width:100%;
+            height:100%;
+        }
     }
     .hand {
-        background: url('/images/le_shang_hand.png');
-        background-size: cover;
+        background: url('/images/le_shang_hand.png') center;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
-        height: 5%;
+        height: 10%;
         position: absolute;
-        bottom: 28%;
+        bottom: 20%;
         left: 70%;
         transform: translate3d(-50%, 0, 0);
         z-index: 10;
