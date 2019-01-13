@@ -300,18 +300,16 @@
             display: none;
         }
     }
-    .girlUnclick {
+    .girl {
         width: 100%;
         height: 46%;
         bottom: 0;
         position: absolute;
+    }
+    .girlUnclick {
         animation: girlUnclick 1s infinite;
     }
-    .girlClick {
-        width: 100%;
-        height: 46%;
-        bottom: 0;
-        position: absolute;
+    .girlClick {        
         animation: girlClick 1.5s;
     }
     .hand {
