@@ -46,18 +46,12 @@ module.exports = {
             le_shang.init();
         });
         $('.leXiang').on('click', function() {
-            $('.page1').removeClass('done');
-            $('.page2').removeClass('done');
-            $('.page3').removeClass('done');
-            $('.page4').removeClass('done');
-            $('.page5').removeClass('done');
-            $('.page6').removeClass('done');
-
             $('.main').hide();
             $('.shang').hide();
             $('.huo').hide();
             $('.xue').hide();
 
+            $('.xiang .page1').css('display','block');
             $('.xiang .page1 .popup1').css('display','block');
             $('.xiang').show();
             le_xiang.init();
