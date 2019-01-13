@@ -4,12 +4,6 @@
     // load dependencies
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
-    var le_shang = require('./le_shang.js');
-    var le_xiang = require('./le_xiang.js');
-    var le_huo = require('./le_huo.js');
-    var le_xue = require('./le_xue.js');
-
-  
 
     $(document).ready(function () {
         /***********************************************
@@ -56,10 +50,13 @@
             'le_shang_coin_bar3.png',
             'le_shang_coin_bar4.png',
             'le_shang_coin_bar5.png',
-            'le_shang_coins.png',
             'le_shang_content.png',
             'le_shang_continue.png',
-            'le_shang_girl.png',
+            'le_shang_girl_click1.png',
+            'le_shang_girl_click2.png',
+            'le_shang_girl_click2.png',
+            'le_shang_girl_unclick1.png',
+            'le_shang_girl_unclick2.png',
             'le_shang_go.png',
             'le_shang_hand.png',
             'le_shang_header.png',
@@ -72,7 +69,6 @@
             'le_shang_popup6.png',
             'le_shang_popup7.png',
             'le_shang_popup8.png',
-            'le_shang_single_coin.png',
             'le_shang_text1.png',
             'le_shang_text2.png',
             'le_shang_text3.png',
@@ -157,10 +153,6 @@
             // init
             interactive.init();
             main_page.init();
-            le_shang.init();
-            le_xiang.init();
-            le_xue.init();
-            le_huo.init();
             $(".loading-overlay").slideUp();
         });
         loader.addProgressListener(function(e){
