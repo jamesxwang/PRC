@@ -159,6 +159,8 @@ module.exports = {
     },
     onClickClown() {
         $('.xiang .clown').one('click', function() {
+            var click_sound = document.getElementById("click_sound");
+            click_sound.play();
             $('.xiang .clown').removeClass('clownUnclick');
             $('.xiang .clown').addClass('clownClick');
             $('.xiang .hand').css('display','none');

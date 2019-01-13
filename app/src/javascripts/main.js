@@ -105,11 +105,13 @@
             'le_xue_description1.png',
             'le_xue_description2.png',
             'le_xue_description3.png',
-            'le_xue_desk.png',
             'le_xue_header.png',
             'le_xue_pie.png',
             'le_xue_scene.png',
-            'le_xue_teacher.png',
+            'le_xue_teacher_click1.png',
+            'le_xue_teacher_click2.png',
+            'le_xue_teacher_unclick1.png',
+            'le_xue_teacher_unclick2.png',
             'le_xue_content1.png',
             'le_xue_content2.png',
             'le_xue_content3.png',
@@ -181,6 +183,7 @@
         });
         soundManager.onready(function() {
             loader.addSound('bg_music','/audios/background.mp3');
+            loader.addSound('click_sound','/audios/click.mp3');
             $btnMusic.show();
             if (!$btnMusic.hasClass('paused') && bgMusic.paused)
                 bgMusic.play();

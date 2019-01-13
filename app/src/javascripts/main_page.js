@@ -35,22 +35,14 @@ module.exports = {
             $('.theme .leHuo').addClass('tada');
         });
         $('.leShang').on('click', function() {
-            $('.main').hide();
-            $('.xiang').hide();
-            $('.huo').hide();
-            $('.xue').hide();
-
+            self.hideAllTheme();
             $('.shang').show();
             $('.shang .page1').css('display','block');
             $('.shang .page1 .popup1').css('display','block');
             le_shang.init();
         });
         $('.leXiang').on('click', function() {
-            $('.main').hide();
-            $('.shang').hide();
-            $('.huo').hide();
-            $('.xue').hide();
-
+            self.hideAllTheme();
             $('.xiang .page1').css('display','block');
             $('.xiang .page1 .popup1').css('display','block');
             $('.xiang').show();
@@ -58,26 +50,15 @@ module.exports = {
 
         });
         $('.leHuo').on('click', function() {
-            $('.main').hide();
-            $('.shang').hide();
-            $('.xiang').hide();
-            $('.xue').hide();
+            self.hideAllTheme();
 
             $('.huo').show();
             le_huo.init();
         });
         $('.leXue').on('click', function() {
-            $('.page1').removeClass('done');
-            $('.page2').removeClass('done');
-            $('.page3').removeClass('done');
-            $('.page4').removeClass('done');
-            $('.page5').removeClass('done');
-
-            $('.main').hide();
-            $('.shang').hide();
-            $('.xiang').hide();
-            $('.huo').hide();
-
+            self.hideAllTheme();
+            $('.xue .page1').css('display','block');
+            $('.xue .page1 .text1').css('display','block');
             $('.xue').show();
             le_xue.init();
         });
@@ -91,7 +72,6 @@ module.exports = {
         $('.interactive').removeClass('scaleOut');
         $('.interactive .doorBox .left_door').removeClass('slideOutLeft');
         $('.interactive .doorBox .right_door').removeClass('slideOutRight');
-        // $('.interactive').addClass('scaleIn');
         $('.interactive').show();
         this.closeDoor();
     },
@@ -122,5 +102,11 @@ module.exports = {
                 $('.endText').css('display','block');
             }, 200);
         });
+    },
+    hideAllTheme() {
+        $('.main').hide();
+        $('.shang').hide();
+        $('.xiang').hide();
+        $('.huo').hide();
     }
 }

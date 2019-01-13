@@ -182,6 +182,8 @@ module.exports = {
     },
     onClickCoins() {
         $('.shang .girl').one('click', function() {
+            var click_sound = document.getElementById("click_sound");
+            click_sound.play();
             $('.shang .girl').removeClass('girlUnclick');
             $('.shang .girl').addClass('girlClick');
             $('.shang .hand').css('display','none');
