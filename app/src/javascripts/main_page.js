@@ -1,4 +1,9 @@
 var $ = require('jquery');
+var le_shang = require('./le_shang.js');
+var le_shang = require('./le_shang.js');
+var le_xiang = require('./le_xiang.js');
+var le_huo = require('./le_huo.js');
+var le_xue = require('./le_xue.js');
 
 module.exports = {
     init: function() {
@@ -30,19 +35,15 @@ module.exports = {
             $('.theme .leHuo').addClass('tada');
         });
         $('.leShang').on('click', function() {
-            $('.page1').removeClass('done');
-            $('.page2').removeClass('done');
-            $('.page3').removeClass('done');
-            $('.page4').removeClass('done');
-            $('.page5').removeClass('done');
-            $('.page6').removeClass('done');
-
             $('.main').hide();
             $('.xiang').hide();
             $('.huo').hide();
             $('.xue').hide();
 
             $('.shang').show();
+            $('.shang .page1').css('display','block');
+            $('.shang .page1 .popup1').css('display','block');
+            le_shang.init();
         });
         $('.leXiang').on('click', function() {
             $('.page1').removeClass('done');
@@ -59,6 +60,8 @@ module.exports = {
 
             $('.xiang .page1 .popup1').css('display','block');
             $('.xiang').show();
+            le_xiang.init();
+
         });
         $('.leHuo').on('click', function() {
             $('.main').hide();
@@ -67,6 +70,7 @@ module.exports = {
             $('.xue').hide();
 
             $('.huo').show();
+            le_huo.init();
         });
         $('.leXue').on('click', function() {
             $('.page1').removeClass('done');
@@ -81,6 +85,7 @@ module.exports = {
             $('.huo').hide();
 
             $('.xue').show();
+            le_xue.init();
         });
         $('.end').on('click', function() {
             self.showEndPage();
