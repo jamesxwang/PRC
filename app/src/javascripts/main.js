@@ -1,5 +1,4 @@
 (function () {
-    'use strict';
 
     // load dependencies
     var interactive = require('./interactive.js');

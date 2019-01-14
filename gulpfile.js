@@ -1,5 +1,3 @@
-'use strict';
-
 var autoprefixer = require('gulp-autoprefixer');
 var browserify = require('gulp-browserify');
 var browserSync = require('browser-sync').create();
