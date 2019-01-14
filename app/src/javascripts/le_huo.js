@@ -61,6 +61,7 @@ module.exports = {
         $('.huo .page3 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.huo .page3 .carousel').css('display','block');
+                $('.huo .page3 .light').css('display','block');
             }, 200);
         });
         $('.huo .page3 .carousel').one(animationEnd, function() {
@@ -141,9 +142,11 @@ module.exports = {
                         $('.huo .page3 .carousel').removeClass('zoomIn');
                         $('.huo .page3 .popup1').addClass('bounceOutLeft');
                         $('.huo .page3 .carousel').addClass('bounceOutLeft');
+                        $('.huo .page3 .light').addClass('animated fadeOut');
                         
                         $('.huo .page4').addClass('done');
                         setTimeout(() => {
+                            $('.huo .page4').show();
                             $('.huo .page4').show();
                             $('.huo .page4 .continue').css('display','block');
                         }, 1000);
