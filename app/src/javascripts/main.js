@@ -15,7 +15,8 @@
         var BASE_PATH = '/images/';
         var fileList = [
             'loading_light.png',
-            'loading_man.png',
+            'loading_man1.png',
+            'loading_man2.png',
             'loading_progress1.png',
             'loading_progress2.png',
             'interactive_arrow1.png',
@@ -136,7 +137,26 @@
             'le_xue_no.png',
             'le_xue_title1.png',
             'le_xue_title2.png',
-
+            'le_huo_hand.png',
+            'le_huo_header1.png',
+            'le_huo_header2.png',
+            'le_huo_light.png',
+            'le_huo_logo.png',
+            'le_huo_pyramid.png',
+            'le_huo_athlete_click1.png',
+            'le_huo_athlete_click2.png',
+            'le_huo_athlete_unclick1.png',
+            'le_huo_athlete_unclick2.png',
+            'le_huo_text_bold1.png',
+            'le_huo_text_bold2.png',
+            'le_huo_text_bold3.png',
+            'le_huo_text_bold4.png',
+            'le_huo_text_bold5.png',
+            'le_huo_text_branch1.png',
+            'le_huo_text_branch2.png',
+            'le_huo_text_branch3.png',
+            'le_huo_text_branch4.png',
+            'le_huo_text_branch5.png',
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
@@ -147,6 +167,10 @@
             console.log("预加载图片："+fileList.length+"张");
             // autoplay
             var bgMusic = $('audio').get(0);
+            var $btnMusic = $('#btn-music');
+            $btnMusic.show();
+            if (!$btnMusic.hasClass('paused') && bgMusic.paused)
+                bgMusic.play();
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
                 if (bgMusic.paused) {
@@ -169,8 +193,6 @@
         });
 
         // Sound
-        var $btnMusic = $('#btn-music');
-        var bgMusic = $('audio').get(0);
         soundManager.url = 'soundManager2/';
         soundManager.flashVersion = 9;
         soundManager.useHighPerformance = true;
@@ -184,9 +206,7 @@
         soundManager.onready(function() {
             loader.addSound('bg_music','/audios/background.mp3');
             loader.addSound('click_sound','/audios/click.mp3');
-            $btnMusic.show();
-            if (!$btnMusic.hasClass('paused') && bgMusic.paused)
-                bgMusic.play();
+            
             loader.start();
         });
         /***********************************************/
