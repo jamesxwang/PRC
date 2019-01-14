@@ -22,7 +22,7 @@ module.exports = {
         /****************************
          *       for develop        *
          ****************************/ 
-        self.gotoMainPage();
+        // self.gotoMainPage();
 
         // $('.interactive').hide();
         // $('.xue').show();
