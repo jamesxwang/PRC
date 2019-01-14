@@ -158,7 +158,15 @@
             'le_huo_text_branch5.png',
             'le_huo_continue.png',
             'le_huo_go.png',
-
+            'le_huo_image1.jpg',
+            'le_huo_image2.jpg',
+            'le_huo_image3.jpg',
+            'le_huo_image4.jpg',
+            'le_huo_image5.jpg',
+            'le_huo_image6.jpg',
+            'le_huo_image7.jpg',
+            'le_huo_image8.jpg',
+            'le_huo_image9.jpg',
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
