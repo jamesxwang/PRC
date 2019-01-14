@@ -2,6 +2,8 @@ FROM nginx
 
 MAINTAINER James wang <jameswangx95@gmail.com>
 
+RUN sudo npm install
+
 RUN mkdir /data/log/nginx -p
 
 RUN chown nginx.nginx -R /data/log/nginx
