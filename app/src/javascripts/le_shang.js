@@ -211,7 +211,7 @@ module.exports = {
                         $('.shang .page2').addClass('done');
                         setTimeout(() => {
                             $('.shang .page2').show();
-                            $('.shang .page2 .popup1').css('display','block');
+                            $('.shang .page2 .branchBox').css('display','block');
                         }, 1000);
                         break;
                     }
@@ -254,7 +254,7 @@ module.exports = {
                         $('.shang .page4').addClass('done');
                         setTimeout(() => {
                             $('.shang .page4').show();
-                            $('.shang .page4 .popup1').css('display','block');
+                            $('.shang .page4 .continue').css('display','block');
                         }, 1000);
                         break;
                     }

@@ -25,6 +25,7 @@ module.exports = {
         self.pageOneAnimation(animationEnd);
         self.pageTwoAnimation(animationEnd);
         self.pageThreeAnimation(animationEnd);
+        self.pageFourAnimation(animationEnd);
     },
     pageOneAnimation(animationEnd) {
         var self = this;
@@ -44,6 +45,10 @@ module.exports = {
                 self.onClickAthlete();
             }, 200);
         });
+        
+    },
+    pageTwoAnimation(animationEnd) {
+        var self = this;
         $('.huo .page1 .boldText .text5').one(animationEnd, function() {
             setTimeout(() => {
                 self.showHand();
@@ -51,23 +56,32 @@ module.exports = {
             }, 200);
         });
     },
-    pageTwoAnimation(animationEnd) {
+    pageThreeAnimation(animationEnd) {
         var self = this;
-        $('.shang .page2 .popup1').one(animationEnd, function() {
+        $('.huo .page3 .popup1').one(animationEnd, function() {
             setTimeout(() => {
-                $('.shang .page2 .texts').css('display','block');
+                $('.huo .page3 .carousel').css('display','block');
             }, 200);
         });
-        $('.shang .page2 .texts').one(animationEnd, function() {
+        $('.huo .page3 .carousel').one(animationEnd, function() {
             setTimeout(() => {
-                // TODO: extend branches
-                // $('.shang .page2 .branches').css('display','block');
+                self.showHand();
+                self.onClickAthlete();
             }, 200);
         });
     },
-    pageThreeAnimation(animationEnd) {
+    pageFourAnimation(animationEnd) {
         var self = this;
-
+        $('.huo .page4 .continue').one(animationEnd, function() {
+            setTimeout(() => {
+                $('.huo .page4 .go').css('display','block');
+            }, 200);
+        });
+        $('.huo .page4 .go').on('click', function() {
+            $('.huo').hide();
+            self.reset();
+            $('.main').show();
+        });
     },
     showHand() {
         $('.huo .hand').css('display','block');
@@ -97,24 +111,42 @@ module.exports = {
                         $('.huo .page1 .boldText .text3').addClass('transformLeft');
                         $('.huo .page1 .boldText .text4').addClass('transformLeft');
                         $('.huo .page1 .boldText .text5').addClass('transformLeftLittle');
-                        $('.huo .page1 .branchBox').css('display','block');
+                        $('.huo .page2').addClass('done');
+                        setTimeout(() => {
+                            $('.huo .page2').show();
+                            $('.huo .page2 .branchBox').css('display','block');
+                        }, 0);
                         break;
                     }
                     case 3:
                     {
                         $('.huo .page1 .popup1').removeClass('flash');
                         $('.huo .page1 .pyramid').removeClass('fadeInDown');
-                        $('.huo .page1 .boldText').removeClass('fadeInDown');
-                        $('.huo .page1 .branchBox').removeClass('fadeInDown');
+                        $('.huo .page1 .boldText').removeClass('fadeIn');
+                        $('.huo .page2 .branchBox').removeClass('fadeInRight');
                         $('.huo .page1 .popup1').addClass('bounceOutLeft');
                         $('.huo .page1 .pyramid').addClass('bounceOutLeft');
-                        $('.huo .page1 .boldText').addClass('bounceOutLeft');
-                        $('.huo .page1 .branchBox').addClass('bounceOutLeft');
-                        $('.huo .page2 .popup1').css('display','block');
+                        $('.huo .page1 .boldText').addClass('animated bounceOutLeft');
+                        $('.huo .page2 .branchBox').addClass('animated bounceOutLeft');
+                        $('.huo .page3').addClass('done');
+                        setTimeout(() => {
+                            $('.huo .page3').show();
+                            $('.huo .page3 .popup1').css('display','block');
+                        }, 1000);
                         break;
                     }
                     case 4:
                     {
+                        $('.huo .page3 .popup1').removeClass('flash');
+                        $('.huo .page3 .carousel').removeClass('zoomIn');
+                        $('.huo .page3 .popup1').addClass('bounceOutLeft');
+                        $('.huo .page3 .carousel').addClass('bounceOutLeft');
+                        
+                        $('.huo .page4').addClass('done');
+                        setTimeout(() => {
+                            $('.huo .page4').show();
+                            $('.huo .page4 .continue').css('display','block');
+                        }, 1000);
                         break;
                     }
                     default:
@@ -124,5 +156,8 @@ module.exports = {
                 $('.huo .athlete').addClass('athleteUnclick');
             }, 1500);
         });
+    },
+    reset() {
+
     }
 }
