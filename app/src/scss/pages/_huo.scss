@@ -78,6 +78,9 @@
             }
             
         }
+        
+    }
+    .page2 {
         .branchBox {
             width: 45%;
             height: 40%;
@@ -118,6 +121,57 @@
             }
         }
         
+    }
+    .page3 {
+        .popup1 {
+            background: url('/images/le_huo_header2.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 90%;
+            height: 14%;
+            position: absolute;
+            margin: 0 5% 0 5%;
+            top:20%;
+            z-index: 3;
+            display: none;
+        }
+        .carousel {
+            border: 1px red solid;
+            width: 100%;
+            height: 35%;
+            position: absolute;
+            top: 33%;
+            display: none;
+        }
+    }
+    .page4 {
+        .continue {
+            background: url('/images/le_huo_continue.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 40%;
+            height: 15%;
+            position: absolute;
+            top: 30%;
+            margin: 0 30% 0 30%;
+            z-index: 3;
+            display: none;
+        }
+        .go {
+            background: url('/images/le_huo_go.png') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 60%;
+            height: 15%;
+            position: absolute;
+            top: 50%;
+            margin: 0 20% 0 20%;
+            z-index: 3;
+            display: none;
+        }
     }
     .athlete {
         width: 100%;

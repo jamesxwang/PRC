@@ -157,6 +157,9 @@
             'le_huo_text_branch3.png',
             'le_huo_text_branch4.png',
             'le_huo_text_branch5.png',
+            'le_huo_continue.png',
+            'le_huo_go.png',
+
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
