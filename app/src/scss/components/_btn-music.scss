@@ -10,8 +10,9 @@
     position: fixed;
     top: 0.6rem;
     right: 0.5rem;
-    z-index: 999;
+    z-index: 9999;
     animation: btnMusicAni 3s infinite linear;
+    display: none;
 }
 #btn-music.paused {
     opacity: 0.4;

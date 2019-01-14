@@ -51,7 +51,8 @@ module.exports = {
         });
         $('.leHuo').on('click', function() {
             self.hideAllTheme();
-
+            $('.huo .page1').css('display','block');
+            $('.huo .page1 .popup1').css('display','block');
             $('.huo').show();
             le_huo.init();
         });
