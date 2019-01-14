@@ -16,6 +16,7 @@ var sass = require('gulp-sass');
 var streamSeries = require('stream-series');
 var plumber = require('gulp-plumber');
 var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
 
 var vendors = require('./config/vendors');
 
@@ -179,6 +180,7 @@ gulp.task('minify-css', function () {
 // uglify app/dist/javascripts/bundle.js and save as app/dist/javascripts/bundle.min.js
 gulp.task('uglify-js', function () {
     return gulp.src('app/dist/javascripts/bundle.js')
+        .pipe(babel())
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
@@ -217,7 +219,7 @@ gulp.task('del-bundle', function (cb) {
 // inject the minified files to index.html
 // delete unminified files
 gulp.task('prod',  function (cb) {
-    runSequence(['minify-css', 'uglify-js'], ['inject-min', 'del-bundle'], cb);
+    runSequence(['clean-files'], ['publish-fonts', 'publish-images', 'publish-audios', 'publish-css', 'publish-js'], ['minify-css', 'uglify-js'], ['inject-min', 'del-bundle'], cb);
 });
 
 
