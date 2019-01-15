@@ -1,6 +1,6 @@
 .main {
     .main_page_logo {
-        background: url('/images/main_page_logo1.png') no-repeat transparent center 0;
+        background: url('../images/main_page_logo1.png') no-repeat transparent center 0;
         background-size: contain;
         width: 90%;
         min-height: 40%;
@@ -29,20 +29,20 @@
             animation-duration: 1s;
         }
         .leShang {
-            background: url('/images/main_page_shang.png') center;
+            background: url('../images/main_page_shang.png') center;
         }
         .leXiang {
-            background: url('/images/main_page_xiang.png') center;
+            background: url('../images/main_page_xiang.png') center;
         }
         .leXue {
-            background: url('/images/main_page_xue.png') center;
+            background: url('../images/main_page_xue.png') center;
         }
         .leHuo {
-            background: url('/images/main_page_huo.png') center;
+            background: url('../images/main_page_huo.png') center;
         }
     }
     .hand {
-        background: url('/images/main_page_hand.png') center;
+        background: url('../images/main_page_hand.png') center;
         background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
@@ -55,7 +55,7 @@
         animation: handAnimate 5s;
     }
     .end {
-        background: url('/images/main_page_end.png') center;
+        background: url('../images/main_page_end.png') center;
         background-size: contain;
         background-repeat: no-repeat;
         width: 20%;

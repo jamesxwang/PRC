@@ -69,3 +69,17 @@
         background-size:contain;
     }
 }
+@-webkit-keyframes loadingAni {
+    0% {
+        background:url('../images/loading_man1.png') top center no-repeat;
+        background-size:contain;
+    }
+    50% {
+        background:url('../images/loading_man2.png') top center no-repeat;
+        background-size:contain;
+    }
+    100% {
+        background:url('../images/loading_man1.png') top center no-repeat;
+        background-size:contain;
+    }
+}

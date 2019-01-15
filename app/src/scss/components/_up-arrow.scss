@@ -43,3 +43,24 @@
         transform: translate3d(-50%, -50%, 0);
     }
 }
+@-webkit-keyframes upArrowAni {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, 30%, 0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate3d(-50%, -20%, 0);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translate3d(-50%, -35%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}

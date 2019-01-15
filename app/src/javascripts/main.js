@@ -11,7 +11,7 @@
         var loader = new PxLoader();
 
         // Images
-        var BASE_PATH = '/images/';
+        var BASE_PATH = '/dist/images/';
         var fileList = [
             'loading_light.png',
             'loading_man1.png',
@@ -225,8 +225,8 @@
             soundManager.reboot(); 
         });
         soundManager.onready(function() {
-            loader.addSound('bg_music','/audios/background.mp3');
-            loader.addSound('click_sound','/audios/click.mp3');
+            loader.addSound('bg_music','/dist/audios/background.mp3');
+            loader.addSound('click_sound','/dist/audios/click.mp3');
             
             loader.start();
         });

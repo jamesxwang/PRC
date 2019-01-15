@@ -40,7 +40,7 @@
         z-index: 3;
     }
     .logo {
-        background: url('/images/logo.png') center;
+        background: url('../images/logo.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -57,7 +57,7 @@
         width: 96%;
         height: 81%;
         margin: 0 2% 0 2%;
-        background-image: url('/images/interactive_neon.png');
+        background-image: url('../images/interactive_neon.png');
         background-repeat: no-repeat;
         background-size:100% 100%;
         top: 20%;
@@ -65,7 +65,7 @@
     }
     .left_door,
     .right_door {
-        background-image: url('/images/interactive_door.png');
+        background-image: url('../images/interactive_door.png');
         background-repeat:no-repeat;
         background-size:100% 100%;
         -moz-background-size:100% 100%;
@@ -84,7 +84,7 @@
         border-left: 1px #000 solid;
     }
     .rotate {
-        background: url('/images/interactive_big_logo.png') center;
+        background: url('../images/interactive_big_logo.png') center;
         background-repeat:no-repeat;
         background-size: contain;
         position: absolute;
@@ -99,7 +99,7 @@
         transform-origin: center;
     }
     .hint_1 {
-        background-image: url('/images/interactive_hint1.png');
+        background-image: url('../images/interactive_hint1.png');
         position: absolute;
         width: 60%;
         height: 15%;
@@ -112,7 +112,7 @@
         -webkit-animation:blink 2s infinite;
     }
     .hint_2 {
-        background-image: url('/images/interactive_hint2.png');
+        background-image: url('../images/interactive_hint2.png');
         position: absolute;
         width: 40%;
         height: 20%;
@@ -135,11 +135,11 @@
         z-index: 6;
     }
     .arrow_blue {
-        background-image: url('/images/interactive_arrow2.png');
+        background-image: url('../images/interactive_arrow2.png');
         top: 20%;
     }
     .arrow_pink {
-        background-image: url('/images/interactive_arrow1.png');
+        background-image: url('../images/interactive_arrow1.png');
         top: 65%;
     }
     .endNeon {
@@ -148,7 +148,7 @@
         position: absolute;
         margin: 0 15% 0 15%;
         top: 30%;
-        background: url('/images/interactive_end_neon.png') center;
+        background: url('../images/interactive_end_neon.png') center;
         background-repeat:no-repeat;
         background-size: contain;
         display: none;
@@ -161,69 +161,11 @@
         position: absolute;
         margin: 0 30% 0 30%;
         top: 80%;
-        background: url('/images/interactive_text.png') center;
+        background: url('../images/interactive_text.png') center;
         background-repeat:no-repeat;
         background-size: contain;
         display: none;
         z-index: 99;
-    }
-}
-.scaleOut {
-    animation-timing-function: linear;
-    animation-name: scaleOut;
-    animation-duration: 1s;
-}
-.scaleIn {
-    animation-timing-function: linear;
-    animation-name: scaleIn;
-    animation-duration: 1s;
-}
-@keyframes scaleIn {
-    from {
-        transform: scale(4) translate3d(0,70px,0);
-    }
-    80% {
-        transform: scale(1) translate3d(0,0px,0);
-    }
-    100% {
-        transform: scale(1) translate3d(0,0px,0);
-        visibility: hidden;
-    }
-}
-@-webkit-keyframes scaleIn {
-    from {
-        transform: scale(4) translate3d(0,70px,0);
-    }
-    80% {
-        transform: scale(1) translate3d(0,0px,0);
-    }
-    100% {
-        transform: scale(1) translate3d(0,0px,0);
-        visibility: hidden;
-    }
-}
-@keyframes scaleOut {
-    from {
-        transform: scale(1) translate3d(0,0px,0);
-    }
-    80% {
-        transform: scale(4) translate3d(0,70px,0);
-    }
-    100% {
-        transform: scale(4) translate3d(0,70px,0);
-        visibility: hidden;
-    }
-}
-@-webkit-keyframes scaleOut {
-    from {
-        transform: scale(1) translate3d(0,0px,0);
-    }
-    80% {
-        transform: scale(4) translate3d(0,70px,0);
-    }
-    100% {
-        transform: scale(4) translate3d(0,70px,0);
-        visibility: hidden;
     }
 }
 @keyframes blink{

@@ -1,6 +1,6 @@
 .huo {
     .header {
-        background: url('/images/le_huo_logo.png') center;
+        background: url('../images/le_huo_logo.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -15,7 +15,7 @@
     }
     .page1 {
         .popup1 {
-            background: url('/images/le_huo_header1.png') center;
+            background: url('../images/le_huo_header1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -28,7 +28,7 @@
             display: none;
         }
         .pyramid {
-            background: url('/images/le_huo_pyramid.png') right no-repeat;
+            background: url('../images/le_huo_pyramid.png') right no-repeat;
             background-size: contain;
             width: 50%;
             height: 40%;
@@ -45,27 +45,27 @@
             left: 10%;
             display: none;
             .text1 {
-                background: url('/images/le_huo_text_bold1.png') right;
+                background: url('../images/le_huo_text_bold1.png') right;
                 height: 4.6%;
                 top: 10%;
             }
             .text2 {
-                background: url('/images/le_huo_text_bold2.png') right;
+                background: url('../images/le_huo_text_bold2.png') right;
                 height: 4.5%;
                 top: 25%;
             }
             .text3 {
-                background: url('/images/le_huo_text_bold3.png') right;
+                background: url('../images/le_huo_text_bold3.png') right;
                 height: 11%;
                 top: 40%;
             }
             .text4 {
-                background: url('/images/le_huo_text_bold4.png') right;
+                background: url('../images/le_huo_text_bold4.png') right;
                 height: 11%;
                 top: 60%;
             }
             .text5 {
-                background: url('/images/le_huo_text_bold5.png') right;
+                background: url('../images/le_huo_text_bold5.png') right;
                 height: 4.5%;
                 top: 83%;
             }
@@ -89,28 +89,28 @@
             left: 29%;
             display: none;
             .branch1 {
-                background: url('/images/le_huo_text_branch1.png') right;
+                background: url('../images/le_huo_text_branch1.png') right;
                 width: 80%;
                 height: 17%;
             }
             .branch2 {
-                background: url('/images/le_huo_text_branch2.png') right;
+                background: url('../images/le_huo_text_branch2.png') right;
                 width: 78%;
                 height: 15%;
             }
             .branch3 {
-                background: url('/images/le_huo_text_branch3.png') right;
+                background: url('../images/le_huo_text_branch3.png') right;
                 width: 80%;
                 height: 14%;
             }
             .branch4 {
-                background: url('/images/le_huo_text_branch4.png') right;
+                background: url('../images/le_huo_text_branch4.png') right;
                 width: 79%;
                 height: 13%;
                 margin-top: 10%;
             }
             .branch5 {
-                background: url('/images/le_huo_text_branch5.png') right;
+                background: url('../images/le_huo_text_branch5.png') right;
                 width: 45%;
                 height: 12%;
                 margin: 20% 10% 0 25%;
@@ -124,7 +124,7 @@
     }
     .page3 {
         .popup1 {
-            background: url('/images/le_huo_header2.png') center;
+            background: url('../images/le_huo_header2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -137,7 +137,7 @@
             display: none;
         }
         .light {
-            background: url('/images/le_huo_light.png') center;
+            background: url('../images/le_huo_light.png') center;
             background-repeat: no-repeat;
             background-size: cover;
             background-color: transparent;
@@ -160,31 +160,31 @@
             z-index: 3;
             display: none;
             .item-1 {
-                background: url('/images/le_huo_image1.jpg');
+                background: url('../images/le_huo_image1.jpg');
             }
             .item-2 {
-                background: url('/images/le_huo_image2.jpg');
+                background: url('../images/le_huo_image2.jpg');
             }
             .item-3 {
-                background: url('/images/le_huo_image3.jpg');
+                background: url('../images/le_huo_image3.jpg');
             }
             .item-4 {
-                background: url('/images/le_huo_image4.jpg');
+                background: url('../images/le_huo_image4.jpg');
             }
             .item-5 {
-                background: url('/images/le_huo_image5.jpg');
+                background: url('../images/le_huo_image5.jpg');
             }
             .item-6 {
-                background: url('/images/le_huo_image6.jpg');
+                background: url('../images/le_huo_image6.jpg');
             }
             .item-7 {
-                background: url('/images/le_huo_image7.jpg');
+                background: url('../images/le_huo_image7.jpg');
             }
             .item-8 {
-                background: url('/images/le_huo_image8.jpg');
+                background: url('../images/le_huo_image8.jpg');
             }
             .item-9 {
-                background: url('/images/le_huo_image9.jpg');
+                background: url('../images/le_huo_image9.jpg');
             }
             .item-1,.item-2,.item-3,.item-4,.item-5,.item-6,.item-7,.item-8,.item-9, {
                 background-size: contain;
@@ -231,7 +231,7 @@
     }
     .page4 {
         .continue {
-            background: url('/images/le_huo_continue.png') center;
+            background: url('../images/le_huo_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -244,7 +244,7 @@
             display: none;
         }
         .go {
-            background: url('/images/le_huo_go.png') center;
+            background: url('../images/le_huo_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -273,7 +273,7 @@
         animation: athleteClick 1.5s;
     }
     .hand {
-        background: url('/images/le_huo_hand.png');
+        background: url('../images/le_huo_hand.png');
         background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
@@ -297,39 +297,94 @@
 }
 @keyframes athleteUnclick {
     0% {
-        background: url('/images/le_huo_athlete_unclick1.png') center bottom;
+        background: url('../images/le_huo_athlete_unclick1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     50% {
-        background: url('/images/le_huo_athlete_unclick2.png') center bottom;
+        background: url('../images/le_huo_athlete_unclick2.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     100% {
-        background: url('/images/le_huo_athlete_unclick1.png') center bottom;
+        background: url('../images/le_huo_athlete_unclick1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@-webkit-keyframes athleteUnclick {
+    0% {
+        background: url('../images/le_huo_athlete_unclick1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50% {
+        background: url('../images/le_huo_athlete_unclick2.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100% {
+        background: url('../images/le_huo_athlete_unclick1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
 }
 @keyframes athleteClick {
     0% {
-        background: url('/images/le_huo_athlete_click1.png') center bottom;
+        background: url('../images/le_huo_athlete_click1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     50% {
-        background: url('/images/le_huo_athlete_click2.png') center bottom;
+        background: url('../images/le_huo_athlete_click2.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     100% {
-        background: url('/images/le_huo_athlete_click1.png') center bottom;
+        background: url('../images/le_huo_athlete_click1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@-webkit-keyframes athleteClick {
+    0% {
+        background: url('../images/le_huo_athlete_click1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50% {
+        background: url('../images/le_huo_athlete_click2.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100% {
+        background: url('../images/le_huo_athlete_click1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
 }
 @keyframes handAni {
+    0% {
+        transform: translate3d(-50%, 20%, 0);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate3d(-50%, -10%, 0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translate3d(-50%, -25%, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(-50%, -30%, 0);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes handAni {
     0% {
         transform: translate3d(-50%, 20%, 0);
         opacity: 0;
@@ -358,7 +413,23 @@
         transform: translate3d(-50%, 0, 0);
     }
 }
+@-webkit-keyframes transformLeft {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
 @keyframes transformLeftLittle {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-30%, 0, 0);
+    }
+}
+@-webkit-keyframes transformLeftLittle {
     from {
         transform: translate3d(0, 0, 0);
     }

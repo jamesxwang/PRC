@@ -1,6 +1,6 @@
 .xue {
     .header {
-        background: url('/images/le_xue_header.png') center;
+        background: url('../images/le_xue_header.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -28,7 +28,7 @@
         animation: teacherClick 1s;
     }
     .blackboard {
-        background: url('/images/le_xue_scene.png') center;
+        background: url('../images/le_xue_scene.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -41,7 +41,7 @@
     }
     .page1 {
         .text1 {
-            background: url('/images/le_xue_text1.png') center;
+            background: url('../images/le_xue_text1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -53,7 +53,7 @@
             z-index: 3;
         }
         .pie {
-            background: url('/images/le_xue_pie.png') center;
+            background: url('../images/le_xue_pie.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -76,17 +76,17 @@
             margin: 0 10% 0 10%;
             background-size: contain;
             .description1 {
-                background: url('/images/le_xue_description1.png') right;
+                background: url('../images/le_xue_description1.png') right;
                 width: 100%;
                 height: 60%;
             }
             .description2 {
-                background: url('/images/le_xue_description2.png');
+                background: url('../images/le_xue_description2.png');
                 width: 100%;
                 height: 50%;
             }
             .description3 {
-                background: url('/images/le_xue_description3.png');
+                background: url('../images/le_xue_description3.png');
                 width: 100%;
                 height: 40%;
                 margin-top: 10%;
@@ -106,7 +106,7 @@
     }
     .page2 {
         .text1 {
-            background: url('/images/le_xue_text2.png') center;
+            background: url('../images/le_xue_text2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -128,19 +128,19 @@
             z-index: 2;
             .content1 {
                 margin: 0 75% 0 0;
-                background: url('/images/le_xue_content1.png') left;
+                background: url('../images/le_xue_content1.png') left;
             }
             .content2 {
-                background: url('/images/le_xue_content2.png') top;
+                background: url('../images/le_xue_content2.png') top;
                 margin: 0 0 0 31%;
                 top: -19%;
             }
             .content3 {
-                background: url('/images/le_xue_content3.png') bottom;
+                background: url('../images/le_xue_content3.png') bottom;
                 margin: 32% 75% 0 18%;
             }
             .content4 {
-                background: url('/images/le_xue_content4.png') right;
+                background: url('../images/le_xue_content4.png') right;
                 margin: 10% 75% 0 50%;                
                 
             }
@@ -155,7 +155,7 @@
             }
         }
         .text2 {
-            background: url('/images/le_xue_text3.png') center;
+            background: url('../images/le_xue_text3.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -170,7 +170,7 @@
     }
     .page3 {
         .text1 {
-            background: url('/images/le_xue_text4.png') center;
+            background: url('../images/le_xue_text4.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -183,7 +183,7 @@
             display: none;
         }
         .question {
-            background: url('/images/le_xue_question.png') center;
+            background: url('../images/le_xue_question.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -206,15 +206,15 @@
             top: 45%;
             z-index: 3;
             .bullet1 {
-                background: url('/images/le_xue_bullet1.png') left;
+                background: url('../images/le_xue_bullet1.png') left;
                 
             }
             .bullet2 {
-                background: url('/images/le_xue_bullet2.png') left;
+                background: url('../images/le_xue_bullet2.png') left;
                 margin-right: 27%;
             }
             .bullet3 {
-                background: url('/images/le_xue_bullet3.png') left;
+                background: url('../images/le_xue_bullet3.png') left;
                 margin-right: 21%;
             }
             .bullet1, .bullet2, .bullet3 {
@@ -226,7 +226,7 @@
             }
         }
         .no {
-            background: url('/images/le_xue_no.png') center;
+            background: url('../images/le_xue_no.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -260,13 +260,13 @@
                 top: 0;
                 z-index: 3;
                 .title {
-                    background: url('/images/le_xue_title1.png');
+                    background: url('../images/le_xue_title1.png');
                 }
                 .bullet1 {
-                    background: url('/images/le_xue_bullet4.png');
+                    background: url('../images/le_xue_bullet4.png');
                 }
                 .bullet2 {
-                    background: url('/images/le_xue_bullet5.png');
+                    background: url('../images/le_xue_bullet5.png');
                 }
                 .title, .bullet1, .bullet2 {
                     height: 100%;
@@ -285,19 +285,19 @@
                 top: 0;
                 z-index: 3;
                 .title {
-                    background: url('/images/le_xue_title2.png');
+                    background: url('../images/le_xue_title2.png');
                 }
                 .bullet1 {
-                    background: url('/images/le_xue_bullet6.png');
+                    background: url('../images/le_xue_bullet6.png');
                 }
                 .bullet2 {
-                    background: url('/images/le_xue_bullet7.png');
+                    background: url('../images/le_xue_bullet7.png');
                 }
                 .bullet3 {
-                    background: url('/images/le_xue_bullet8.png');
+                    background: url('../images/le_xue_bullet8.png');
                 }
                 .bullet4 {
-                    background: url('/images/le_xue_bullet9.png');
+                    background: url('../images/le_xue_bullet9.png');
                 }
                 .title, .bullet1, .bullet2, .bullet3, .bullet4 {
                     height: 100%;
@@ -310,7 +310,7 @@
     }
     .page5 {
         .continue {
-            background: url('/images/le_xue_continue.png') center;
+            background: url('../images/le_xue_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -323,7 +323,7 @@
             display: none;
         }
         .go {
-            background: url('/images/le_xue_go.png') center;
+            background: url('../images/le_xue_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -337,7 +337,7 @@
         }
     }
     .hand {
-        background: url('/images/le_shang_hand.png');
+        background: url('../images/le_shang_hand.png');
         background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
@@ -387,36 +387,91 @@
         transform: translate3d(-50%, 30%, 0) rotateY(180deg);
     }
 }
+@-webkit-keyframes downAni {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) rotateY(180deg);;
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate3d(-50%, -35%, 0) rotateY(180deg);;
+    }
+
+    60% {
+        opacity: 0;
+        transform: translate3d(-50%, -20%, 0) rotateY(180deg);;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, 30%, 0) rotateY(180deg);
+    }
+}
 @keyframes teacherUnclick {
     0% {
-        background: url('/images/le_xue_teacher_unclick1.png') center bottom;
+        background: url('../images/le_xue_teacher_unclick1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     50% {
-        background: url('/images/le_xue_teacher_unclick2.png') center bottom;
+        background: url('../images/le_xue_teacher_unclick2.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     100% {
-        background: url('/images/le_xue_teacher_unclick1.png') center bottom;
+        background: url('../images/le_xue_teacher_unclick1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@-webkit-keyframes teacherUnclick {
+    0% {
+        background: url('../images/le_xue_teacher_unclick1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50% {
+        background: url('../images/le_xue_teacher_unclick2.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100% {
+        background: url('../images/le_xue_teacher_unclick1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
 }
 @keyframes teacherClick {
     0% {
-        background: url('/images/le_xue_teacher_click1.png') center bottom;
+        background: url('../images/le_xue_teacher_click1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     50% {
-        background: url('/images/le_xue_teacher_click2.png') center bottom;
+        background: url('../images/le_xue_teacher_click2.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
     100% {
-        background: url('/images/le_xue_teacher_click1.png') center bottom;
+        background: url('../images/le_xue_teacher_click1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@-webkit-keyframes teacherClick {
+    0% {
+        background: url('../images/le_xue_teacher_click1.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    50% {
+        background: url('../images/le_xue_teacher_click2.png') center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    100% {
+        background: url('../images/le_xue_teacher_click1.png') center bottom;
         background-repeat: no-repeat;
         background-size: contain;
     }
