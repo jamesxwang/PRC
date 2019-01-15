@@ -142,7 +142,8 @@ module.exports = {
                         $('.huo .page3 .carousel').removeClass('zoomIn');
                         $('.huo .page3 .popup1').addClass('bounceOutLeft');
                         $('.huo .page3 .carousel').addClass('bounceOutLeft');
-                        $('.huo .page3 .light').addClass('animated fadeOut');
+                        $('.huo .page3 .light').removeClass('fadeIn');
+                        $('.huo .page3 .light').addClass('fadeOut');
                         
                         $('.huo .page4').addClass('done');
                         setTimeout(() => {
@@ -161,6 +162,43 @@ module.exports = {
         });
     },
     reset() {
+        // page1
+        $('.huo .page1 .popup1').removeClass('bounceOutLeft');
+        $('.huo .page1 .pyramid').removeClass('bounceOutLeft');
+        $('.huo .page1 .boldText').removeClass('bounceOutLeft');
+        $('.huo .page1 .popup1').addClass('flash');
+        $('.huo .page1 .pyramid').addClass('fadeInDown');
+        $('.huo .page1 .boldText').addClass('fadeIn');
+        $('.huo .page1 .popup1').css('display','none');
+        $('.huo .page1 .pyramid').css('display','none');
+        $('.huo .page1 .boldText').css('display','none');
+        $('.huo .page1 .boldText .text1').removeClass('transformLeft');
+        $('.huo .page1 .boldText .text2').removeClass('transformLeft');
+        $('.huo .page1 .boldText .text3').removeClass('transformLeft');
+        $('.huo .page1 .boldText .text4').removeClass('transformLeft');
+        $('.huo .page1 .boldText .text5').removeClass('transformLeftLittle');
 
+        // page2
+        $('.huo .page2 .branchBox').removeClass('bounceOutLeft');
+        $('.huo .page2 .branchBox').addClass('fadeInRight');
+        $('.huo .page2 .branchBox').css('display','none');
+
+        // page3
+        $('.huo .page3 .popup1').removeClass('bounceOutLeft');
+        $('.huo .page3 .light').removeClass('fadeOut bounceOutLeft');
+        $('.huo .page3 .carousel').removeClass('bounceOutLeft');
+        $('.huo .page3 .popup1').addClass('flash');
+        $('.huo .page3 .light').addClass('fadeIn');
+        $('.huo .page3 .carousel').addClass('zoomIn');
+        $('.huo .page3 .popup1').css('display','none');
+        $('.huo .page3 .light').css('display','none');
+        $('.huo .page3 .carousel').css('display','none');
+        
+        // page4
+        $('.huo .page4 .continue').css('display','none');
+        $('.huo .page4 .go').css('display','none');
+        
+        $('.huo span').removeClass('done');
+        $('.huo span').css('display','none');
     }
 }

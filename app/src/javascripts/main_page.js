@@ -22,18 +22,7 @@ module.exports = {
                 }
             }
         })(document.createElement('div'));
-        setTimeout(() => {
-            $('.theme .leShang').addClass('tada');
-        }, 1000);
-        $('.theme .leShang').one(animationEnd, function() {
-            $('.theme .leXiang').addClass('tada');
-        });
-        $('.theme .leXiang').one(animationEnd, function() {
-            $('.theme .leXue').addClass('tada');
-        });
-        $('.theme .leXue').one(animationEnd, function() {
-            $('.theme .leHuo').addClass('tada');
-        });
+        self.showTada(animationEnd);
         $('.leShang').on('click', function() {
             self.hideAllTheme();
             $('.shang').show();
@@ -66,6 +55,20 @@ module.exports = {
         $('.end').on('click', function() {
             self.showEndPage();
         })
+    },
+    showTada(animationEnd) {
+        setTimeout(() => {
+            $('.theme .leShang').addClass('tada');
+        }, 1000);
+        $('.theme .leShang').one(animationEnd, function() {
+            $('.theme .leXiang').addClass('tada');
+        });
+        $('.theme .leXiang').one(animationEnd, function() {
+            $('.theme .leXue').addClass('tada');
+        });
+        $('.theme .leXue').one(animationEnd, function() {
+            $('.theme .leHuo').addClass('tada');
+        });
     },
     showEndPage() {
         $('.interactive .rotateBox').hide();

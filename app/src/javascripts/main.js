@@ -194,6 +194,17 @@
             // init
             interactive.init();
             main_page.init();
+
+            // carousel
+            var mySwiper = new Swiper('.carousel .swiper-container',{
+                centeredSlides: true,
+                slidesPerView: 3,
+                loop: true,
+                watchActiveIndex: true,
+                observer: true,
+                observeParents: true,
+            });	
+
             $(".loading-overlay").slideUp();
         });
         loader.addProgressListener(function(e){
