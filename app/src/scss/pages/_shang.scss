@@ -308,9 +308,15 @@
     }
     .girlUnclick {
         animation: girlUnclick 1s infinite;
+        -webkit-animation: girlUnclick 1s infinite;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .girlClick {        
         animation: girlClick 1.5s;
+        -webkit-animation: girlClick 1.5s;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .hand {
         background: url('../images/le_shang_hand.png') center;
@@ -322,8 +328,10 @@
         bottom: 10%;
         left: 50%;
         transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
         z-index: 10;
         animation: upAni 2s infinite linear;
+        -webkit-animation: upAni 2s infinite linear;
         display: none;
     }
     
@@ -331,69 +339,69 @@
 @keyframes girlUnclick {
     0% {
         background: url('../images/le_shang_girl_unclick1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     50% {
         background: url('../images/le_shang_girl_unclick2.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     100% {
         background: url('../images/le_shang_girl_unclick1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 @-webkit-keyframes girlUnclick {
     0% {
         background: url('../images/le_shang_girl_unclick1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     50% {
         background: url('../images/le_shang_girl_unclick2.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     100% {
         background: url('../images/le_shang_girl_unclick1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 @keyframes girlClick {
     0% {
         background: url('../images/le_shang_girl_click1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     50% {
         background: url('../images/le_shang_girl_click2.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     100% {
         background: url('../images/le_shang_girl_click3.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 @-webkit-keyframes girlClick {
     0% {
         background: url('../images/le_shang_girl_click1.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     50% {
         background: url('../images/le_shang_girl_click2.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     100% {
         background: url('../images/le_shang_girl_click3.png') bottom;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 @keyframes upAni {

@@ -123,9 +123,9 @@ module.exports = {
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
         $('.right_door').one(animationEnd, function() {
-            setTimeout(() => {
+            // setTimeout(() => {
                 self.gotoMainPage();
-            }, 1000);
+            // }, 500);
         });
     },
     gotoMainPage() {

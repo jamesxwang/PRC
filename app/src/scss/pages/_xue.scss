@@ -23,9 +23,15 @@
     }
     .teacherUnclick {
         animation: teacherUnclick 1s infinite;
+        -webkit-animation: teacherUnclick 1s infinite;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .teacherClick {
         animation: teacherClick 1s;
+        -webkit-animation: teacherClick 1s;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .blackboard {
         background: url('../images/le_xue_scene.png') center;
@@ -351,6 +357,7 @@
         transform: translate3d(-50%, 0, 0);
         z-index: 10;
         animation: downAni 2s infinite linear;
+        -webkit-animation: downAni 2s infinite linear;
         display: none;
     }
 }
