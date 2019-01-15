@@ -194,6 +194,18 @@ module.exports = {
             $('.xue').hide();
             self.reset();
             $('.main').show();
+            setTimeout(() => {
+                $('.theme .leShang').addClass('tada');
+            }, 1000);
+            $('.theme .leShang').one(animationEnd, function() {
+                $('.theme .leXiang').addClass('tada');
+            });
+            $('.theme .leXiang').one(animationEnd, function() {
+                $('.theme .leXue').addClass('tada');
+            });
+            $('.theme .leXue').one(animationEnd, function() {
+                $('.theme .leHuo').addClass('tada');
+            });
         });
     },
     showHand() {

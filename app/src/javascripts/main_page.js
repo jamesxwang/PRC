@@ -112,5 +112,10 @@ module.exports = {
         $('.shang').hide();
         $('.xiang').hide();
         $('.huo').hide();
+        $('.xue').hide();
+        $('.theme .leShang').removeClass('tada');
+        $('.theme .leXiang').removeClass('tada');
+        $('.theme .leXue').removeClass('tada');
+        $('.theme .leHuo').removeClass('tada');
     }
 }
