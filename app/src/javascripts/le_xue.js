@@ -300,26 +300,30 @@ module.exports = {
             }, 1000);
         });
     },
+    removeClass(pageNum, el, clas) {
+        $('.xue .page'+pageNum+' .'+el).removeClass(clas);
+    },
+    hideElement(pageNum, list) {
+        for (el of list) {
+            $('.xue .page' + pageNum + ' .' + el).css('display','none');
+        }
+    },
     reset() {
         // page1
-        $('.xue .page1 .text1').removeClass('fadeOut');
+        this.removeClass(1,'text1','fadeOut');
+        // $('.xue .page1 .text1').removeClass('fadeOut');
         $('.xue .page1 .pie').removeClass('fadeOut');
         $('.xue .page1 .grid').removeClass('animated fadeOut');
         $('.xue .page1 .text1').addClass('flash');
         $('.xue .page1 .pie').addClass('flash');
-        $('.xue .page1 .text1').css('display','none');
-        $('.xue .page1 .pie').css('display','none');
-        $('.xue .page1 .grid div').css('display','none');
-
+        this.hideElement(1,['pie','grid div','text1']);
         // page2
         $('.xue .page2 .text1').removeClass('fadeOut');
         $('.xue .page2 .text2').removeClass('fadeOut');
         $('.xue .page2 .content_wrapper').removeClass('animated fadeOut');
         $('.xue .page2 .text1').addClass('flash');
         $('.xue .page2 .text2').addClass('fadeIn');
-        $('.xue .page2 .text1').css('display','none');
-        $('.xue .page2 .content_wrapper div').css('display','none');
-        $('.xue .page2 .text2').css('display','none');
+        this.hideElement(2,['text1','content_wrapper div','text2']);
 
         // page3
         $('.xue .page3 .text1').removeClass('fadeOut');
@@ -328,20 +332,15 @@ module.exports = {
         $('.xue .page3 .no').removeClass('fadeOut');
         $('.xue .page3 .text1').addClass('flash');
         $('.xue .page3 .question').addClass('flash');
-        $('.xue .page3 .text1').css('display','none');
-        $('.xue .page3 .question').css('display','none');
-        $('.xue .page3 .grid div').css('display','none');
-        $('.xue .page3 .no').css('display','none');
+        $('.xue .page3 .no').addClass('flash');
+        this.hideElement(3,['text1','question','grid div','no']);
 
         // page4
         $('.xue .page4 .grid').removeClass('animated fadeOut');
-        $('.xue .page4 .grid .content1 div').css('display','none');
-        $('.xue .page4 .grid .content2 div').css('display','none');
-        $('.xue .page4 .grid .text').css('display','none');
+        this.hideElement(4,['grid .content1 div','grid .content2 div','text']);
 
         // page5
-        $('.xue .page5 .continue').css('display','none');
-        $('.xue .page5 .go').css('display','none');
+        this.hideElement(5,['continue','go']);
 
         $('.xue span').removeClass('done');
         $('.xue span').css('display','none');
