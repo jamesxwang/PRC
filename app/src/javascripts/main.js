@@ -9,9 +9,12 @@
          *                   Loader                    *
          ***********************************************/
         var loader = new PxLoader();
+        var bgMusic = $('audio').get(0);
+        var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_PATH = '/dist/images/';
+        var BASE_IMAGE_PATH = '/dist/images/';
+        var BASE_AUDIO_PATH = '/dist/audios/';
         var fileList = [
             'loading_light.png',
             'loading_man1.png',
@@ -169,18 +172,30 @@
             'le_huo_image9.jpg',
         ];
         for(var i = 0; i < fileList.length; i++){
-            var pxImage = new PxLoaderImage(BASE_PATH + fileList[i]);
+            var pxImage = new PxLoaderImage(BASE_IMAGE_PATH + fileList[i]);
             pxImage.imageNumber = i + 1;
             loader.add(pxImage);
+        }
+        var autoPlayAudio = function() {
+            wx.config({
+                debug: false,
+                appId: '',
+                timestamp: 1,
+                nonceStr: '',
+                signature: '',
+                jsApiList: []
+            });
+            wx.ready(function() {
+                bgMusic.play();
+            });
         }
         loader.addCompletionListener(function(){
             console.log("预加载图片："+fileList.length+"张");
             // autoplay
-            var bgMusic = $('audio').get(0);
-            var $btnMusic = $('#btn-music');
             $btnMusic.show();
             if (!$btnMusic.hasClass('paused') && bgMusic.paused)
                 bgMusic.play();
+            autoPlayAudio();
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
                 if (bgMusic.paused) {
@@ -225,8 +240,8 @@
             soundManager.reboot(); 
         });
         soundManager.onready(function() {
-            loader.addSound('bg_music','/dist/audios/background.mp3');
-            loader.addSound('click_sound','/dist/audios/click.mp3');
+            loader.addSound('bg_music', BASE_AUDIO_PATH + 'background.mp3');
+            loader.addSound('click_sound', BASE_AUDIO_PATH + 'click.mp3');
             
             loader.start();
         });

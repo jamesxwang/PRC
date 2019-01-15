@@ -280,7 +280,7 @@
                 height: 100%;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: 18.6% 11% 11.4% 11.1% 11%;
+                grid-template-rows: 18.6% 11% 11.4% 11.1% 11% 16%;
                 grid-row-gap: .4rem;
                 top: 0;
                 z-index: 3;
@@ -299,7 +299,10 @@
                 .bullet4 {
                     background: url('../images/le_xue_bullet9.png');
                 }
-                .title, .bullet1, .bullet2, .bullet3, .bullet4 {
+                .text {
+                    background: url('../images/le_xue_text5.png');
+                }
+                .title, .bullet1, .bullet2, .bullet3, .bullet4,.text {
                     height: 100%;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -363,6 +366,34 @@
                     margin-top: 33%;
                 }
             }
+        }
+        .page2 {
+            .content_wrapper {
+                margin: 0 22% 0 18%;
+                .content1 {
+                    margin-right: 77%;
+                }
+                .content2 {
+                    margin: 10% 0 0 34%;
+                }
+                .content3 {
+                    margin: 30% 75% 0 22%;
+                }
+                .content4 {
+                    margin: 9% 75% 0 58%;                
+                }
+            }
+            .text2 {
+                top:63%;
+            }
+           
+        }
+        .page3 .question,
+        .page3 .grid {
+            transform: scale(0.9);
+        }
+        .page4 .grid {
+            transform: scale(0.9);
         }
     }
 }

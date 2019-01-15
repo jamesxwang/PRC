@@ -25,9 +25,9 @@ module.exports = {
         // self.gotoMainPage();
 
         // $('.interactive').hide();
-        // $('.huo').show();
+        // $('.xue').show();
         // $('.page1').hide();
-        // $('.page3').show();
+        // $('.page4').show();
         /****************************/ 
 
         
