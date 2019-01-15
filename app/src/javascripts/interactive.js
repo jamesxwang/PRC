@@ -126,16 +126,7 @@ module.exports = {
             setTimeout(() => {
                 self.gotoMainPage();
             }, 1000);
-            // $('.interactive').addClass('scaleOut');
         });
-        
-        // $('.interactive').one(animationEnd, function() {
-        //     $('.interactive').removeClass('scaleOut');
-        //     setTimeout(() => {
-        //         self.gotoMainPage();
-        //     }, 1500);
-        // });
-        
     },
     gotoMainPage() {
         $('.interactive').hide();

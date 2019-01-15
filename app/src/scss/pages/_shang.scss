@@ -1,6 +1,6 @@
 .shang {
     .header {
-        background: url('/images/le_shang_header.png') center;
+        background: url('../images/le_shang_header.png') center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -15,7 +15,7 @@
     }
     .page1 {
         .popup1 {
-            background: url('/images/le_shang_popup1.png') center;
+            background: url('../images/le_shang_popup1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -45,17 +45,17 @@
                 background-size: contain!important;
             }
             .circle_1 {
-                background: url('/images/le_shang_circle1.png') center;
+                background: url('../images/le_shang_circle1.png') center;
             }
             .circle_2 {
-                background: url('/images/le_shang_circle2.png') center;
+                background: url('../images/le_shang_circle2.png') center;
             }
             .circle_3 {
-                background: url('/images/le_shang_circle3.png') center;
+                background: url('../images/le_shang_circle3.png') center;
             }
         }
         .popup2 {
-            background: url('/images/le_shang_popup2.png') center;
+            background: url('../images/le_shang_popup2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -72,7 +72,7 @@
 
     .page2 {
         .popup1 {
-            background: url('/images/le_shang_popup3.png') center;
+            background: url('../images/le_shang_popup3.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -85,7 +85,7 @@
             display: none;
         }
         .text {
-            background: url('/images/le_shang_text1.png') center;
+            background: url('../images/le_shang_text1.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -98,7 +98,7 @@
             display: none;
         }
         .arrow {
-            background-image: url('/images/le_shang_arrow1.png');
+            background-image: url('../images/le_shang_arrow1.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -121,19 +121,19 @@
             grid-template-rows: 100%;
             z-index: 3;
             .bar1 {
-                background-image: url('/images/le_shang_coin_bar1.png');
+                background-image: url('../images/le_shang_coin_bar1.png');
             }
             .bar2 {
-                background-image: url('/images/le_shang_coin_bar2.png');
+                background-image: url('../images/le_shang_coin_bar2.png');
             }
             .bar3 {
-                background-image: url('/images/le_shang_coin_bar3.png');
+                background-image: url('../images/le_shang_coin_bar3.png');
             }
             .bar4 {
-                background-image: url('/images/le_shang_coin_bar4.png');
+                background-image: url('../images/le_shang_coin_bar4.png');
             }
             .bar5 {
-                background-image: url('/images/le_shang_coin_bar5.png');
+                background-image: url('../images/le_shang_coin_bar5.png');
             }
             .bar1,.bar2,.bar3,.bar4,.bar5 {
                 background-repeat: no-repeat;
@@ -146,7 +146,7 @@
     }
     .page3 {
         .popup1 {
-            background: url('/images/le_shang_popup4.png') center;
+            background: url('../images/le_shang_popup4.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -159,7 +159,7 @@
             display: none;
         }
         .text1 {
-            background: url('/images/le_shang_text2.png') center;
+            background: url('../images/le_shang_text2.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -172,7 +172,7 @@
             display: none;
         }
         .text2 {
-            background: url('/images/le_shang_text3.png') center;
+            background: url('../images/le_shang_text3.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -197,13 +197,13 @@
 
             z-index: 3;
             .popup2 {
-                background: url('/images/le_shang_popup5.png') top;
+                background: url('../images/le_shang_popup5.png') top;
             }
             .popup3 {
-                background: url('/images/le_shang_popup6.png') top;
+                background: url('../images/le_shang_popup6.png') top;
             }
             .popup4 {
-                background: url('/images/le_shang_popup7.png') top;
+                background: url('../images/le_shang_popup7.png') top;
             }
             .popup2,.popup3,.popup4 {
                 background-repeat: no-repeat;
@@ -216,7 +216,7 @@
             }
         }
         .text3 {
-            background-image: url('/images/le_shang_text4.png');
+            background-image: url('../images/le_shang_text4.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -231,7 +231,7 @@
     }
     .page4 {
         .popup1 {
-            background: url('/images/le_shang_popup8.png') center;
+            background: url('../images/le_shang_popup8.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -244,7 +244,7 @@
             display: none;
         }
         .pig {
-            background: url('/images/le_shang_pig.png') center;
+            background: url('../images/le_shang_pig.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -259,7 +259,7 @@
     }
     .page5 {
         .content {
-            background: url('/images/le_shang_content.png') center;
+            background: url('../images/le_shang_content.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -274,7 +274,7 @@
     }
     .page6 {
         .continue {
-            background: url('/images/le_shang_continue.png') center;
+            background: url('../images/le_shang_continue.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -287,7 +287,7 @@
             display: none;
         }
         .go {
-            background: url('/images/le_shang_go.png') center;
+            background: url('../images/le_shang_go.png') center;
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
@@ -313,7 +313,7 @@
         animation: girlClick 1.5s;
     }
     .hand {
-        background: url('/images/le_shang_hand.png') center;
+        background: url('../images/le_shang_hand.png') center;
         background-size: contain;
         background-repeat: no-repeat;
         width: 10%;
@@ -330,39 +330,94 @@
 }
 @keyframes girlUnclick {
     0% {
-        background: url('/images/le_shang_girl_unclick1.png') bottom;
+        background: url('../images/le_shang_girl_unclick1.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
     50% {
-        background: url('/images/le_shang_girl_unclick2.png') bottom;
+        background: url('../images/le_shang_girl_unclick2.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
     100% {
-        background: url('/images/le_shang_girl_unclick1.png') bottom;
+        background: url('../images/le_shang_girl_unclick1.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@-webkit-keyframes girlUnclick {
+    0% {
+        background: url('../images/le_shang_girl_unclick1.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background: url('../images/le_shang_girl_unclick2.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url('../images/le_shang_girl_unclick1.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
 @keyframes girlClick {
     0% {
-        background: url('/images/le_shang_girl_click1.png') bottom;
+        background: url('../images/le_shang_girl_click1.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
     50% {
-        background: url('/images/le_shang_girl_click2.png') bottom;
+        background: url('../images/le_shang_girl_click2.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
     100% {
-        background: url('/images/le_shang_girl_click3.png') bottom;
+        background: url('../images/le_shang_girl_click3.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@-webkit-keyframes girlClick {
+    0% {
+        background: url('../images/le_shang_girl_click1.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background: url('../images/le_shang_girl_click2.png') bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url('../images/le_shang_girl_click3.png') bottom;
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
 @keyframes upAni {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate3d(-50%, -35%, 0);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translate3d(-50%, -20%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, 30%, 0);
+    }
+}
+@-webkit-keyframes upAni {
     0% {
         opacity: 0;
         transform: translate3d(-50%, -50%, 0);
