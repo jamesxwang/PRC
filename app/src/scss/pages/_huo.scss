@@ -268,9 +268,16 @@
     }
     .athleteUnclick {
         animation: athleteUnclick 1s infinite;
+        -webkit-animation: athleteUnclick 1s infinite;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .athleteClick {
         animation: athleteClick 1.5s;
+        -webkit-animation: athleteClick 1.5s;
+        background-size: contain;
+        background-repeat: no-repeat;
+
     }
     .hand {
         background: url('../images/le_huo_hand.png');
@@ -284,16 +291,21 @@
         transform: translate3d(-50%, 0, 0);
         z-index: 10;
         animation: handAni 2s infinite linear;
+        -webkit-animation: handAni 2s infinite linear;
         display: none;
     }
 }
 .transformLeft {
     transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
     animation: transformLeft .7s linear;
+    -webkit-animation: transformLeft .7s linear;
 }
 .transformLeftLittle {
     transform: translate3d(-30%, 0, 0);
+    -webkit-transform: translate3d(-30%, 0, 0);
     animation: transformLeftLittle .7s linear;
+    -webkit-animation: transformLeftLittle .7s linear;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .huo {

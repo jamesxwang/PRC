@@ -14,6 +14,9 @@
     padding-bottom: 19.125%;
     margin: 15% auto;
     animation: loadingAni .5s infinite;
+    -webkit-animation: loadingAni .5s infinite;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 .ProgressWrap{
     position: relative;
@@ -71,15 +74,15 @@
 }
 @-webkit-keyframes loadingAni {
     0% {
-        background:url('../images/loading_man1.png') top center no-repeat;
-        background-size:contain;
+        -webkit-background:url('../images/loading_man1.png') top center no-repeat;
+        -webkit-background-size:contain;
     }
     50% {
-        background:url('../images/loading_man2.png') top center no-repeat;
-        background-size:contain;
+        -webkit-background:url('../images/loading_man2.png') top center no-repeat;
+        -webkit-background-size:contain;
     }
     100% {
-        background:url('../images/loading_man1.png') top center no-repeat;
+        -webkit-background:url('../images/loading_man1.png') top center no-repeat;
         background-size:contain;
     }
 }

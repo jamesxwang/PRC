@@ -10,6 +10,7 @@
         left: 0;
         right: 0;
         animation: fade 3s infinite;
+        -webkit-animation: fade 3s infinite;
     }
     .big_logo_wrapper {
         width: 100%;
@@ -285,9 +286,15 @@
     }
     .clownUnclick {
         animation: clownUnclick 1s infinite;
+        -webkit-animation: clownUnclick 1s infinite;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .clownClick {
         animation: clownClick 1s;
+        -webkit-animation: clownClick 1s;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .bubble_wrapper {
         width: 100%;
@@ -305,6 +312,7 @@
             width:100%;
             height:100%;
             animation: bubbleAni 2s infinite;
+            -webkit-animation: bubbleAni 2s infinite;
         }
     }
     .hand {
@@ -319,6 +327,7 @@
         transform: translate3d(-50%, 0, 0);
         z-index: 10;
         animation: upAni 2s infinite linear;
+        -webkit-animation: upAni 2s infinite linear;
         display: none;
     }
 }
