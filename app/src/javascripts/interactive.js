@@ -122,11 +122,9 @@ module.exports = {
         $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
-        $('.right_door').one(animationEnd, function() {
-            // setTimeout(() => {
-                self.gotoMainPage();
-            // }, 500);
-        });
+        setTimeout(() => {
+            self.gotoMainPage();
+        }, 600);
     },
     gotoMainPage() {
         $('.interactive').hide();
