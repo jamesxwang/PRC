@@ -12,9 +12,8 @@
     width: 70%;
     height: 70%;
     padding-bottom: 19.125%;
-    background:url('../images/loading_man1.png') top center no-repeat;
-    background-size:contain;
     margin: 15% auto;
+    animation: loadingAni .5s infinite;
 }
 .ProgressWrap{
     position: relative;
@@ -55,4 +54,18 @@
     height: 100%;
     background-color: rgb(02, 52, 102);
     z-index: 9999;
+}
+@keyframes loadingAni {
+    0% {
+        background:url('../images/loading_man1.png') top center no-repeat;
+        background-size:contain;
+    }
+    50% {
+        background:url('../images/loading_man2.png') top center no-repeat;
+        background-size:contain;
+    }
+    100% {
+        background:url('../images/loading_man1.png') top center no-repeat;
+        background-size:contain;
+    }
 }
