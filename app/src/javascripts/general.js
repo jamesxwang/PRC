@@ -17,6 +17,8 @@ module.exports = {
         })(document.createElement('div'));
     },
     showTada(animationEnd) {
+        $('.main .bubble div').css('display','none');
+
         $('.main .hand').css('display','block');
         $('.main .hand').addClass('handAnimate');
         setTimeout(() => {
