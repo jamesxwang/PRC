@@ -36,6 +36,7 @@
             'logo2.png',
             'music.png',
             'main_page_background.png',
+            'main_page_bubble1.png',
             'main_page_hand.png',
             'main_page_huo.png',
             'main_page_logo1.png',
