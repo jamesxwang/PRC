@@ -187,6 +187,7 @@
                 jsApiList: []
             });
             wx.ready(function() {
+                bgMusic.volume = 0.3;
                 bgMusic.play();
             });
         }
@@ -200,6 +201,7 @@
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
                 if (bgMusic.paused) {
+                    bgMusic.volume = 0.3;
                     bgMusic.play();
                     $(this).removeClass('paused');
                 } else {
@@ -242,6 +244,7 @@
         });
         soundManager.onready(function() {
             loader.addSound('bg_music', BASE_AUDIO_PATH + 'background.mp3');
+            loader.addSound('door_sound', BASE_AUDIO_PATH + 'door.mp3');
             loader.addSound('click_sound', BASE_AUDIO_PATH + 'click.mp3');
             
             loader.start();

@@ -49,5 +49,9 @@ module.exports = {
     playClickSound() {
         var click_sound = document.getElementById("click_sound");
         click_sound.play();
+    },
+    playDoorSound() {
+        var door_sound = document.getElementById("door_sound");
+        door_sound.play();
     }
 }
