@@ -105,14 +105,14 @@ module.exports = {
     openDoor() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
-
+        general.playDoorSound();
         $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
         setTimeout(() => {
             self.gotoMainPage();
             general.showTada(animationEnd);
-        }, 600);
+        }, 2500);
     },
     gotoMainPage() {
         $('.interactive').hide();
