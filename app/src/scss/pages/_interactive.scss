@@ -76,6 +76,10 @@
         left: 0;
         animation-duration: 2s;
     }
+    .closeDoorAnimationDuration {
+        animation-duration: .6s!important;
+        -webkit-animation-duration: .6s!important;
+    }
     .left_door {
         border-right: 1px #000 solid;
     }

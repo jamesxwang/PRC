@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
@@ -8,20 +9,8 @@ module.exports = {
     },
     initAnimation() {
         var self = this;
+        var animationEnd = general.initAnimationEnd();
 
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
         self.pageOneAnimation(animationEnd);
         self.pageTwoAnimation(animationEnd);
         self.pageThreeAnimation(animationEnd);
@@ -129,7 +118,6 @@ module.exports = {
         });
         $('.xue .page3 .no').one(animationEnd, function() {
             setTimeout(() => {
-                self.showHand();
                 self.onClickTeacher();
             }, 200);
         });
@@ -194,18 +182,7 @@ module.exports = {
             $('.xue').hide();
             self.reset();
             $('.main').show();
-            setTimeout(() => {
-                $('.theme .leShang').addClass('tada');
-            }, 1000);
-            $('.theme .leShang').one(animationEnd, function() {
-                $('.theme .leXiang').addClass('tada');
-            });
-            $('.theme .leXiang').one(animationEnd, function() {
-                $('.theme .leXue').addClass('tada');
-            });
-            $('.theme .leXue').one(animationEnd, function() {
-                $('.theme .leHuo').addClass('tada');
-            });
+            general.showTada(animationEnd);
         });
     },
     showHand() {
@@ -213,8 +190,7 @@ module.exports = {
     },
     onClickTeacher() {
         $('.xue .teacher').one('click', function() {
-            var click_sound = document.getElementById("click_sound");
-            click_sound.play();
+            general.playClickSound();
             $('.xue .teacher').removeClass('teacherUnclick');
             $('.xue .teacher').addClass('teacherClick');
             $('.xue .hand').css('display','none');
@@ -311,7 +287,6 @@ module.exports = {
     reset() {
         // page1
         this.removeClass(1,'text1','fadeOut');
-        // $('.xue .page1 .text1').removeClass('fadeOut');
         $('.xue .page1 .pie').removeClass('fadeOut');
         $('.xue .page1 .grid').removeClass('animated fadeOut');
         $('.xue .page1 .text1').addClass('flash');

@@ -4,25 +4,12 @@ var le_shang = require('./le_shang.js');
 var le_xiang = require('./le_xiang.js');
 var le_huo = require('./le_huo.js');
 var le_xue = require('./le_xue.js');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
         var self = this;
-
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
-        self.showTada(animationEnd);
+        var animationEnd = general.initAnimationEnd();
         $('.leShang').on('click', function() {
             self.hideAllTheme();
             $('.shang').show();
@@ -56,24 +43,9 @@ module.exports = {
             self.showEndPage();
         })
     },
-    showTada(animationEnd) {
-        setTimeout(() => {
-            $('.theme .leShang').addClass('tada');
-        }, 1000);
-        $('.theme .leShang').one(animationEnd, function() {
-            $('.theme .leXiang').addClass('tada');
-        });
-        $('.theme .leXiang').one(animationEnd, function() {
-            $('.theme .leXue').addClass('tada');
-        });
-        $('.theme .leXue').one(animationEnd, function() {
-            $('.theme .leHuo').addClass('tada');
-        });
-    },
     showEndPage() {
         $('.interactive .rotateBox').hide();
         $('.interactive .container .neon').hide();
-        $('.interactive').removeClass('scaleOut');
         $('.interactive .doorBox .left_door').removeClass('slideOutLeft');
         $('.interactive .doorBox .right_door').removeClass('slideOutRight');
         $('.interactive').show();
@@ -81,21 +53,10 @@ module.exports = {
     },
     closeDoor() {
         var self = this;
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
-        $('.interactive .doorBox .left_door').addClass('slideInLeft faster');
-        $('.interactive .doorBox .right_door').addClass('slideInRight faster');
+        var animationEnd = general.initAnimationEnd();
+
+        $('.interactive .doorBox .left_door').addClass('slideInLeft closeDoorAnimationDuration');
+        $('.interactive .doorBox .right_door').addClass('slideInRight closeDoorAnimationDuration');
         $('.interactive .doorBox .left_door').one(animationEnd, function() {
             setTimeout(() => {
                 $('.endNeon').css('display','block');

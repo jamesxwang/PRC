@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
@@ -8,20 +9,8 @@ module.exports = {
     },
     initAnimation() {
         var self = this;
+        var animationEnd = general.initAnimationEnd();
 
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
         self.pageOneAnimation(animationEnd);
         self.pageTwoAnimation(animationEnd);
         self.pageThreeAnimation(animationEnd);
@@ -32,10 +21,6 @@ module.exports = {
         $('.huo .page1 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.huo .page1 .pyramid').css('display','block');
-            }, 200);
-        });
-        $('.huo .page1 .pyramid').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.huo .page1 .boldText').css('display','block');
             }, 200);
         });
@@ -82,18 +67,7 @@ module.exports = {
             $('.huo').hide();
             self.reset();
             $('.main').show();
-            setTimeout(() => {
-                $('.theme .leShang').addClass('tada');
-            }, 1000);
-            $('.theme .leShang').one(animationEnd, function() {
-                $('.theme .leXiang').addClass('tada');
-            });
-            $('.theme .leXiang').one(animationEnd, function() {
-                $('.theme .leXue').addClass('tada');
-            });
-            $('.theme .leXue').one(animationEnd, function() {
-                $('.theme .leHuo').addClass('tada');
-            });
+            general.showTada(animationEnd);
         });
     },
     showHand() {
@@ -101,8 +75,7 @@ module.exports = {
     },
     onClickAthlete() {
         $('.huo .athlete').one('click', function() {
-            var click_sound = document.getElementById("click_sound");
-            click_sound.play();
+            general.playClickSound();
             $('.huo .athlete').removeClass('athleteUnclick');
             $('.huo .athlete').addClass('athleteClick');
             $('.huo .hand').css('display','none');
@@ -134,7 +107,7 @@ module.exports = {
                     case 3:
                     {
                         $('.huo .page1 .popup1').removeClass('flash');
-                        $('.huo .page1 .pyramid').removeClass('fadeInDown');
+                        $('.huo .page1 .pyramid').removeClass('fadeIn');
                         $('.huo .page1 .boldText').removeClass('fadeIn');
                         $('.huo .page2 .branchBox').removeClass('fadeInRight');
                         $('.huo .page1 .popup1').addClass('bounceOutLeft');
@@ -179,7 +152,7 @@ module.exports = {
         $('.huo .page1 .pyramid').removeClass('bounceOutLeft');
         $('.huo .page1 .boldText').removeClass('bounceOutLeft');
         $('.huo .page1 .popup1').addClass('flash');
-        $('.huo .page1 .pyramid').addClass('fadeInDown');
+        $('.huo .page1 .pyramid').addClass('fadeIn');
         $('.huo .page1 .boldText').addClass('fadeIn');
         $('.huo .page1 .popup1').css('display','none');
         $('.huo .page1 .pyramid').css('display','none');

@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
@@ -8,20 +9,8 @@ module.exports = {
     },
     initAnimation() {
         var self = this;
+        var animationEnd = general.initAnimationEnd();
 
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
 
         self.pageOneAnimation(animationEnd);
         self.pageTwoAnimation(animationEnd);
@@ -36,17 +25,10 @@ module.exports = {
         $('.xiang .page1 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page1 .popup2').css('display','block');
-            }, 500);
-        });
-        $('.xiang .page1 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page1 .popup3').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page1 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page1 .popup4').css('display','block');
-            }, 200);
+
+            }, 500);
         });
         $('.xiang .page1 .popup4').one(animationEnd, function() {
             setTimeout(() => {
@@ -60,10 +42,6 @@ module.exports = {
         $('.xiang .page2 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page2 .popup2').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page2 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page2 .popup3').css('display','block');
             }, 200);
         });
@@ -79,15 +57,7 @@ module.exports = {
         $('.xiang .page3 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page3 .popup2').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page3 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page3 .popup3').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page3 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page3 .popup4').css('display','block');
             }, 200);
         });
@@ -117,21 +87,10 @@ module.exports = {
         $('.xiang .page5 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page5 .popup2').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page5 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page5 .popup3').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page5 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page5 .popup4').css('display','block');
-            }, 200);
-        });
-        $('.xiang .page5 .popup4').one(animationEnd, function() {
-            setTimeout(() => {
                 $('.xiang .page5 .popup5').css('display','block');
+
             }, 200);
         });
         $('.xiang .page5 .popup5').one(animationEnd, function() {
@@ -152,18 +111,7 @@ module.exports = {
             $('.xiang').hide();
             self.reset();
             $('.main').show();
-            setTimeout(() => {
-                $('.theme .leShang').addClass('tada');
-            }, 1000);
-            $('.theme .leShang').one(animationEnd, function() {
-                $('.theme .leXiang').addClass('tada');
-            });
-            $('.theme .leXiang').one(animationEnd, function() {
-                $('.theme .leXue').addClass('tada');
-            });
-            $('.theme .leXue').one(animationEnd, function() {
-                $('.theme .leHuo').addClass('tada');
-            });
+            general.showTada(animationEnd);
         });
     },
     showHand() {
@@ -171,8 +119,7 @@ module.exports = {
     },
     onClickClown() {
         $('.xiang .clown').one('click', function() {
-            var click_sound = document.getElementById("click_sound");
-            click_sound.play();
+            general.playClickSound();            
             $('.xiang .clown').removeClass('clownUnclick');
             $('.xiang .clown').addClass('clownClick');
             $('.xiang .hand').css('display','none');

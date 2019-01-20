@@ -41,6 +41,34 @@
             background: url('../images/main_page_huo.png') center;
         }
     }
+    .bubble {
+        .bubble1 {
+            top: 40%;
+            left: 5%;
+        }
+        .bubble2 {
+            top: 40%;
+            left: 50%;
+        }
+        .bubble3 {
+            top: 65%;
+            left: 5%;
+        }
+        .bubble4 {
+            top: 65%;
+            left: 50%;
+        }
+        .bubble1,.bubble2,.bubble3,.bubble4 {
+            width: 25%;
+            height: 15%;
+            background: url('../images/main_page_bubble1.png')center;
+            position: absolute;
+            background-color: transparent;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+        }
+    }
     .hand {
         background: url('../images/main_page_hand.png') center;
         background-size: contain;
@@ -52,6 +80,10 @@
         left: 30%;
         z-index: 10;
         opacity: 0;
+        display: none;
+    }
+    .handAnimate {
+        animation-duration: 1s;
         animation: handAnimate 5s;
         -webkit-animation: handAnimate 5s;
     }
