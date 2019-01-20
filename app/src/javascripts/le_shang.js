@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
@@ -8,20 +9,8 @@ module.exports = {
     },
     initAnimation() {
         var self = this;
+        var animationEnd = general.initAnimationEnd();
 
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
         self.pageOneAnimation(animationEnd);
         self.pageTwoAnimation(animationEnd);
         self.pageThreeAnimation(animationEnd);
@@ -175,18 +164,7 @@ module.exports = {
             $('.shang').hide();
             self.reset();
             $('.main').show();
-            setTimeout(() => {
-                $('.theme .leShang').addClass('tada');
-            }, 1000);
-            $('.theme .leShang').one(animationEnd, function() {
-                $('.theme .leXiang').addClass('tada');
-            });
-            $('.theme .leXiang').one(animationEnd, function() {
-                $('.theme .leXue').addClass('tada');
-            });
-            $('.theme .leXue').one(animationEnd, function() {
-                $('.theme .leHuo').addClass('tada');
-            });
+            general.showTada(animationEnd);
         });
     },
     showHand() {
@@ -194,8 +172,7 @@ module.exports = {
     },
     onClickCoins() {
         $('.shang .girl').one('click', function() {
-            var click_sound = document.getElementById("click_sound");
-            click_sound.play();
+            general.playClickSound();
             $('.shang .girl').removeClass('girlUnclick');
             $('.shang .girl').addClass('girlClick');
             $('.shang .hand').css('display','none');

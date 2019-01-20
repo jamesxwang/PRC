@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var general = require('./general.js');
 
 module.exports = {
     init: function() {
@@ -29,8 +30,6 @@ module.exports = {
         // $('.page1').hide();
         // $('.page4').show();
         /****************************/ 
-
-        
     },
     initTouchEvents(angle) {
         var self = this;
@@ -105,25 +104,14 @@ module.exports = {
     },
     openDoor() {
         var self = this;
-        var animationEnd = (function(el) {
-            var animations = {
-                animation: 'animationend',
-                OAnimation: 'oAnimationEnd',
-                MozAnimation: 'mozAnimationEnd',
-                WebkitAnimation: 'webkitAnimationEnd',
-            };
-            for (var t in animations) {
-                if (el.style[t] !== undefined) {
-                    return animations[t];
-                }
-            }
-        })(document.createElement('div'));
+        var animationEnd = general.initAnimationEnd();
 
         $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
         setTimeout(() => {
             self.gotoMainPage();
+            general.showTada(animationEnd);
         }, 600);
     },
     gotoMainPage() {

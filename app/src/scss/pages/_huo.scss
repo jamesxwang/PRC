@@ -41,8 +41,8 @@
             width: 55%;
             height: 40%;
             position: absolute;
-            top: 33%;
-            left: 10%;
+            top: 35%;
+            left: 16%;
             display: none;
             .text1 {
                 background: url('../images/le_huo_text_bold1.png') right;
@@ -78,7 +78,6 @@
             }
             
         }
-        
     }
     .page2 {
         .branchBox {
@@ -120,7 +119,6 @@
                 background-size: contain;
             }
         }
-        
     }
     .page3 {
         .popup1 {
@@ -296,21 +294,24 @@
     }
 }
 .transformLeft {
-    transform: translate3d(-50%, 0, 0);
-    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-60%, -60%, 0);
+    -webkit-transform: translate3d(-60%, -60%, 0);
     animation: transformLeft .7s linear;
     -webkit-animation: transformLeft .7s linear;
 }
 .transformLeftLittle {
-    transform: translate3d(-30%, 0, 0);
-    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-37%, -70%, 0);
+    -webkit-transform: translate3d(-37%, -70%, 0);
     animation: transformLeftLittle .7s linear;
     -webkit-animation: transformLeftLittle .7s linear;
 }
+// iPhone X
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .huo {
         .page1 {
             .boldText {
+                top: 34%;
+                left: 13%;
                 transform: scale(0.9);
                 .text5 {
                     margin-top: 5%;
@@ -319,17 +320,19 @@
         }
         .page2 {
             .branchBox {
+                left: 26%;
                 .branch1,.branch2,.branch3,.branch4 {
                     transform: scale(0.9);
                     margin-top: 5%;
                 }
                 .branch5 {
-                    margin: 20% 0 0 20%;
+                    margin: 20% 0 0 17%;
                 }
             }
         }
     }
 }
+
 @keyframes athleteUnclick {
     0% {
         background: url('../images/le_huo_athlete_unclick1.png') center bottom;
@@ -445,7 +448,7 @@
         transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-60%, -60%, 0);
     }
 }
 @-webkit-keyframes transformLeft {
@@ -453,7 +456,7 @@
         transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-60%, -60%, 0);
     }
 }
 @keyframes transformLeftLittle {
@@ -461,7 +464,7 @@
         transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translate3d(-30%, 0, 0);
+        transform: translate3d(-37%, -70%, 0);
     }
 }
 @-webkit-keyframes transformLeftLittle {
@@ -469,6 +472,6 @@
         transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translate3d(-30%, 0, 0);
+        transform: translate3d(-37%, -70%, 0);
     }
 }

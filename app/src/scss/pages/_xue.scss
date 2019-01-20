@@ -19,7 +19,7 @@
         height: 50%;
         bottom: 0;
         position: absolute;
-        z-index: 2;
+        z-index: 4;
     }
     .teacherUnclick {
         animation: teacherUnclick 1s infinite;
@@ -341,7 +341,7 @@
             position: absolute;
             top: 54%;
             margin: 0 20% 0 20%;
-            z-index: 3;
+            z-index: 5;
             display: none;
         }
     }
