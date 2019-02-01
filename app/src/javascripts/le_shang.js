@@ -62,22 +62,22 @@ module.exports = {
         $('.shang .page2 .bar1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.shang .page2 .bar2').css('display','block');
-            }, 100);
+            }, 300);
         });
         $('.shang .page2 .bar2').one(animationEnd, function() {
             setTimeout(() => {
                 $('.shang .page2 .bar3').css('display','block');                
-            }, 100);
+            }, 300);
         });
         $('.shang .page2 .bar3').one(animationEnd, function() {
             setTimeout(() => {
                 $('.shang .page2 .bar4').css('display','block');
-            }, 100);
+            }, 300);
         });
         $('.shang .page2 .bar4').one(animationEnd, function() {
             setTimeout(() => {
                 $('.shang .page2 .bar5').css('display','block');
-            }, 100);
+            }, 300);
         });
         $('.shang .page2 .bar5').one(animationEnd, function() {
             setTimeout(() => {
@@ -146,7 +146,17 @@ module.exports = {
     },
     pageFiveAnimation(animationEnd) {
         var self = this;
+        $('.shang .page5 .text1').one(animationEnd, function() {
+            setTimeout(() => {
+                $('.shang .page5 .content').css('display','block');
+            },200);
+        });
         $('.shang .page5 .content').one(animationEnd, function() {
+            setTimeout(() => {
+                $('.shang .page5 .text2').css('display','block');
+            },200);
+        });
+        $('.shang .page5 .text2').one(animationEnd, function() {
             setTimeout(() => {
                 self.showHand();
                 self.onClickCoins();
@@ -208,7 +218,7 @@ module.exports = {
                     {
                         $('.shang .page2 .popup1').removeClass('fadeIn');
                         $('.shang .page2 .text').removeClass('bounceIn');
-                        $('.shang .page2 .arrow').removeClass('bounceIn');
+                        $('.shang .page2 .arrow').removeClass('slideInLeft');
 
                         $('.shang .page2 .popup1').addClass('bounceOutLeft');
                         $('.shang .page2 .text').addClass('bounceOutLeft');
@@ -255,7 +265,7 @@ module.exports = {
                         $('.shang .page4 .pig').addClass('bounceOutLeft');
                         setTimeout(() => {
                             $('.shang .page5').show();
-                            $('.shang .page5 .content').css('display','block');
+                            $('.shang .page5 .text1').css('display','block');
                         }, 1000);
                         break;
                     }
@@ -263,10 +273,15 @@ module.exports = {
                     {
                         $('.shang .page6').addClass('done');
                         $('.shang .page4 .popup1').removeClass('fadeIn');
+                        $('.shang .page5 .text1').removeClass('fadeIn');
                         $('.shang .page5 .content').removeClass('fadeIn');
+                        $('.shang .page5 .text2').removeClass('fadeIn');
 
                         $('.shang .page4 .popup1').addClass('bounceOutLeft');
+                        $('.shang .page5 .text1').addClass('bounceOutLeft');
                         $('.shang .page5 .content').addClass('bounceOutLeft');
+                        $('.shang .page5 .text2').addClass('bounceOutLeft');
+
                         setTimeout(() => {
                             $('.shang .page6').show();
                             $('.shang .page6 .continue').css('display','block');
@@ -343,9 +358,16 @@ module.exports = {
         $('.shang .page4 .pig').css('display','none');
 
         // page5
+        $('.shang .page5 .text1').removeClass('bounceOutLeft');
         $('.shang .page5 .content').removeClass('bounceOutLeft');
+        $('.shang .page5 .text2').removeClass('bounceOutLeft');
+
+        $('.shang .page5 .text1').addClass('fadeIn');
         $('.shang .page5 .content').addClass('fadeIn');
+        $('.shang .page5 .text2').addClass('fadeIn');
+        $('.shang .page5 .text1').css('display','none');
         $('.shang .page5 .content').css('display','none');
+        $('.shang .page5 .text2').css('display','none');
 
         // page6
         $('.shang .page5 .continue').css('display','none');

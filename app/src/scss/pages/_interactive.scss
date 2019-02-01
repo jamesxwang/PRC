@@ -133,7 +133,7 @@
         -webkit-animation:blink 2s infinite;
         position: absolute;
         width: 50%;
-        height: 15%;
+        height: 25%;
         background-repeat:no-repeat;
         background-size: contain;
         margin: 0 25% 0 25%;
@@ -146,6 +146,7 @@
     .arrow_pink {
         background-image: url('../images/interactive_arrow1.png');
         top: 65%;
+        height: 15%;
     }
     .endNeon {
         width: 70%;

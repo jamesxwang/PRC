@@ -127,42 +127,42 @@ module.exports = {
         $('.xue .page4 .content1 .title').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content1 .bullet1').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content1 .bullet1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content1 .bullet2').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content1 .bullet2').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content2 .title').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content2 .title').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content2 .bullet1').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content2 .bullet1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content2 .bullet2').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content2 .bullet2').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content2 .bullet3').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content2 .bullet3').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .content2 .bullet4').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .content2 .bullet4').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xue .page4 .text').css('display','block');
-            }, 200);
+            }, 100);
         });
         $('.xue .page4 .text').one(animationEnd, function() {
             setTimeout(() => {

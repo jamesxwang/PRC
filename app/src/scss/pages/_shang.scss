@@ -258,16 +258,32 @@
         }
     }
     .page5 {
+        .text1 {
+            background: url('../images/le_shang_text5.png') center;
+            width: 80%;
+            height: 10%;
+            top: 32%;
+            margin: 0 10% 0 10%;
+        }
         .content {
             background: url('../images/le_shang_content.png') center;
+            width: 80%;
+            height: 35%;
+            top: 35%;
+            margin: 0 10% 0 10%;
+        }
+        .text2 {
+            background: url('../images/le_shang_text6.png') center;
+            width: 80%;
+            height: 10%;
+            top: 63%;
+            margin: 0 10% 0 10%;
+        }
+        .text1, .content, .text2 {
             background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
-            width: 80%;
-            height: 35%;
             position: absolute;
-            top: 35%;
-            margin: 0 10% 0 10%;
             z-index: 3;
             display: none;
         }

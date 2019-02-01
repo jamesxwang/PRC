@@ -77,6 +77,8 @@
             'le_shang_text2.png',
             'le_shang_text3.png',
             'le_shang_text4.png',
+            'le_shang_text5.png',
+            'le_shang_text6.png',
             'le_xiang_big_logo.png',
             'le_xiang_bubble1.png',
             'le_xiang_clown_click1.png',
