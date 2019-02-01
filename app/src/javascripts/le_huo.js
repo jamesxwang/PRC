@@ -109,7 +109,7 @@ module.exports = {
                         $('.huo .page1 .popup1').removeClass('flash');
                         $('.huo .page1 .pyramid').removeClass('fadeIn');
                         $('.huo .page1 .boldText').removeClass('fadeIn');
-                        $('.huo .page2 .branchBox').removeClass('fadeInRight');
+                        $('.huo .page2 .branchBox').removeClass('fadeIn slow');
                         $('.huo .page1 .popup1').addClass('bounceOutLeft');
                         $('.huo .page1 .pyramid').addClass('bounceOutLeft');
                         $('.huo .page1 .boldText').addClass('animated bounceOutLeft');
@@ -165,7 +165,7 @@ module.exports = {
 
         // page2
         $('.huo .page2 .branchBox').removeClass('bounceOutLeft');
-        $('.huo .page2 .branchBox').addClass('fadeInRight');
+        $('.huo .page2 .branchBox').addClass('fadeIn slow');
         $('.huo .page2 .branchBox').css('display','none');
 
         // page3

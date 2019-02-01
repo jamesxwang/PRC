@@ -69,6 +69,23 @@ module.exports = {
             if (angle>=-25)
                 self.setRotate(angle);
         });
+        $('.rotate').on('touchstart',function(e) {
+            startX = e.touches[0].pageX;
+            startY = e.touches[0].pageY;
+        });
+        $('.rotate').on('touchmove',function(e) {
+            moveX = e.touches[0].pageX;
+            moveY = e.touches[0].pageY;
+            var result = self.GetSlideDirection(startX,startY,moveX,moveY)
+            var direction = result[0];
+            var percent = (Math.abs(result[1])/(document.body.clientWidth/4));
+            if (direction == 4)
+                angle -= (percent * 25)/100;
+            else if (direction == 3)
+                angle += (percent * 25)/100;
+            if (angle>=-25)
+                self.setRotate(angle);
+        });
     },
     GetSlideDirection:function (startX, startY, endX, endY) {
         var self = this;

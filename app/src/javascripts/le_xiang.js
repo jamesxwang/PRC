@@ -25,9 +25,16 @@ module.exports = {
         $('.xiang .page1 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page1 .popup2').css('display','block');
+            }, 500);
+        });
+        $('.xiang .page1 .popup2').one(animationEnd, function() {
+            setTimeout(() => {
                 $('.xiang .page1 .popup3').css('display','block');
+            }, 500);
+        });
+        $('.xiang .page1 .popup3').one(animationEnd, function() {
+            setTimeout(() => {
                 $('.xiang .page1 .popup4').css('display','block');
-
             }, 500);
         });
         $('.xiang .page1 .popup4').one(animationEnd, function() {
@@ -42,8 +49,12 @@ module.exports = {
         $('.xiang .page2 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page2 .popup2').css('display','block');
-                $('.xiang .page2 .popup3').css('display','block');
             }, 200);
+        });
+        $('.xiang .page2 .popup2').one(animationEnd, function() {
+            setTimeout(() => {
+                $('.xiang .page2 .popup3').css('display','block');
+            }, 500);
         });
         $('.xiang .page2 .popup3').one(animationEnd, function() {
             setTimeout(() => {
@@ -57,7 +68,15 @@ module.exports = {
         $('.xiang .page3 .popup1').one(animationEnd, function() {
             setTimeout(() => {
                 $('.xiang .page3 .popup2').css('display','block');
+            }, 200);
+        });
+        $('.xiang .page3 .popup2').one(animationEnd, function() {
+            setTimeout(() => {
                 $('.xiang .page3 .popup3').css('display','block');
+            }, 200);
+        });
+        $('.xiang .page3 .popup3').one(animationEnd, function() {
+            setTimeout(() => {
                 $('.xiang .page3 .popup4').css('display','block');
             }, 200);
         });
@@ -138,9 +157,9 @@ module.exports = {
                     case 2:
                     {
                         $('.xiang .page1 .popup1').removeClass('flash');
-                        $('.xiang .page1 .popup2').removeClass('slideInRight');
-                        $('.xiang .page1 .popup3').removeClass('slideInLeft');
-                        $('.xiang .page1 .popup4').removeClass('slideInRight');
+                        $('.xiang .page1 .popup2').removeClass('slideInLeft');
+                        $('.xiang .page1 .popup3').removeClass('slideInRight');
+                        $('.xiang .page1 .popup4').removeClass('slideInLeft');
 
                         $('.xiang .page1 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page1 .grid').addClass('animated bounceOutLeft');
@@ -186,7 +205,7 @@ module.exports = {
                     case 5:
                     {
                         $('.xiang .page4 .popup1').removeClass('flash');
-                        $('.xiang .page4 .popup2').removeClass('slideInRight');
+                        $('.xiang .page4 .popup2').removeClass('fadeIn');
                         
                         $('.xiang .page4 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page4 .popup2').addClass('bounceOutLeft');
@@ -224,9 +243,9 @@ module.exports = {
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');
         $('.xiang .page1 .popup1').addClass('flash');
-        $('.xiang .page1 .popup2').addClass('slideInRight');
-        $('.xiang .page1 .popup3').addClass('slideInLeft');
-        $('.xiang .page1 .popup4').addClass('slideInRight');
+        $('.xiang .page1 .popup2').addClass('slideInLeft');
+        $('.xiang .page1 .popup3').addClass('slideInRight');
+        $('.xiang .page1 .popup4').addClass('slideInLeft');
         $('.xiang .page1 .popup1').css('display','none');
         $('.xiang .page1 .popup2').css('display','none');
         $('.xiang .page1 .popup3').css('display','none');
@@ -253,7 +272,7 @@ module.exports = {
         $('.xiang .page4 .popup1').removeClass('bounceOutLeft')
         $('.xiang .page4 .popup2').removeClass('bounceOutLeft')
         $('.xiang .page4 .popup1').addClass('flash')
-        $('.xiang .page4 .popup2').addClass('slideInRight')
+        $('.xiang .page4 .popup2').addClass('fadeIn')
         $('.xiang .page4 .popup1').css('display','none');
         $('.xiang .page4 .popup2').css('display','none');
 

@@ -24,22 +24,26 @@ module.exports = {
         setTimeout(() => {
             $('.theme .leShang').addClass('tada');
             $('.main .bubble .bubble1').addClass('fadeIn');
-            $('.main .bubble .bubble1').css('display','block');
+            if (!$('.main .bubble .bubble1').hasClass('done'))
+                $('.main .bubble .bubble1').css('display','block');
         }, 700);
         $('.theme .leShang').one(animationEnd, function() {
             $('.theme .leXiang').addClass('tada');
             $('.main .bubble .bubble2').addClass('fadeIn');
-            $('.main .bubble .bubble2').css('display','block');
+            if (!$('.main .bubble .bubble2').hasClass('done'))
+                $('.main .bubble .bubble2').css('display','block');
         });
         $('.theme .leXiang').one(animationEnd, function() {
             $('.theme .leXue').addClass('tada');
             $('.main .bubble .bubble4').addClass('fadeIn');
-            $('.main .bubble .bubble4').css('display','block');
+            if (!$('.main .bubble .bubble4').hasClass('done'))
+                $('.main .bubble .bubble4').css('display','block');
         });
         $('.theme .leXue').one(animationEnd, function() {
             $('.theme .leHuo').addClass('tada');
             $('.main .bubble .bubble3').addClass('fadeIn');
-            $('.main .bubble .bubble3').css('display','block');
+            if (!$('.main .bubble .bubble3').hasClass('done'))
+                $('.main .bubble .bubble3').css('display','block');
         });
         $('.main .hand').one(animationEnd, function() {
             $('.main .hand').removeClass('handAnimate');
