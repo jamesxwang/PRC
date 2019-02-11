@@ -3,10 +3,19 @@
 
 ## 目录
 
+ - [实时预览](#实时预览)
  - [依赖列表](#依赖列表)
  - [项目结构](#项目结构)
  - [开发流程](#开发流程)
  - [发布流程](#发布流程)
+
+## 实时预览
+
+**使用手机**访问下面的地址或扫描下方二维码
+
+[http://html.quantify.site/dist][12]
+
+![Scan Me][13]
 
 ## 依赖列表
 1. [Swiper][1] --> 用于实现页面的整屏滚动
@@ -101,4 +110,6 @@
   [9]: http://npm.taobao.org/
   [10]: https://github.com/nodejs/node-gyp
   [11]: https://github.com/nodejs/node-gyp#installation
+  [12]: http://html.quantify.site/dist
+  [13]: QRCode.png
   [22]: http://opensource.org/licenses/mit-license.html
