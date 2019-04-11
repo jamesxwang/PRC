@@ -23,12 +23,12 @@ module.exports = {
         /****************************
          *       for develop        *
          ****************************/ 
-        // self.gotoMainPage();
+        self.gotoMainPage();
 
-        // $('.interactive').hide();
-        // $('.xue').show();
+        $('.interactive').hide();
+        // $('.shang').show();
         // $('.page1').hide();
-        // $('.page4').show();
+        // $('.page2').show();
         /****************************/ 
     },
     initTouchEvents(angle) {

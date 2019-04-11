@@ -13,8 +13,10 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_IMAGE_PATH = '/dist/images/';
-        var BASE_AUDIO_PATH = '/dist/audios/';
+        // var BASE_IMAGE_PATH = '/dist/images/';
+        // var BASE_AUDIO_PATH = '/dist/audios/';
+        var BASE_IMAGE_PATH = '/images/';
+        var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
             'loading_light.png',
             'loading_man1.png',
