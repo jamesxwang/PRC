@@ -375,9 +375,9 @@
         background: url('../images/le_shang_hand.png') center;
         background-size: contain;
         background-repeat: no-repeat;
-        @include wh(15%, 10%);
+        @include wh(10%, 10%);
         position: absolute;
-        bottom: 5%;
+        bottom: 10%;
         left: 50%;
         transform: translate3d(-50%, 0, 0);
         -webkit-transform: translate3d(-50%, 0, 0);
