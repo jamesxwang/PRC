@@ -1,1 +1,20 @@
 @charset "UTF-8";
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+// 背景图属性
+@mixin rsc ($repeat, $size, $color) {
+  background-repeat: $repeat;
+  background-size: $size;
+  background-color: $color;
+}
+
+// border and padding
+@mixin bmp($border, $margin, $padding) {
+  border: $border;
+  margin: $margin;
+  padding: $padding;
+}
