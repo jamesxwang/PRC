@@ -4,6 +4,7 @@
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
     var general = require('./general.js');
+    var wechatShare = require('./wechat-share.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -191,6 +192,7 @@
             });
         }
         loader.addCompletionListener(function(){
+            wechatShare.init();
             console.log("预加载图片："+fileList.length+"张");
             // autoplay
             $btnMusic.show();
