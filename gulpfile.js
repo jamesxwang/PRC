@@ -1,3 +1,5 @@
+'use strict';
+
 var autoprefixer = require('gulp-autoprefixer');
 var browserify = require('gulp-browserify');
 var browserSync = require('browser-sync').create();
@@ -14,7 +16,6 @@ var sass = require('gulp-sass');
 var streamSeries = require('stream-series');
 var plumber = require('gulp-plumber');
 var uglify = require('gulp-uglify');
-var babel = require('gulp-babel');
 
 var vendors = require('./config/vendors');
 
@@ -178,7 +179,6 @@ gulp.task('minify-css', function () {
 // uglify app/dist/javascripts/bundle.js and save as app/dist/javascripts/bundle.min.js
 gulp.task('uglify-js', function () {
     return gulp.src('app/dist/javascripts/bundle.js')
-        .pipe(babel())
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'

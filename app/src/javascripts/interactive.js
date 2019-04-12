@@ -18,7 +18,7 @@ module.exports = {
         // $('.page2').show();
         /****************************/ 
     },
-    initTouchEvents(angle) {
+    initTouchEvents: function(angle) {
         var self = this;
         var startX,startY,moveX,moveY,endX,endY = 0;
 
@@ -76,12 +76,12 @@ module.exports = {
     },
     GetSlideDirection:function (startX, startY, endX, endY) {
         var self = this;
-        let dy = startY - endY;
-        let dx = endX - startX;
-        let result = 0;
+        var dy = startY - endY;
+        var dx = endX - startX;
+        var result = 0;
         if(Math.abs(dx) < 2 && Math.abs(dy) < 2)
             return result;
-        let angle = self.GetSlideAngle(dx, dy);
+        var angle = self.GetSlideAngle(dx, dy);
         if(angle >= -45 && angle < 45)
             result = 4;
         else if (angle >= 45 && angle < 135)
@@ -113,7 +113,7 @@ module.exports = {
         $('.rotateBox').addClass('animated fadeOut');
         $('.left_door').addClass('slideOutLeft');
         $('.right_door').addClass('slideOutRight');
-        setTimeout(() => {
+        setTimeout(function() {
             self.gotoMainPage();
             general.showTada(animationEnd);
         }, 2500);

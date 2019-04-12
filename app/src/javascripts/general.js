@@ -21,7 +21,7 @@ module.exports = {
 
         $('.main .hand').css('display','block');
         $('.main .hand').addClass('handAnimate');
-        setTimeout(() => {
+        setTimeout(function() {
             $('.theme .leShang').addClass('tada');
             $('.main .bubble .bubble1').addClass('fadeIn');
             if (!$('.main .bubble .bubble1').hasClass('done'))

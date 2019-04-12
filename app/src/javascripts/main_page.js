@@ -1,6 +1,5 @@
 var $ = require('jquery');
 var le_shang = require('./le_shang.js');
-var le_shang = require('./le_shang.js');
 var le_xiang = require('./le_xiang.js');
 var le_huo = require('./le_huo.js');
 var le_xue = require('./le_xue.js');
@@ -45,9 +44,9 @@ module.exports = {
         });
         $('.end').on('click', function() {
             self.showEndPage();
-        })
+        });
     },
-    showEndPage() {
+    showEndPage: function() {
         $('.interactive .rotateBox').hide();
         $('.interactive .container .neon').hide();
         $('.interactive .doorBox .left_door').removeClass('slideOutLeft');
@@ -55,24 +54,24 @@ module.exports = {
         $('.interactive').show();
         this.closeDoor();
     },
-    closeDoor() {
+    closeDoor: function() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
 
         $('.interactive .doorBox .left_door').addClass('slideInLeft closeDoorAnimationDuration');
         $('.interactive .doorBox .right_door').addClass('slideInRight closeDoorAnimationDuration');
         $('.interactive .doorBox .left_door').one(animationEnd, function() {
-            setTimeout(() => {
+            setTimeout(function() {
                 $('.endNeon').css('display','block');
             }, 200);
         });
         $('.endNeon').one(animationEnd, function() {
-            setTimeout(() => {
+            setTimeout(function() {
                 $('.endText').css('display','block');
             }, 200);
         });
     },
-    hideAllTheme() {
+    hideAllTheme: function() {
         $('.main').hide();
         $('.shang').hide();
         $('.xiang').hide();
