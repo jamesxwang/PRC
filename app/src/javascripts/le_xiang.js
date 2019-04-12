@@ -23,108 +23,75 @@ module.exports = {
     pageOneAnimation(animationEnd) {
         var self = this;
         $('.xiang .page1 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page1 .popup2').css('display','block');
-            }, 500);
+            $('.xiang .page1 .popup2').css('display','block');
         });
         $('.xiang .page1 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page1 .popup3').css('display','block');
-            }, 500);
+            $('.xiang .page1 .popup3').css('display','block');
         });
         $('.xiang .page1 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page1 .popup4').css('display','block');
-            }, 500);
+            $('.xiang .page1 .popup4').css('display','block');
         });
         $('.xiang .page1 .popup4').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickClown();
-            }, 200);
+            self.showHand();
+            self.onClickClown();
         });
     },
     pageTwoAnimation(animationEnd) {
         var self = this;
         $('.xiang .page2 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page2 .popup2').css('display','block');
-            }, 200);
+            $('.xiang .page2 .popup2').css('display','block');
         });
         $('.xiang .page2 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page2 .popup3').css('display','block');
-            }, 500);
+            $('.xiang .page2 .popup3').css('display','block');
         });
         $('.xiang .page2 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickClown();
-            }, 200);
+            self.showHand();
+            self.onClickClown();
         });
     },
     pageThreeAnimation(animationEnd) {
         var self = this;
         $('.xiang .page3 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page3 .popup2').css('display','block');
-            }, 200);
+            $('.xiang .page3 .popup2').css('display','block');
         });
         $('.xiang .page3 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page3 .popup3').css('display','block');
-            }, 200);
+            $('.xiang .page3 .popup3').css('display','block');
         });
         $('.xiang .page3 .popup3').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page3 .popup4').css('display','block');
-            }, 200);
+            $('.xiang .page3 .popup4').css('display','block');
         });
         $('.xiang .page3 .popup4').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickClown();
-            }, 200);
+            self.showHand();
+            self.onClickClown();
         });
     },
     pageFourAnimation(animationEnd) {
         var self = this;
         $('.xiang .page4 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page4 .popup2').css('display','block');
-            }, 200);
+            $('.xiang .page4 .popup2').css('display','block');
         });
         $('.xiang .page4 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickClown();
-            }, 200);
+            self.showHand();
+            self.onClickClown();
         });
     },
     pageFiveAnimation(animationEnd) {
         var self = this;
         $('.xiang .page5 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page5 .popup2').css('display','block');
-                $('.xiang .page5 .popup3').css('display','block');
-                $('.xiang .page5 .popup4').css('display','block');
-                $('.xiang .page5 .popup5').css('display','block');
-
-            }, 200);
+            $('.xiang .page5 .popup2').css('display','block');
+            $('.xiang .page5 .popup3').css('display','block');
+            $('.xiang .page5 .popup4').css('display','block');
+            $('.xiang .page5 .popup5').css('display','block');
         });
         $('.xiang .page5 .popup5').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickClown();
-            }, 200);
+            self.showHand();
+            self.onClickClown();
         });
     },
     pageSixAnimation(animationEnd) {
         var self = this;
         $('.xiang .page6 .continue').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.xiang .page6 .go').css('display','block');
-            }, 200);
+            $('.xiang .page6 .go').css('display','block');
         });
         $('.xiang .page6 .go').on('click', function() {
             $('.xiang').hide();
