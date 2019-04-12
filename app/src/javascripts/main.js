@@ -3,6 +3,7 @@
     // load dependencies
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
+    var general = require('./general.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -138,18 +139,9 @@
             'le_xue_text2.png',
             'le_xue_text3.png',
             'le_xue_text4.png',
-            'le_xue_bullet4.png',
-            'le_xue_bullet5.png',
-            'le_xue_bullet6.png',
-            'le_xue_bullet7.png',
-            'le_xue_bullet8.png',
-            'le_xue_bullet9.png',
             'le_xue_go.png',
-            'le_xue_title1.png',
-            'le_xue_title2.png',
             'le_huo_hand.png',
             'le_huo_header1.png',
-            'le_huo_header2.png',
             'le_huo_light.png',
             'le_huo_logo.png',
             'le_huo_pyramid.png',
@@ -169,15 +161,15 @@
             'le_huo_text_branch5.png',
             'le_huo_continue.png',
             'le_huo_go.png',
-            'le_huo_image1.jpg',
-            'le_huo_image2.jpg',
-            'le_huo_image3.jpg',
-            'le_huo_image4.jpg',
-            'le_huo_image5.jpg',
-            'le_huo_image6.jpg',
-            'le_huo_image7.jpg',
-            'le_huo_image8.jpg',
-            'le_huo_image9.jpg',
+            'le_huo_image1.png',
+            'le_huo_image2.png',
+            'le_huo_image3.png',
+            'le_huo_image4.png',
+            'le_huo_image5.png',
+            'le_huo_image6.png',
+            'le_huo_image7.png',
+            'le_huo_image8.png',
+            'le_huo_image9.png',
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_IMAGE_PATH + fileList[i]);
@@ -228,7 +220,10 @@
                 watchActiveIndex: true,
                 observer: true,
                 observeParents: true,
-            });	
+                onTransitionEnd: function (swiper) {
+                    general.handleCarousel(swiper);
+                },
+            });
 
             $(".loading-overlay").slideUp();
         });

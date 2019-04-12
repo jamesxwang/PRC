@@ -7,7 +7,7 @@ module.exports = {
 
         self.initAnimation();
     },
-    initAnimation() {
+    initAnimation: function() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
 
@@ -20,7 +20,7 @@ module.exports = {
         self.pageSixAnimation(animationEnd);
 
     },
-    pageOneAnimation(animationEnd) {
+    pageOneAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page1 .popup1').one(animationEnd, function() {
             $('.xiang .page1 .popup2').css('display','block');
@@ -36,7 +36,7 @@ module.exports = {
             self.onClickClown();
         });
     },
-    pageTwoAnimation(animationEnd) {
+    pageTwoAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page2 .popup1').one(animationEnd, function() {
             $('.xiang .page2 .popup2').css('display','block');
@@ -49,7 +49,7 @@ module.exports = {
             self.onClickClown();
         });
     },
-    pageThreeAnimation(animationEnd) {
+    pageThreeAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page3 .popup1').one(animationEnd, function() {
             $('.xiang .page3 .popup2').css('display','block');
@@ -65,7 +65,7 @@ module.exports = {
             self.onClickClown();
         });
     },
-    pageFourAnimation(animationEnd) {
+    pageFourAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page4 .popup1').one(animationEnd, function() {
             $('.xiang .page4 .popup2').css('display','block');
@@ -75,7 +75,7 @@ module.exports = {
             self.onClickClown();
         });
     },
-    pageFiveAnimation(animationEnd) {
+    pageFiveAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page5 .popup1').one(animationEnd, function() {
             $('.xiang .page5 .popup2').css('display','block');
@@ -88,7 +88,7 @@ module.exports = {
             self.onClickClown();
         });
     },
-    pageSixAnimation(animationEnd) {
+    pageSixAnimation: function(animationEnd) {
         var self = this;
         $('.xiang .page6 .continue').one(animationEnd, function() {
             $('.xiang .page6 .go').css('display','block');
@@ -100,10 +100,10 @@ module.exports = {
             general.showTada(animationEnd);
         });
     },
-    showHand() {
+    showHand: function() {
         $('.xiang .hand').css('display','block');
     },
-    onClickClown() {
+    onClickClown: function() {
         $('.xiang .clown').one('click', function() {
             general.playClickSound();            
             $('.xiang .clown').removeClass('clownUnclick');
@@ -204,7 +204,7 @@ module.exports = {
             }, 1000);
         });
     },
-    reset() {
+    reset: function() {
         // page1
         $('.xiang .page1 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');

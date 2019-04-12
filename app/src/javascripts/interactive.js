@@ -108,7 +108,7 @@ module.exports = {
     GetSlideAngle:function (dx, dy) {
         return Math.atan2(dy, dx) * 180 / Math.PI;
     },
-    setRotate(angle) {
+    setRotate: function(angle) {
         $('.rotate').css('transform','rotate('+angle+'deg)');
         $('.rotate').css('-moz-transform','transform','rotate('+angle+'deg)');
         $('.rotate').css('-webkit-transform','transform','rotate('+angle+'deg)');
@@ -119,7 +119,7 @@ module.exports = {
             this.openDoor();
         }
     },
-    openDoor() {
+    openDoor: function() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
         general.playDoorSound();
@@ -131,7 +131,7 @@ module.exports = {
             general.showTada(animationEnd);
         }, 2500);
     },
-    gotoMainPage() {
+    gotoMainPage: function() {
         $('.interactive').hide();
         $('.main').show();
     }

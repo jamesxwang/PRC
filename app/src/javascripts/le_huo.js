@@ -7,7 +7,7 @@ module.exports = {
 
         self.initAnimation();
     },
-    initAnimation() {
+    initAnimation: function() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
 
@@ -16,52 +16,40 @@ module.exports = {
         self.pageThreeAnimation(animationEnd);
         self.pageFourAnimation(animationEnd);
     },
-    pageOneAnimation(animationEnd) {
+    pageOneAnimation: function(animationEnd) {
         var self = this;
         $('.huo .page1 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.huo .page1 .pyramid').css('display','block');
-                $('.huo .page1 .boldText').css('display','block');
-            }, 200);
+            $('.huo .page1 .pyramid').css('display','block');
+            $('.huo .page1 .boldText').css('display','block');
         });
         $('.huo .page1 .boldText').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickAthlete();
-            }, 200);
+            self.showHand();
+            self.onClickAthlete();
         });
         
     },
-    pageTwoAnimation(animationEnd) {
+    pageTwoAnimation: function(animationEnd) {
         var self = this;
         $('.huo .page1 .boldText .text5').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickAthlete();
-            }, 200);
+            self.showHand();
+            self.onClickAthlete();
         });
     },
-    pageThreeAnimation(animationEnd) {
+    pageThreeAnimation: function(animationEnd) {
         var self = this;
-        $('.huo .page3 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.huo .page3 .carousel').css('display','block');
-                $('.huo .page3 .light').css('display','block');
-            }, 200);
+        $('.huo .page3 .type1').one(animationEnd, function() {
+            $('.huo .page3 .carousel').css('display','block');
+            $('.huo .page3 .light').css('display','block');
         });
         $('.huo .page3 .carousel').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickAthlete();
-            }, 200);
+            self.showHand();
+            self.onClickAthlete();
         });
     },
-    pageFourAnimation(animationEnd) {
+    pageFourAnimation: function(animationEnd) {
         var self = this;
         $('.huo .page4 .continue').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.huo .page4 .go').css('display','block');
-            }, 200);
+            $('.huo .page4 .go').css('display','block');
         });
         $('.huo .page4 .go').on('click', function() {
             $('.huo').hide();
@@ -70,10 +58,10 @@ module.exports = {
             general.showTada(animationEnd);
         });
     },
-    showHand() {
+    showHand: function() {
         $('.huo .hand').css('display','block');
     },
-    onClickAthlete() {
+    onClickAthlete: function() {
         $('.huo .athlete').one('click', function() {
             general.playClickSound();
             $('.huo .athlete').removeClass('athleteUnclick');
@@ -117,15 +105,17 @@ module.exports = {
                         $('.huo .page3').addClass('done');
                         setTimeout(() => {
                             $('.huo .page3').show();
-                            $('.huo .page3 .popup1').css('display','block');
+                            $('.huo .header').css('display','none');
+                            $('.huo .header2').css('display','block');
+                            $('.huo .page3 .type1').css('display','block');
                         }, 1000);
                         break;
                     }
                     case 4:
                     {
-                        $('.huo .page3 .popup1').removeClass('flash');
+                        $('.huo .page3 .type div').removeClass('fadeIn');
                         $('.huo .page3 .carousel').removeClass('zoomIn');
-                        $('.huo .page3 .popup1').addClass('bounceOutLeft');
+                        $('.huo .page3 .type div').addClass('bounceOutLeft');
                         $('.huo .page3 .carousel').addClass('bounceOutLeft');
                         $('.huo .page3 .light').removeClass('fadeIn');
                         $('.huo .page3 .light').addClass('fadeOut');
@@ -146,7 +136,9 @@ module.exports = {
             }, 1500);
         });
     },
-    reset() {
+    reset: function() {
+        $('.huo .header').css('display','block');
+        $('.huo .header2').css('display','none');
         // page1
         $('.huo .page1 .popup1').removeClass('bounceOutLeft');
         $('.huo .page1 .pyramid').removeClass('bounceOutLeft');
@@ -169,13 +161,13 @@ module.exports = {
         $('.huo .page2 .branchBox').css('display','none');
 
         // page3
-        $('.huo .page3 .popup1').removeClass('bounceOutLeft');
+        $('.huo .page3 .type div').removeClass('bounceOutLeft');
         $('.huo .page3 .light').removeClass('fadeOut bounceOutLeft');
         $('.huo .page3 .carousel').removeClass('bounceOutLeft');
-        $('.huo .page3 .popup1').addClass('flash');
+        $('.huo .page3 .type div').addClass('fadeIn');
         $('.huo .page3 .light').addClass('fadeIn');
         $('.huo .page3 .carousel').addClass('zoomIn');
-        $('.huo .page3 .popup1').css('display','none');
+        $('.huo .page3 .type div').css('display','none');
         $('.huo .page3 .light').css('display','none');
         $('.huo .page3 .carousel').css('display','none');
         
