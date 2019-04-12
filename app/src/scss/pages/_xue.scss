@@ -1,9 +1,8 @@
+@import '../helpers/mixins';
 .xue {
     .header {
         background: url('../images/le_xue_header.png') center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
+        @include rsc(no-repeat,contain,transparent);
         border: 0;
         padding: 0;
         width: 80%;
@@ -35,9 +34,7 @@
     }
     .blackboard {
         background: url('../images/le_xue_scene.png') center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
+        @include rsc(no-repeat,contain,transparent);
         width: 90%;
         height: 50%;
         position: absolute;
@@ -48,9 +45,7 @@
     .page1 {
         .text1 {
             background: url('../images/le_xue_text1.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+            @include rsc(no-repeat,contain,transparent);
             width: 90%;
             height: 14%;
             position: absolute;
@@ -60,9 +55,7 @@
         }
         .pie {
             background: url('../images/le_xue_pie.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+            @include rsc(no-repeat,contain,transparent);
             width: 45%;
             height: 30%;
             position: absolute;
@@ -98,9 +91,7 @@
                 margin-top: 10%;
             }
             .description1,.description2,.description3 {
-                background-repeat: no-repeat;
-                background-color: transparent;
-                background-size: contain;
+                @include rsc(no-repeat,contain,transparent);
                 display:none;
                 z-index: 2;
 
@@ -113,9 +104,7 @@
     .page2 {
         .text1 {
             background: url('../images/le_xue_text2.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+            @include rsc(no-repeat,contain,transparent);
             width: 90%;
             height: 14%;
             position: absolute;
@@ -152,9 +141,7 @@
             }
             .content1,.content2,.content3,.content4 {
                 position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-color: transparent;
+                @include rsc(no-repeat,contain,transparent);
                 width: 50%;
                 height: 40%;
                 display: none;
@@ -162,9 +149,7 @@
         }
         .text2 {
             background: url('../images/le_xue_text3.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+            @include rsc(no-repeat,contain,transparent);
             width: 25%;
             height: 14%;
             position: absolute;
@@ -177,154 +162,92 @@
     .page3 {
         .text1 {
             background: url('../images/le_xue_text4.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 90%;
-            height: 14%;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(90%,14%);
             position: absolute;
             margin: 0 5% 0 5%;
             top:20%;
             z-index: 3;
             display: none;
         }
-        .question {
-            background: url('../images/le_xue_question.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 20%;
-            height: 14%;
+        .text2 {
+            background: url('../images/le_xue_text6.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(80%,24%);
             position: absolute;
-            margin: 0 70% 0 10%;
-            top:38%;
+            margin: 0 10% 0 10%;
+            top:28%;
             z-index: 3;
             display: none;
         }
-        .grid {
-            width: 58%;
-            height: 15%;
+        .coordinate {
+            background: url('../images/le_xue_text7.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(80%,30%);
             position: absolute;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 33% 33% 33%;
-            margin: 0 21% 0 21%;
-            top: 45%;
+            margin: 0 10% 0 10%;
+            top:45%;
             z-index: 3;
-            .bullet1 {
-                background: url('../images/le_xue_bullet1.png') left;
-                
-            }
-            .bullet2 {
-                background: url('../images/le_xue_bullet2.png') left;
-                margin-right: 27%;
-            }
-            .bullet3 {
-                background: url('../images/le_xue_bullet3.png') left;
-                margin-right: 21%;
-            }
-            .bullet1, .bullet2, .bullet3 {
-                height: 100%;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-left: 2%;
-                display: none;
-            }
+            display: none;
         }
-        .no {
-            background: url('../images/le_xue_no.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 50%;
-            height: 15%;
+        .coordinateScrew {
+            background: url('../images/le_xue_text8.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(80%,30%);
             position: absolute;
-            top: 57%;
-            margin: 0 25% 0 25%;
+            margin: 0 10% 0 10%;
+            top:45%;
+            z-index: 3;
+            display: none;
+        }
+        .coordinateScrewText {
+            background: url('../images/le_xue_text9.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(80%,30%);
+            position: absolute;
+            margin: 0 10% 0 10%;
+            top:45%;
             z-index: 3;
             display: none;
         }
     }
     .page4 {
-        .grid {
-            width: 62%;
-            height: 38%;
+        .text1 {
+            background: url('../images/le_xue_text5.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(90%,14%);
             position: absolute;
-            display: grid;
-            grid-template-columns: 100%;
-            margin: 0 17.5% 0 15%;
-            grid-template-rows: 40% 60%;
-            top: 38%;
+            margin: 0 5% 0 5%;
+            top:20%;
             z-index: 3;
-            .content1 {
-                width: 100%;
-                height: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 28% 17.5% 16.9%;
-                grid-row-gap: .4rem;
-                top: 0;
-                z-index: 3;
-                .title {
-                    background: url('../images/le_xue_title1.png');
-                }
-                .bullet1 {
-                    background: url('../images/le_xue_bullet4.png');
-                }
-                .bullet2 {
-                    background: url('../images/le_xue_bullet5.png');
-                }
-                .title, .bullet1, .bullet2 {
-                    height: 100%;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    display: none;
-                }
-            }
-            .content2 {
-                width: 100%;
-                height: 100%;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 18.6% 11% 11.4% 11.1% 11% 16%;
-                grid-row-gap: .4rem;
-                top: 0;
-                z-index: 3;
-                .title {
-                    background: url('../images/le_xue_title2.png');
-                }
-                .bullet1 {
-                    background: url('../images/le_xue_bullet6.png');
-                }
-                .bullet2 {
-                    background: url('../images/le_xue_bullet7.png');
-                }
-                .bullet3 {
-                    background: url('../images/le_xue_bullet8.png');
-                }
-                .bullet4 {
-                    background: url('../images/le_xue_bullet9.png');
-                }
-                .text {
-                    background: url('../images/le_xue_text5.png');
-                }
-                .title, .bullet1, .bullet2, .bullet3, .bullet4,.text {
-                    height: 100%;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    display: none;
-                }
-            }
+            display: none;
+        }
+        .phone1 {
+            background: url('../images/le_xue_text10.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(40%,30%);
+            position: absolute;
+            margin: 0 50% 0 10%;
+            top:38%;
+            z-index: 3;
+            display: none;
+        }
+        .phone2 {
+            background: url('../images/le_xue_text11.png') center;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(40%,30%);
+            position: absolute;
+            margin: 0 15% 0 45%;
+            top:38%;
+            z-index: 3;
+            display: none;
         }
     }
     .page5 {
         .continue {
             background: url('../images/le_xue_continue.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
-            width: 40%;
-            height: 15%;
+            @include rsc(no-repeat,contain,transparent);
+            @include wh(40%, 15%);
             position: absolute;
             top: 40%;
             margin: 0 30% 0 30%;
@@ -333,9 +256,7 @@
         }
         .go {
             background: url('../images/le_xue_go.png') center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-color: transparent;
+            @include rsc(no-repeat,contain,transparent);
             width: 60%;
             height: 15%;
             position: absolute;
@@ -347,10 +268,8 @@
     }
     .hand {
         background: url('../images/le_shang_hand.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 10%;
-        height: 10%;
+        @include rsc(no-repeat,contain,transparent);
+        @include wh(10%, 10%);
         position: absolute;
         bottom: 20%;
         right: 24%;
@@ -395,12 +314,15 @@
             }
            
         }
-        .page3 .question,
-        .page3 .grid {
-            transform: scale(0.9);
+        .page3 {
+            .text2 {
+                top:30%;
+            }
         }
-        .page4 .grid {
-            transform: scale(0.9);
+        .page4 {
+            .phone2 {
+                margin: 0 10% 0 50%;
+            }
         }
     }
 }
