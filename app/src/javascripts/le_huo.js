@@ -68,7 +68,7 @@ module.exports = {
             $('.huo .athlete').addClass('athleteClick');
             $('.huo .hand').css('display','none');
             $('.huo .page1').addClass('done');
-            setTimeout(() => {
+            setTimeout(function() {
                 var pageNum = 1;
                 for (var i = 1; i <= 3; ++i) {
                     var classList = $('.huo .page'+i)[0].classList;
@@ -86,7 +86,7 @@ module.exports = {
                         $('.huo .page1 .boldText .text4').addClass('transformLeft');
                         $('.huo .page1 .boldText .text5').addClass('transformLeftLittle');
                         $('.huo .page2').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.huo .page2').show();
                             $('.huo .page2 .branchBox').css('display','block');
                         }, 0);
@@ -103,7 +103,7 @@ module.exports = {
                         $('.huo .page1 .boldText').addClass('animated bounceOutLeft');
                         $('.huo .page2 .branchBox').addClass('animated bounceOutLeft');
                         $('.huo .page3').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.huo .page3').show();
                             $('.huo .header').css('display','none');
                             $('.huo .header2').css('display','block');
@@ -121,7 +121,7 @@ module.exports = {
                         $('.huo .page3 .light').addClass('fadeOut');
                         
                         $('.huo .page4').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.huo .page4').show();
                             $('.huo .page4').show();
                             $('.huo .page4 .continue').css('display','block');
