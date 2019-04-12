@@ -63,7 +63,7 @@ module.exports = {
             $('.shang .page2 .arrow').css('display','block');
         });
         $('.shang .page2 .arrow').one(animationEnd, function() {
-            setTimeout(() => {
+            setTimeout(function() {
                 self.showHand();
                 self.onClickCoins();
             }, 200);
@@ -87,7 +87,7 @@ module.exports = {
             $('.shang .page3 .no').css('display','block');
         });
         $('.shang .page3 .no').one(animationEnd, function() {
-            setTimeout(() => {
+            setTimeout(function() {
                 self.showHand();
                 self.onClickCoins();
             }, 200);
@@ -179,7 +179,7 @@ module.exports = {
             $('.shang .hand').css('display','none');
             $('.shang .page1').addClass('done');
 
-            setTimeout(() => {
+            setTimeout(function() {
                 var pageNum = 1;
                 for (var i = 1; i <= 8; ++i) {
                     var classList = $('.shang .page'+i)[0].classList;
@@ -199,7 +199,7 @@ module.exports = {
                         $('.shang .page1 .popup2').addClass('bounceOutLeft');
                         
                         $('.shang .page2').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page2').show();
                             $('.shang .page2 .popup1').css('display','block');
                         }, 1000);
@@ -217,7 +217,7 @@ module.exports = {
                         $('.shang .page2 .coinBar').addClass('animated bounceOutLeft');
 
                         $('.shang .page3').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page3').show();
                             $('.shang .page3 .popup1').css('display','block');
                         }, 1000);
@@ -233,7 +233,7 @@ module.exports = {
                         $('.shang .page3 .no').addClass('bounceOutLeft');
 
                         $('.shang .page4').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page4').show();
                             $('.shang .page4 .text1').css('display','block');
                         }, 1000);
@@ -252,7 +252,7 @@ module.exports = {
                         $('.shang .page4 .chance').addClass('bounceOutLeft');
 
                         $('.shang .page5').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page5').show();
                             $('.shang .page5 .popup1').css('display','block');
                         }, 1000);
@@ -277,7 +277,7 @@ module.exports = {
                         $('.shang .page5 .popup4').addClass('bounceOutLeft');
                         $('.shang .page5 .text3').addClass('bounceOutLeft');
 
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page6').show();
                             $('.shang .page6 .popup1').css('display','block');
                         }, 1000);
@@ -289,7 +289,7 @@ module.exports = {
                         $('.shang .page6 .pig').removeClass('fadeIn');
 
                         $('.shang .page6 .pig').addClass('bounceOutLeft');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page7').show();
                             $('.shang .page7 .text1').css('display','block');
                         }, 1000);
@@ -308,7 +308,7 @@ module.exports = {
                         $('.shang .page7 .content').addClass('bounceOutLeft');
                         $('.shang .page7 .text2').addClass('bounceOutLeft');
 
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.shang .page8').show();
                             $('.shang .page8 .continue').css('display','block');
                         }, 1000);
@@ -322,7 +322,7 @@ module.exports = {
             }, 1500);
         });
     },
-    reset() {
+    reset: function() {
         // page1
         $('.shang .page1 .popup1').removeClass('bounceOutLeft');
         $('.shang .page1 .circleBox').removeClass('animated bounceOutLeft');
