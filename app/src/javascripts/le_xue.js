@@ -7,7 +7,7 @@ module.exports = {
 
         self.initAnimation();
     },
-    initAnimation() {
+    initAnimation: function() {
         var self = this;
         var animationEnd = general.initAnimationEnd();
 
@@ -17,7 +17,7 @@ module.exports = {
         self.pageFourAnimation(animationEnd);
         self.pageFiveAnimation(animationEnd);
     },
-    pageOneAnimation(animationEnd) {
+    pageOneAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page1 .text1').one(animationEnd, function() {
             $('.xue .page1 .pie').css('display','block');
@@ -45,7 +45,7 @@ module.exports = {
             self.onClickTeacher();
         });
     },
-    pageTwoAnimation(animationEnd) {
+    pageTwoAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page2 .text1').one(animationEnd, function() {
             $('.xue .page2 .content1').css('display','block');
@@ -67,7 +67,7 @@ module.exports = {
             self.onClickTeacher();
         });
     },
-    pageThreeAnimation(animationEnd) {
+    pageThreeAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page3 .text1').one(animationEnd, function() {
             $('.xue .page3 .text2').css('display','block');
@@ -86,7 +86,7 @@ module.exports = {
             self.onClickTeacher();
         });
     },
-    pageFourAnimation(animationEnd) {
+    pageFourAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page4 .text1').one(animationEnd, function() {
             $('.xue .page4 .phone1').css('display','block');
@@ -99,7 +99,7 @@ module.exports = {
             self.onClickTeacher();
         });
     },
-    pageFiveAnimation(animationEnd) {
+    pageFiveAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page5 .continue').one(animationEnd, function() {
             $('.xue .page5 .go').css('display','block');
@@ -111,10 +111,10 @@ module.exports = {
             general.showTada(animationEnd);
         });
     },
-    showHand() {
+    showHand: function() {
         $('.xue .hand').css('display','block');
     },
-    onClickTeacher() {
+    onClickTeacher: function() {
         $('.xue .teacher').one('click', function() {
             general.playClickSound();
             $('.xue .teacher').removeClass('teacherUnclick');
@@ -209,15 +209,15 @@ module.exports = {
             }, 1000);
         });
     },
-    removeClass(pageNum, el, clas) {
+    removeClass: function(pageNum, el, clas) {
         $('.xue .page'+pageNum+' .'+el).removeClass(clas);
     },
-    hideElement(pageNum, list) {
+    hideElement: function(pageNum, list) {
         for (el of list) {
             $('.xue .page' + pageNum + ' .' + el).css('display','none');
         }
     },
-    reset() {
+    reset: function() {
         // page1
         this.removeClass(1,'text1','fadeOut');
         $('.xue .page1 .pie').removeClass('fadeOut');
