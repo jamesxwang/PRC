@@ -35,48 +35,32 @@ module.exports = {
             $('.shang .page1 .popup2').css('display','block');
         });
         $('.shang .page1 .popup2').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickCoins();
-            }, 200);
+            self.showHand();
+            self.onClickCoins();
         });
     },
     pageTwoAnimation: function(animationEnd) {
         var self = this;
         $('.shang .page2 .popup1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .text').css('display','block');
-            }, 200);
+            $('.shang .page2 .text').css('display','block');
         });
         $('.shang .page2 .text').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .bar1').css('display','block');
-            }, 200);
+            $('.shang .page2 .bar1').css('display','block');
         });
         $('.shang .page2 .bar1').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .bar2').css('display','block');
-            }, 300);
+            $('.shang .page2 .bar2').css('display','block');
         });
         $('.shang .page2 .bar2').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .bar3').css('display','block');                
-            }, 300);
+            $('.shang .page2 .bar3').css('display','block');                
         });
         $('.shang .page2 .bar3').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .bar4').css('display','block');
-            }, 300);
+            $('.shang .page2 .bar4').css('display','block');
         });
         $('.shang .page2 .bar4').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .bar5').css('display','block');
-            }, 300);
+            $('.shang .page2 .bar5').css('display','block');
         });
         $('.shang .page2 .bar5').one(animationEnd, function() {
-            setTimeout(() => {
-                $('.shang .page2 .arrow').css('display','block');
-            }, 200);
+            $('.shang .page2 .arrow').css('display','block');
         });
         $('.shang .page2 .arrow').one(animationEnd, function() {
             setTimeout(() => {
@@ -118,10 +102,8 @@ module.exports = {
             $('.shang .page4 .chance').css('display','block');
         });
         $('.shang .page4 .chance').one(animationEnd, function() {
-            setTimeout(() => {
-                self.showHand();
-                self.onClickCoins();
-            }, 200);
+            self.showHand();
+            self.onClickCoins();
         });
     },
     pageFiveAnimation: function(animationEnd) {
@@ -279,9 +261,9 @@ module.exports = {
                     case 6:
                     {
                         $('.shang .page6').addClass('done');
-                        $('.shang .page5 .popup1').removeClass('fadeIn faster');
-                        $('.shang .page5 .text1').removeClass('fadeInDown faster');
-                        $('.shang .page5 .text2').removeClass('fadeInDown faster');
+                        $('.shang .page5 .popup1').removeClass('fadeIn');
+                        $('.shang .page5 .text1').removeClass('fadeInDown');
+                        $('.shang .page5 .text2').removeClass('fadeInDown');
                         $('.shang .page5 .popup2').removeClass('fadeInRightBig');
                         $('.shang .page5 .popup3').removeClass('fadeInLeftBig');
                         $('.shang .page5 .popup4').removeClass('fadeInRightBig');
@@ -317,9 +299,9 @@ module.exports = {
                     {
                         $('.shang .page8').addClass('done');
                         $('.shang .page6 .popup1').removeClass('fadeIn');
-                        $('.shang .page7 .text1').removeClass('fadeIn faster');
-                        $('.shang .page7 .content').removeClass('fadeIn faster');
-                        $('.shang .page7 .text2').removeClass('fadeIn faster');
+                        $('.shang .page7 .text1').removeClass('fadeIn');
+                        $('.shang .page7 .content').removeClass('fadeIn');
+                        $('.shang .page7 .text2').removeClass('fadeIn');
 
                         $('.shang .page6 .popup1').addClass('bounceOutLeft');
                         $('.shang .page7 .text1').addClass('bounceOutLeft');
@@ -404,9 +386,9 @@ module.exports = {
         $('.shang .page5 .popup3').removeClass('bounceOutLeft');
         $('.shang .page5 .popup4').removeClass('bounceOutLeft');
         $('.shang .page5 .text3').removeClass('bounceOutLeft');
-        $('.shang .page5 .popup1').addClass('fadeIn faster');
-        $('.shang .page5 .text1').addClass('fadeInDown faster');
-        $('.shang .page5 .text2').addClass('fadeInDown faster');
+        $('.shang .page5 .popup1').addClass('fadeIn');
+        $('.shang .page5 .text1').addClass('fadeInDown');
+        $('.shang .page5 .text2').addClass('fadeInDown');
         $('.shang .page5 .popup2').addClass('fadeInRightBig');
         $('.shang .page5 .popup3').addClass('fadeInLeftBig');
         $('.shang .page5 .popup4').addClass('fadeInRightBig');
@@ -431,9 +413,9 @@ module.exports = {
         $('.shang .page7 .text1').removeClass('bounceOutLeft');
         $('.shang .page7 .content').removeClass('bounceOutLeft');
         $('.shang .page7 .text2').removeClass('bounceOutLeft');
-        $('.shang .page7 .text1').addClass('fadeIn faster');
-        $('.shang .page7 .content').addClass('fadeIn faster');
-        $('.shang .page7 .text2').addClass('fadeIn faster');
+        $('.shang .page7 .text1').addClass('fadeIn');
+        $('.shang .page7 .content').addClass('fadeIn');
+        $('.shang .page7 .text2').addClass('fadeIn');
         $('.shang .page7 .text1').css('display','none');
         $('.shang .page7 .content').css('display','none');
         $('.shang .page7 .text2').css('display','none');
