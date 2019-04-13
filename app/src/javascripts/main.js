@@ -15,11 +15,16 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        // var BASE_IMAGE_PATH = '/dist/images/';
-        // var BASE_AUDIO_PATH = '/dist/audios/';
-        var BASE_IMAGE_PATH = '/images/';
-        var BASE_AUDIO_PATH = '/audios/';
+        var BASE_IMAGE_PATH = '/dist/images/';
+        var BASE_AUDIO_PATH = '/dist/audios/';
+        // var BASE_IMAGE_PATH = '/images/';
+        // var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
+            'loading_man1.png',
+            'loading_man2.png',
+            'loading_light.png',
+            // 'loading_progress1.png',
+            // 'loading_progress2.png',
             'interactive_arrow2.png',
             'interactive_background.png',
             'interactive_background2.png',
