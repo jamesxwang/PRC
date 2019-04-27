@@ -11,7 +11,6 @@ module.exports = {
         var animationEnd = general.initAnimationEnd();
         $('.leShang').on('click', function() {
             self.hideAllTheme();
-            $('.bubble .bubble1').addClass('done');
             $('.shang').show();
             $('.shang .page1').css('display','block');
             $('.shang .page1 .popup1').css('display','block');
@@ -19,16 +18,13 @@ module.exports = {
         });
         $('.leXiang').on('click', function() {
             self.hideAllTheme();
-            $('.bubble .bubble2').addClass('done');
             $('.xiang .page1').css('display','block');
             $('.xiang .page1 .popup1').css('display','block');
             $('.xiang').show();
             le_xiang.init();
-
         });
         $('.leHuo').on('click', function() {
             self.hideAllTheme();
-            $('.bubble .bubble3').addClass('done');
             $('.huo .page1').css('display','block');
             $('.huo .page1 .popup1').css('display','block');
             $('.huo').show();
@@ -36,7 +32,6 @@ module.exports = {
         });
         $('.leXue').on('click', function() {
             self.hideAllTheme();
-            $('.bubble .bubble4').addClass('done');
             $('.xue .page1').css('display','block');
             $('.xue .page1 .text1').css('display','block');
             $('.xue').show();

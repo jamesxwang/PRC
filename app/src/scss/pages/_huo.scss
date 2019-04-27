@@ -13,21 +13,6 @@
         margin: 0 10% 0 10%;
         z-index: 3;
     }
-    .header2 {
-        background: url('../images/le_huo_logo2.png') center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
-        border: 0;
-        padding: 0;
-        width: 80%;
-        height: 20%;
-        position: absolute;
-        top:8%;
-        margin: 0 10% 0 10%;
-        z-index: 3;
-        display: none;
-    }
     .page1 {
         .popup1 {
             background: url('../images/le_huo_header1.png') center;
@@ -351,6 +336,12 @@
                 top: 34%;
                 left: 13%;
                 transform: scale(0.9);
+                .text3 {
+                    top: 45%;
+                }
+                .text4 {
+                    top: 65%;
+                }
                 .text5 {
                     margin-top: 5%;
                 }

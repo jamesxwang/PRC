@@ -309,9 +309,9 @@
     .page7 {
         .text1 {
             background: url('../images/le_shang_text5.png') center;
-            @include wh(80%, 13%);
+            @include wh(60%, 13%);
             top: 32%;
-            margin: 0 10% 0 10%;
+            margin: 0 20% 0 20%;
         }
         .content {
             background: url('../images/le_shang_content.png') center;
