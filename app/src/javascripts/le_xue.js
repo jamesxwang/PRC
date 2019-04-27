@@ -121,7 +121,7 @@ module.exports = {
             $('.xue .teacher').addClass('teacherClick');
             $('.xue .hand').css('display','none');
             $('.xue .page1').addClass('done');
-            setTimeout(() => {
+            setTimeout(function() {
                 
                 var pageNum = 1;
                 for (var i = 1; i <= 5; ++i) {
@@ -142,7 +142,7 @@ module.exports = {
                         $('.xue .page1 .text1').addClass('fadeOut');
                         $('.xue .page1 .pie').addClass('fadeOut');
                         $('.xue .page1 .grid').addClass('animated fadeOut');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xue .page2').show();
                             $('.xue .page2 .text1').css('display','block');
                         }, 1000);
@@ -158,7 +158,7 @@ module.exports = {
                         $('.xue .page2 .text1').addClass('fadeOut');
                         $('.xue .page2 .content_wrapper').addClass('animated fadeOut');
                         $('.xue .page2 .text2').addClass('fadeOut');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xue .page3').show();
                             $('.xue .page3 .text1').css('display','block');
                         }, 1000);
@@ -179,7 +179,7 @@ module.exports = {
                         $('.xue .page3 .coordinate').addClass('fadeOut');
                         $('.xue .page3 .coordinateScrew').addClass('fadeOut');
                         $('.xue .page3 .coordinateScrewText').addClass('fadeOut');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xue .page4').show();
                             $('.xue .page4 .text1').css('display','block');
                         }, 1000);
@@ -195,7 +195,7 @@ module.exports = {
                         $('.xue .page4 .text1').addClass('fadeOut');
                         $('.xue .page4 .phone1').addClass('fadeOut');
                         $('.xue .page4 .phone2').addClass('fadeOut');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xue .page5').show();
                             $('.xue .page5 .continue').css('display','block');
                         }, 1000);
@@ -209,29 +209,25 @@ module.exports = {
             }, 1000);
         });
     },
-    removeClass: function(pageNum, el, clas) {
-        $('.xue .page'+pageNum+' .'+el).removeClass(clas);
-    },
-    hideElement: function(pageNum, list) {
-        for (el of list) {
-            $('.xue .page' + pageNum + ' .' + el).css('display','none');
-        }
-    },
     reset: function() {
         // page1
-        this.removeClass(1,'text1','fadeOut');
+        $('.xue .page1 .text1').removeClass('fadeOut');
         $('.xue .page1 .pie').removeClass('fadeOut');
         $('.xue .page1 .grid').removeClass('animated fadeOut');
         $('.xue .page1 .text1').addClass('flash');
         $('.xue .page1 .pie').addClass('flash');
-        this.hideElement(1,['pie','grid div','text1']);
+        $('.xue .page1 .pie').css('display','none');
+        $('.xue .page1 .grid div').css('display','none');
+        $('.xue .page1 .text1').css('display','none');
         // page2
         $('.xue .page2 .text1').removeClass('fadeOut');
         $('.xue .page2 .text2').removeClass('fadeOut');
         $('.xue .page2 .content_wrapper').removeClass('animated fadeOut');
         $('.xue .page2 .text1').addClass('flash');
         $('.xue .page2 .text2').addClass('fadeIn');
-        this.hideElement(2,['text1','content_wrapper div','text2']);
+        $('.xue .page2 .text1').css('display','none');
+        $('.xue .page2 .content_wrapper div').css('display','none');
+        $('.xue .page2 .text2').css('display','none');
 
         // page3
         $('.xue .page3 .text1').removeClass('fadeOut');
@@ -244,7 +240,11 @@ module.exports = {
         $('.xue .page3 .coordinate').addClass('fadeIn');
         $('.xue .page3 .coordinateScrew').addClass('fadeIn');
         $('.xue .page3 .coordinateScrewText').addClass('fadeIn');
-        this.hideElement(3,['text1','text2','coordinate','coordinateScrew','coordinateScrewText']);
+        $('.xue .page3 .text1').css('display','none');
+        $('.xue .page3 .text2').css('display','none');
+        $('.xue .page3 .coordinate').css('display','none');
+        $('.xue .page3 .coordinateScrew').css('display','none');
+        $('.xue .page3 .coordinateScrewText').css('display','none');
 
         // page4
         $('.xue .page4 .text1').removeClass('fadeOut');
@@ -253,10 +253,13 @@ module.exports = {
         $('.xue .page4 .text1').addClass('flash');
         $('.xue .page4 .phone1').addClass('fadeInDown');
         $('.xue .page4 .phone2').addClass('fadeInDown');
-        this.hideElement(4,['text1','phone1','phone2']);
+        $('.xue .page4 .text1').css('display','none');
+        $('.xue .page4 .phone1').css('display','none');
+        $('.xue .page4 .phone2').css('display','none');
 
         // page5
-        this.hideElement(5,['continue','go']);
+        $('.xue .page5 .continue').css('display','none');
+        $('.xue .page5 .go').css('display','none');
 
         $('.xue span').removeClass('done');
         $('.xue span').css('display','none');
