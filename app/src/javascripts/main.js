@@ -1,6 +1,7 @@
 (function () {
 
     // load dependencies
+    var checkage = require('./checkage.js');
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
     var general = require('./general.js');
@@ -15,11 +16,16 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        // var BASE_IMAGE_PATH = '/dist/images/';
-        // var BASE_AUDIO_PATH = '/dist/audios/';
-        var BASE_IMAGE_PATH = '/images/';
-        var BASE_AUDIO_PATH = '/audios/';
+        var BASE_IMAGE_PATH = '/dist/images/';
+        var BASE_AUDIO_PATH = '/dist/audios/';
+        // var BASE_IMAGE_PATH = '/images/';
+        // var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
+            'le_huo_light.png',
+            'loading_man1.png',
+            'loading_man2.png',
+            'music.png',
+            'interactive_arrow1.png',
             'interactive_arrow2.png',
             'interactive_background.png',
             'interactive_background2.png',
@@ -29,7 +35,10 @@
             'interactive_hint1.png',
             'interactive_hint2.png',
             'interactive_neon.png',
+            'interactive_no.png',
             'interactive_text.png',
+            'interactive_text1.png',
+            'interactive_yes.png',
             'le_huo_athlete_click1.png',
             'le_huo_athlete_click2.png',
             'le_huo_athlete_unclick1.png',
@@ -47,9 +56,7 @@
             'le_huo_image7.png',
             'le_huo_image8.png',
             'le_huo_image9.png',
-            'le_huo_light.png',
             'le_huo_logo.png',
-            'le_huo_logo2.png',
             'le_huo_pyramid.png',
             'le_huo_text_bold1.png',
             'le_huo_text_bold2.png',
@@ -135,6 +142,9 @@
             'le_xiang_popup16.png',
             'le_xiang_popup17.png',
             'le_xiang_popup18.png',
+            'le_xiang_popup19.png',
+            'le_xiang_popup20.png',
+            'le_xiang_popup21.png',
             'le_xiang_scene.png',
             'le_xue_content1.png',
             'le_xue_content2.png',
@@ -165,9 +175,7 @@
             'le_xue_text11.png',
             'logo.png',
             'logo2.png',
-            'music.png',
             'main_page_background.png',
-            'main_page_bubble1.png',
             'main_page_end.png',
             'main_page_hand.png',
             'main_page_huo.png',
@@ -216,6 +224,7 @@
                 }
             });
             // init
+            checkage.init();
             interactive.init();
             main_page.init();
 

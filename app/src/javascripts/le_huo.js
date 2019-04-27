@@ -105,8 +105,6 @@ module.exports = {
                         $('.huo .page3').addClass('done');
                         setTimeout(function() {
                             $('.huo .page3').show();
-                            $('.huo .header').css('display','none');
-                            $('.huo .header2').css('display','block');
                             $('.huo .page3 .type1').css('display','block');
                         }, 1000);
                         break;
@@ -137,8 +135,6 @@ module.exports = {
         });
     },
     reset: function() {
-        $('.huo .header').css('display','block');
-        $('.huo .header2').css('display','none');
         // page1
         $('.huo .page1 .popup1').removeClass('bounceOutLeft');
         $('.huo .page1 .pyramid').removeClass('bounceOutLeft');
