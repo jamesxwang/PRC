@@ -110,7 +110,7 @@ module.exports = {
             $('.xiang .clown').addClass('clownClick');
             $('.xiang .hand').css('display','none');
             $('.xiang .page1').addClass('done');
-            setTimeout(() => {
+            setTimeout(function() {
                 
                 var pageNum = 1;
                 for (var i = 1; i <= 6; ++i) {
@@ -131,7 +131,7 @@ module.exports = {
                         $('.xiang .page1 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page1 .grid').addClass('animated bounceOutLeft');
                         $('.xiang .page2').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xiang .page2').show();
                             $('.xiang .page2 .popup1').css('display','block');
                             if (!$('.xiang .page2 .popup1')[0].classList.contains('flash'))
@@ -146,7 +146,7 @@ module.exports = {
                         $('.xiang .page2 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page2 .grid').addClass('animated bounceOutLeft');
                         $('.xiang .page3').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xiang .page3').show();
                             $('.xiang .page3 .popup1').css('display','block');
                             if (!$('.xiang .page3 .popup1')[0].classList.contains('flash'))
@@ -161,7 +161,7 @@ module.exports = {
                         $('.xiang .page3 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page3 .grid').addClass('animated bounceOutLeft');
                         $('.xiang .page4').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xiang .page4').show();
                             $('.xiang .page4 .popup1').css('display','block');
                             if (!$('.xiang .page4 .popup1')[0].classList.contains('flash'))
@@ -177,7 +177,7 @@ module.exports = {
                         $('.xiang .page4 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page4 .popup2').addClass('bounceOutLeft');
                         $('.xiang .page5').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xiang .page5').show();
                             $('.xiang .page5 .popup1').css('display','block');
                             if (!$('.xiang .page5 .popup1')[0].classList.contains('flash'))
@@ -192,7 +192,7 @@ module.exports = {
                         $('.xiang .page5 .popup1').addClass('bounceOutLeft');
                         $('.xiang .grid').addClass('animated bounceOutLeft');
                         $('.xiang .page6').addClass('done');
-                        setTimeout(() => {
+                        setTimeout(function() {
                             $('.xiang .page6').show();
                             $('.xiang .page6 .continue').css('display','block');
                         }, 1000);
