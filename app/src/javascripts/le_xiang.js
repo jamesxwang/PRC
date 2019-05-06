@@ -158,6 +158,7 @@ module.exports = {
                         $('.xiang .page1 .popup2').removeClass('slideInLeft');
                         $('.xiang .page1 .popup3').removeClass('slideInRight');
                         $('.xiang .page1 .popup4').removeClass('slideInLeft');
+                        $('.xiang .page1 .popup5').removeClass('show');
 
                         $('.xiang .page1 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page1 .grid').addClass('animated bounceOutLeft');
@@ -174,6 +175,7 @@ module.exports = {
                     case 3:
                     {
                         $('.xiang .page2 .popup1').removeClass('flash');
+                        $('.xiang .page2 .popup4').removeClass('show');
                     
                         $('.xiang .page2 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page2 .grid').addClass('animated bounceOutLeft');
@@ -221,6 +223,7 @@ module.exports = {
                     case 6:
                     {
                         $('.xiang .page5 .popup1').removeClass('slideInRight');
+                        $('.xiang .page5 .popup6').removeClass('show');
 
                         $('.xiang .page5 .popup1').addClass('bounceOutLeft');
                         $('.xiang .grid').addClass('animated bounceOutLeft');
@@ -242,7 +245,7 @@ module.exports = {
         // page1
         $('.xiang .page1 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page1 .popup5').removeClass('show bounceOutLeft');
+        $('.xiang .page1 .popup5').removeClass('bounceOutLeft');
         $('.xiang .page1 .popup1').addClass('flash');
         $('.xiang .page1 .popup2').addClass('slideInLeft');
         $('.xiang .page1 .popup3').addClass('slideInRight');
@@ -255,7 +258,7 @@ module.exports = {
         // page2
         $('.xiang .page2 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page2 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page2 .popup4').removeClass('show bounceOutLeft');
+        $('.xiang .page2 .popup4').removeClass('bounceOutLeft');
         $('.xiang .page2 .popup1').addClass('flash');
         $('.xiang .page2 .popup1').css('display','none');
         $('.xiang .page2 .popup2').css('display','none');
@@ -281,7 +284,7 @@ module.exports = {
         // page5
         $('.xiang .page5 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page5 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page5 .popup6').removeClass('show bounceOutLeft');
+        $('.xiang .page5 .popup6').removeClass('bounceOutLeft');
         $('.xiang .page5 .popup1').addClass('flash');
         $('.xiang .page5 .popup2').css('display','none');
         $('.xiang .page5 .popup3').css('display','none');

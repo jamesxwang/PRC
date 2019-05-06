@@ -5,7 +5,6 @@
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
     var general = require('./general.js');
-    var wechatShare = require('./wechat-share.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -16,10 +15,10 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_IMAGE_PATH = '/dist/images/';
-        var BASE_AUDIO_PATH = '/dist/audios/';
-        // var BASE_IMAGE_PATH = '/images/';
-        // var BASE_AUDIO_PATH = '/audios/';
+        // var BASE_IMAGE_PATH = '/dist/images/';
+        // var BASE_AUDIO_PATH = '/dist/audios/';
+        var BASE_IMAGE_PATH = '/images/';
+        var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
             'le_huo_light.png',
             'loading_man1.png',
@@ -205,7 +204,6 @@
             });
         }
         loader.addCompletionListener(function(){
-            wechatShare.init();
             console.log("预加载图片："+fileList.length+"张");
             // autoplay
             $btnMusic.show();
