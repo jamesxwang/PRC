@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>保乐力加中国</title>
+    <title>乐生活 只为你</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -315,11 +315,13 @@
 <audio src="audios/click.mp3" id="click_sound"></audio>
 <audio src="audios/door.mp3" id="door_sound"></audio>
 
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
 <!-- Don't delete this. It's needed for development workflow. -->
 <!-- inject:js -->
 <!-- endinject -->
-
+<script>
+    document.write("<script src='accessToken/signPackage.php?originUrl=" + window.location.href + "' type='text/javascript'><\/script>");
+</script>
 </body>
 
 </html>
