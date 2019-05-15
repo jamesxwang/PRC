@@ -36,7 +36,7 @@ module.exports = {
             moveY = e.touches[0].pageY;
             var result = self.GetSlideDirection(startX,startY,moveX,moveY)
             var direction = result[0];
-            var percent = (Math.abs(result[1])/(document.body.clientWidth/12));
+            var percent = (Math.abs(result[1])/(document.body.clientWidth/20));
             if (direction == 4)
                 angle += (percent * 25)/100;
             else if (direction == 3)
@@ -55,7 +55,7 @@ module.exports = {
             moveY = e.touches[0].pageY;
             var result = self.GetSlideDirection(startX,startY,moveX,moveY)
             var direction = result[0];
-            var percent = (Math.abs(result[1])/(document.body.clientWidth/4));
+            var percent = (Math.abs(result[1])/(document.body.clientWidth/20));
             if (direction == 4)
                 angle -= (percent * 25)/100;
             else if (direction == 3)
