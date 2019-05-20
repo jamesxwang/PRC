@@ -111,7 +111,7 @@ module.exports = {
                     }
                     case 4:
                     {
-                        $('.huo .page3 .type div').removeClass('fadeIn');
+                        $('.huo .page3 .type div').removeClass('flash');
                         $('.huo .page3 .carousel').removeClass('zoomIn');
                         $('.huo .page3 .type div').addClass('bounceOutLeft');
                         $('.huo .page3 .carousel').addClass('bounceOutLeft');
@@ -160,7 +160,7 @@ module.exports = {
         $('.huo .page3 .type div').removeClass('bounceOutLeft');
         $('.huo .page3 .light').removeClass('fadeOut bounceOutLeft');
         $('.huo .page3 .carousel').removeClass('bounceOutLeft');
-        $('.huo .page3 .type div').addClass('fadeIn');
+        $('.huo .page3 .type div').addClass('flash');
         $('.huo .page3 .light').addClass('fadeIn');
         $('.huo .page3 .carousel').addClass('zoomIn');
         $('.huo .page3 .type div').css('display','none');

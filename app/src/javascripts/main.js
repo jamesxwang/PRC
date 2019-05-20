@@ -5,7 +5,7 @@
     var interactive = require('./interactive.js');
     var main_page = require('./main_page.js');
     var general = require('./general.js');
-    var wechatShare = require('./wechat-share.js');
+    var wechat = require('./wechat-share.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -16,14 +16,13 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_IMAGE_PATH = '/dist/images/';
-        var BASE_AUDIO_PATH = '/dist/audios/';
-        // var BASE_IMAGE_PATH = '/images/';
-        // var BASE_AUDIO_PATH = '/audios/';
+        var BASE_IMAGE_PATH = '/images/';
+        var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
             'le_huo_light.png',
             'loading_man1.png',
             'loading_man2.png',
+            'share.jpg',
             'music.png',
             'interactive_arrow1.png',
             'interactive_arrow2.png',
@@ -190,28 +189,19 @@
             pxImage.imageNumber = i + 1;
             loader.add(pxImage);
         }
-        var autoPlayAudio = function() {
-            wx.config({
-                debug: false,
-                appId: '',
-                timestamp: 1,
-                nonceStr: '',
-                signature: '',
-                jsApiList: []
-            });
-            wx.ready(function() {
-                bgMusic.volume = 0.3;
-                bgMusic.play();
-            });
-        }
+        // init
+        wechat.init();
+        checkage.init();
+        interactive.init();
+        main_page.init();
+
         loader.addCompletionListener(function(){
-            wechatShare.init();
             console.log("预加载图片："+fileList.length+"张");
             // autoplay
             $btnMusic.show();
             if (!$btnMusic.hasClass('paused') && bgMusic.paused)
                 bgMusic.play();
-            autoPlayAudio();
+            wechat.autoplay();
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
                 if (bgMusic.paused) {
@@ -223,10 +213,6 @@
                     $(this).addClass('paused');
                 }
             });
-            // init
-            checkage.init();
-            interactive.init();
-            main_page.init();
 
             // carousel
             var mySwiper = new Swiper('.carousel .swiper-container',{
