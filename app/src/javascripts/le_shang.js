@@ -191,8 +191,8 @@ module.exports = {
                 {
                     case 2:
                     {
-                        $('.shang .page1 .popup1').removeClass('fadeIn');
-                        $('.shang .page1 .popup2').removeClass('fadeIn');
+                        $('.shang .page1 .popup1').removeClass('flash');
+                        $('.shang .page1 .popup2').removeClass('flash');
 
                         $('.shang .page1 .popup1').addClass('bounceOutLeft');
                         $('.shang .page1 .circleBox').addClass('animated bounceOutLeft');
@@ -207,7 +207,7 @@ module.exports = {
                     }
                     case 3:
                     {
-                        $('.shang .page2 .popup1').removeClass('fadeIn');
+                        $('.shang .page2 .popup1').removeClass('flash');
                         $('.shang .page2 .text').removeClass('bounceIn');
                         $('.shang .page2 .arrow').removeClass('slideInLeft');
 
@@ -241,7 +241,7 @@ module.exports = {
                     }
                     case 5:
                     {
-                        $('.shang .page3 .popup1').removeClass('fadeIn');
+                        $('.shang .page3 .popup1').removeClass('flash');
                         $('.shang .page4 .text1').removeClass('fadeIn');
                         $('.shang .page4 .text2').removeClass('fadeIn');
                         $('.shang .page4 .chance').removeClass('zoomIn');
@@ -261,7 +261,7 @@ module.exports = {
                     case 6:
                     {
                         $('.shang .page6').addClass('done');
-                        $('.shang .page5 .popup1').removeClass('fadeIn');
+                        $('.shang .page5 .popup1').removeClass('flash');
                         $('.shang .page5 .text1').removeClass('fadeInDown');
                         $('.shang .page5 .text2').removeClass('fadeInDown');
                         $('.shang .page5 .popup2').removeClass('fadeInRightBig');
@@ -327,8 +327,8 @@ module.exports = {
         $('.shang .page1 .popup1').removeClass('bounceOutLeft');
         $('.shang .page1 .circleBox').removeClass('animated bounceOutLeft');
         $('.shang .page1 .popup2').removeClass('bounceOutLeft');
-        $('.shang .page1 .popup1').addClass('fadeIn');
-        $('.shang .page1 .popup2').addClass('fadeIn');
+        $('.shang .page1 .popup1').addClass('flash');
+        $('.shang .page1 .popup2').addClass('flash');
         $('.shang .page1 .circle_1').css('display','none');
         $('.shang .page1 .circle_2').css('display','none');
         $('.shang .page1 .circle_3').css('display','none');
@@ -340,7 +340,7 @@ module.exports = {
         $('.shang .page2 .text').removeClass('bounceOutLeft');
         $('.shang .page2 .arrow').removeClass('bounceOutLeft');
         $('.shang .page2 .coinBar').removeClass('animated bounceOutLeft');
-        $('.shang .page2 .popup1').addClass('fadeIn');
+        $('.shang .page2 .popup1').addClass('flash');
         $('.shang .page2 .text').addClass('bounceIn');
         $('.shang .page2 .arrow').addClass('slideInLeft');
         $('.shang .page2 .popup1').css('display','none');
@@ -357,7 +357,7 @@ module.exports = {
         $('.shang .page3 .question').removeClass('bounceOutLeft');
         $('.shang .page3 .grid').removeClass('animated bounceOutLeft');
         $('.shang .page3 .no').removeClass('bounceOutLeft');
-        $('.shang .page3 .popup1').addClass('fadeIn');
+        $('.shang .page3 .popup1').addClass('flash');
         $('.shang .page3 .question').addClass('flash');
         $('.shang .page3 .no').addClass('flash');
         $('.shang .page3 .popup1').css('display','none');
@@ -386,7 +386,7 @@ module.exports = {
         $('.shang .page5 .popup3').removeClass('bounceOutLeft');
         $('.shang .page5 .popup4').removeClass('bounceOutLeft');
         $('.shang .page5 .text3').removeClass('bounceOutLeft');
-        $('.shang .page5 .popup1').addClass('fadeIn');
+        $('.shang .page5 .popup1').addClass('flash');
         $('.shang .page5 .text1').addClass('fadeInDown');
         $('.shang .page5 .text2').addClass('fadeInDown');
         $('.shang .page5 .popup2').addClass('fadeInRightBig');
@@ -404,7 +404,7 @@ module.exports = {
         // page6
         $('.shang .page6 .popup1').removeClass('bounceOutLeft');
         $('.shang .page6 .pig').removeClass('bounceOutLeft');
-        $('.shang .page6 .popup1').addClass('fadeIn');
+        $('.shang .page6 .popup1').addClass('flash');
         $('.shang .page6 .pig').addClass('fadeIn');
         $('.shang .page6 .popup1').css('display','none');
         $('.shang .page6 .pig').css('display','none');

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>保乐力加中国</title>
+    <title>乐生活 只为你</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -28,6 +28,14 @@
 </div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
+        <!-- 18岁 -->
+        <div class="swiper-slide checkage">
+           <div class="text"></div>
+           <div class="grid">
+               <div class="yes"></div>
+               <div class="no"></div>
+           </div>
+        </div>
         <!-- 交互页 -->
         <div class="swiper-slide interactive">
             <div class="screenshot">
@@ -60,12 +68,6 @@
                 <div class="leHuo animated"></div>
                 <div class="leXue animated"></div>
             </div>
-            <div class="bubble">
-                <div class="bubble1 animated"></div>
-                <div class="bubble2 animated"></div>
-                <div class="bubble3 animated"></div>
-                <div class="bubble4 animated"></div>
-            </div>
             <div class="hand"></div>
             <div class="end"></div>
         </div>
@@ -74,16 +76,16 @@
             <div class="logo"></div>
             <div class="header"></div>
             <span class="page1">
-                <div class="popup1 animated fadeIn faster"></div>
+                <div class="popup1 animated flash faster"></div>
                 <div class="circleBox faster">
                     <div class="circle_1 animated fadeIn faster"></div>
                     <div class="circle_2 animated fadeIn faster"></div>
                     <div class="circle_3 animated fadeIn faster"></div>
                 </div>
-                <div class="popup2 animated fadeIn faster"></div>
+                <div class="popup2 animated flash faster"></div>
             </span>
             <span class="page2" style="display:none">
-                <div class="popup1 animated fadeIn faster"></div>
+                <div class="popup1 animated flash faster"></div>
                 <div class="text animated bounceIn faster"></div>
                 <div class="arrow animated slideInLeft faster"></div>
                 <div class="coinBar faster">
@@ -95,7 +97,7 @@
                 </div>
             </span>
             <span class="page3" style="display:none">
-                <div class="popup1 animated fadeIn faster"></div>
+                <div class="popup1 animated flash faster"></div>
                 <div class="question animated flash faster"></div>
                 <div class="grid faster">
                     <div class="bullet1 animated flipInX faster"></div>
@@ -110,9 +112,9 @@
                 <div class="chance animated zoomIn faster"></div>
             </span>
             <span class="page5" style="display:none">
-                <div class="popup1 animated fadeIn faster faster"></div>
-                <div class="text1 animated fadeInDown faster faster"></div>
-                <div class="text2 animated fadeInDown faster faster"></div>
+                <div class="popup1 animated flash faster"></div>
+                <div class="text1 animated fadeInDown faster"></div>
+                <div class="text2 animated fadeInDown faster"></div>
                 <div class="grid faster">
                     <div class="popup2 animated fadeInRightBig faster"></div>
                     <div class="popup3 animated fadeInLeftBig faster"></div>
@@ -121,7 +123,7 @@
                 <div class="text3 animated fadeIn faster"></div>
             </span>
             <span class="page6" style="display:none">
-                <div class="popup1 animated fadeIn faster"></div>
+                <div class="popup1 animated flash faster"></div>
                 <div class="pig animated fadeIn faster"></div>
             </span>
             <span class="page7" style="display:none">
@@ -150,6 +152,7 @@
                     <div class="popup3 animated slideInRight faster"></div>
                     <div class="popup4 animated slideInLeft faster"></div>
                 </div>
+                <div class="popup5 animated faster"></div>
             </span>
             <span class="page2" style="display:none">
                 <div class="popup1 animated flash faster"></div>
@@ -157,6 +160,7 @@
                     <div class="popup2 animated slideInLeft faster"></div>
                     <div class="popup3 animated slideInRight faster"></div>
                 </div>
+                <div class="popup4 animated faster"></div>
             </span>
             <span class="page3" style="display:none">
                 <div class="popup1 animated flash faster"></div>
@@ -178,6 +182,7 @@
                     <div class="popup4 animated slideInRight faster"></div>
                     <div class="popup5 animated slideInLeft faster"></div>
                 </div>
+                <div class="popup6 animated faster"></div>
             </span>
             <span class="page6" style="display:none">
                 <div class="continue animated zoomInDown faster"></div>
@@ -193,7 +198,6 @@
         <div class="swiper-slide dark_background huo" style="display:none">
             <div class="logo"></div>
             <div class="header"></div>
-            <div class="header2"></div>
             <span class="page1" style="display:none">
                 <div class="popup1 animated flash faster"></div>
                 <div class="pyramid animated fadeIn faster"></div>
@@ -217,9 +221,9 @@
             </span>
             <span class="page3" style="display:none">
                 <div class="type">
-                    <div class="type1 animated faster fadeIn" data-origin-class="type1 animated faster"></div>
-                    <div class="type2 animated faster fadeIn" data-origin-class="type2 animated faster"></div>
-                    <div class="type3 animated faster fadeIn" data-origin-class="type3 animated faster"></div>
+                    <div class="type1 animated faster flash" data-origin-class="type1 animated faster"></div>
+                    <div class="type2 animated faster flash" data-origin-class="type2 animated faster"></div>
+                    <div class="type3 animated faster flash" data-origin-class="type3 animated faster"></div>
                 </div>
                 <div class="light animated fadeIn faster"></div>
                 <div class="carousel animated zoomIn faster">
@@ -252,7 +256,7 @@
             <div class="header"></div>
             <span class="page1">
                 <div class="text1 animated flash faster"></div>
-                <div class="pie animated flash faster"></div>
+                <div class="pie animated fadeIn faster"></div>
                 <div class="grid faster">
                     <div class="description2 animated fadeIn faster"></div>
                     <div class="blank1">&nbsp;</div>
@@ -311,11 +315,13 @@
 <audio src="audios/click.mp3" id="click_sound"></audio>
 <audio src="audios/door.mp3" id="door_sound"></audio>
 
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
 <!-- Don't delete this. It's needed for development workflow. -->
 <!-- inject:js -->
 <!-- endinject -->
-
+<script>
+    document.write("<script src='accessToken/signPackage.php?originUrl=" + window.location.href + "' type='text/javascript'><\/script>");
+</script>
 </body>
 
 </html>

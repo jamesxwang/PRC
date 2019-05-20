@@ -51,6 +51,7 @@
             grid-template-rows: 33% 33% 33%;
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
+            z-index: 2;
             .popup2 {
                 background: url('../images/le_xiang_popup2.png') center;
                 margin-left: 5%;
@@ -72,6 +73,23 @@
                 display: none;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+        .popup5 {
+            background: url('../images/le_xiang_popup19.png') center;
+            position: absolute;
+            width: 60%;
+            height: 15%;
+            top: 43%;
+            left: 10%;
+            display: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.show {
+                // -webkit-animation-name: flashTwice;
+                // animation-name: flashTwice;
+                display: block;
+                z-index: 3;
             }
         }
     }
@@ -100,6 +118,7 @@
             grid-template-rows: 33% 40%;
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
+            z-index: 2;
             .popup2 {
                 background: url('../images/le_xiang_popup6.png') center;
                 margin-left: 5%;
@@ -116,6 +135,23 @@
                 display: none;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+        .popup4 {
+            background: url('../images/le_xiang_popup20.png') center;
+            position: absolute;
+            width: 30%;
+            height: 10%;
+            top: 42%;
+            right: 12%;
+            display: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.show {
+                // -webkit-animation-name: flashTwice;
+                // animation-name: flashTwice;
+                display: block;
+                z-index: 3;
             }
         }
     }
@@ -220,6 +256,7 @@
             grid-template-rows: 25% 25% 25% 25%;
             margin: 0 22.5% 0 22.5%;
             background-size: contain;
+            z-index: 2;
             .popup2 {
                 background: url('../images/le_xiang_popup15.png') center;
                 margin-left: 5%;
@@ -247,6 +284,23 @@
                 display: none;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+        .popup6 {
+            background: url('../images/le_xiang_popup21.png') center;
+            position: absolute;
+            width: 30%;
+            height: 15%;
+            top: 35%;
+            right: 13%;
+            display: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.show {
+                // -webkit-animation-name: flashTwice;
+                // animation-name: flashTwice;
+                display: block;
+                z-index: 3;
             }
         }
     }
@@ -329,6 +383,21 @@
         animation: upAni 2s infinite linear;
         -webkit-animation: upAni 2s infinite linear;
         display: none;
+        &.guide1 {
+            height: 5%;
+            left: 32%;
+            bottom: 42%;
+        }
+        &.guide2 {
+            height: 5%;
+            left: 75%;
+            bottom: 48%;
+        }
+        &.guide5 {
+            height: 5%;
+            left: 75%;
+            bottom: 48%;
+        }
     }
 }
 @keyframes clownUnclick {
@@ -429,5 +498,27 @@
     }
     100% {
         opacity: 0.4;
+    }
+}
+@-webkit-keyframes flashTwice {
+    from,
+    50%,
+    to {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+}
+@keyframes flashTwice {
+    from,
+    50%,
+    to {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
     }
 }

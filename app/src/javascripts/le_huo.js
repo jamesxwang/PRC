@@ -105,15 +105,13 @@ module.exports = {
                         $('.huo .page3').addClass('done');
                         setTimeout(function() {
                             $('.huo .page3').show();
-                            $('.huo .header').css('display','none');
-                            $('.huo .header2').css('display','block');
                             $('.huo .page3 .type1').css('display','block');
                         }, 1000);
                         break;
                     }
                     case 4:
                     {
-                        $('.huo .page3 .type div').removeClass('fadeIn');
+                        $('.huo .page3 .type div').removeClass('flash');
                         $('.huo .page3 .carousel').removeClass('zoomIn');
                         $('.huo .page3 .type div').addClass('bounceOutLeft');
                         $('.huo .page3 .carousel').addClass('bounceOutLeft');
@@ -137,8 +135,6 @@ module.exports = {
         });
     },
     reset: function() {
-        $('.huo .header').css('display','block');
-        $('.huo .header2').css('display','none');
         // page1
         $('.huo .page1 .popup1').removeClass('bounceOutLeft');
         $('.huo .page1 .pyramid').removeClass('bounceOutLeft');
@@ -164,7 +160,7 @@ module.exports = {
         $('.huo .page3 .type div').removeClass('bounceOutLeft');
         $('.huo .page3 .light').removeClass('fadeOut bounceOutLeft');
         $('.huo .page3 .carousel').removeClass('bounceOutLeft');
-        $('.huo .page3 .type div').addClass('fadeIn');
+        $('.huo .page3 .type div').addClass('flash');
         $('.huo .page3 .light').addClass('fadeIn');
         $('.huo .page3 .carousel').addClass('zoomIn');
         $('.huo .page3 .type div').css('display','none');
