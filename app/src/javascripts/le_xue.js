@@ -137,7 +137,7 @@ module.exports = {
                         $('.xue .page2').addClass('done');
 
                         $('.xue .page1 .text1').removeClass('flash');
-                        $('.xue .page1 .pie').removeClass('flash');
+                        $('.xue .page1 .pie').removeClass('fadeIn');
 
                         $('.xue .page1 .text1').addClass('fadeOut');
                         $('.xue .page1 .pie').addClass('fadeOut');
@@ -215,7 +215,7 @@ module.exports = {
         $('.xue .page1 .pie').removeClass('fadeOut');
         $('.xue .page1 .grid').removeClass('animated fadeOut');
         $('.xue .page1 .text1').addClass('flash');
-        $('.xue .page1 .pie').addClass('flash');
+        $('.xue .page1 .pie').addClass('fadeIn');
         $('.xue .page1 .pie').css('display','none');
         $('.xue .page1 .grid div').css('display','none');
         $('.xue .page1 .text1').css('display','none');
