@@ -32,12 +32,8 @@ module.exports = {
             $('.xiang .page1 .popup4').css('display','block');
         });
         $('.xiang .page1 .popup4').one(animationEnd, function() {
-            self.showHandGuide1();
+            self.showHand();
             self.onClickClown();
-        });
-        $('.xiang .page1 .popup4').on('click', function() {
-            $('.xiang .hand').removeClass('guide1');
-            $('.xiang .page1 .popup5').toggleClass('show');
         });
     },
     pageTwoAnimation: function(animationEnd) {
@@ -49,12 +45,8 @@ module.exports = {
             $('.xiang .page2 .popup3').css('display','block');
         });
         $('.xiang .page2 .popup3').one(animationEnd, function() {
-            self.showHandGuide2();
+            self.showHand();
             self.onClickClown();
-        });
-        $('.xiang .page2 .popup3').on('click', function() {
-            $('.xiang .hand').removeClass('guide2');
-            $('.xiang .page2 .popup4').toggleClass('show');
         });
     },
     pageThreeAnimation: function(animationEnd) {
@@ -92,12 +84,8 @@ module.exports = {
             $('.xiang .page5 .popup5').css('display','block');
         });
         $('.xiang .page5 .popup5').one(animationEnd, function() {
-            self.showHandGuide5();
+            self.showHand();
             self.onClickClown();
-        });
-        $('.xiang .page5 .popup3').on('click', function() {
-            $('.xiang .hand').removeClass('guide5');
-            $('.xiang .page5 .popup6').toggleClass('show');
         });
     },
     pageSixAnimation: function(animationEnd) {
@@ -112,31 +100,13 @@ module.exports = {
             general.showTada(animationEnd);
         });
     },
-    showHandGuide1: function() {
-        $('.xiang .hand').addClass('guide1');
-        $('.xiang .hand').css('display','block');        
-    },
-    showHandGuide2: function() {
-        $('.xiang .hand').addClass('guide2');
-        $('.xiang .hand').css('display','block');        
-    },
-    showHandGuide5: function() {
-        $('.xiang .hand').addClass('guide5');
-        $('.xiang .hand').css('display','block');        
-    },
     showHand: function() {
         $('.xiang .hand').css('display','block');
-    },
-    resetHand: function() {
-        $('.xiang .hand').removeClass('guide1');
-        $('.xiang .hand').removeClass('guide2');
-        $('.xiang .hand').removeClass('guide5');
     },
     onClickClown: function() {
         var self = this;
         $('.xiang .clown').one('click', function() {
             general.playClickSound();
-            self.resetHand();         
             $('.xiang .clown').removeClass('clownUnclick');
             $('.xiang .clown').addClass('clownClick');
             $('.xiang .hand').css('display','none');
@@ -158,11 +128,9 @@ module.exports = {
                         $('.xiang .page1 .popup2').removeClass('slideInLeft');
                         $('.xiang .page1 .popup3').removeClass('slideInRight');
                         $('.xiang .page1 .popup4').removeClass('slideInLeft');
-                        $('.xiang .page1 .popup5').removeClass('show');
 
                         $('.xiang .page1 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page1 .grid').addClass('animated bounceOutLeft');
-                        $('.xiang .page1 .popup5').addClass('bounceOutLeft');
                         $('.xiang .page2').addClass('done');
                         setTimeout(function() {
                             $('.xiang .page2').show();
@@ -175,11 +143,9 @@ module.exports = {
                     case 3:
                     {
                         $('.xiang .page2 .popup1').removeClass('flash');
-                        $('.xiang .page2 .popup4').removeClass('show');
                     
                         $('.xiang .page2 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page2 .grid').addClass('animated bounceOutLeft');
-                        $('.xiang .page2 .popup4').addClass('bounceOutLeft');
                         $('.xiang .page3').addClass('done');
                         setTimeout(function() {
                             $('.xiang .page3').show();
@@ -223,11 +189,9 @@ module.exports = {
                     case 6:
                     {
                         $('.xiang .page5 .popup1').removeClass('slideInRight');
-                        $('.xiang .page5 .popup6').removeClass('show');
 
                         $('.xiang .page5 .popup1').addClass('bounceOutLeft');
                         $('.xiang .grid').addClass('animated bounceOutLeft');
-                        $('.xiang .page5 .popup6').addClass('bounceOutLeft');
                         $('.xiang .page6').addClass('done');
                         setTimeout(function() {
                             $('.xiang .page6').show();
@@ -245,7 +209,6 @@ module.exports = {
         // page1
         $('.xiang .page1 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page1 .popup5').removeClass('bounceOutLeft');
         $('.xiang .page1 .popup1').addClass('flash');
         $('.xiang .page1 .popup2').addClass('slideInLeft');
         $('.xiang .page1 .popup3').addClass('slideInRight');
@@ -258,7 +221,6 @@ module.exports = {
         // page2
         $('.xiang .page2 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page2 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page2 .popup4').removeClass('bounceOutLeft');
         $('.xiang .page2 .popup1').addClass('flash');
         $('.xiang .page2 .popup1').css('display','none');
         $('.xiang .page2 .popup2').css('display','none');
@@ -284,7 +246,6 @@ module.exports = {
         // page5
         $('.xiang .page5 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page5 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page5 .popup6').removeClass('bounceOutLeft');
         $('.xiang .page5 .popup1').addClass('flash');
         $('.xiang .page5 .popup2').css('display','none');
         $('.xiang .page5 .popup3').css('display','none');
@@ -297,6 +258,5 @@ module.exports = {
 
         $('.xiang span').removeClass('done');
         $('.xiang span').css('display','none');
-        this.resetHand();
     }
 }

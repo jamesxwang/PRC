@@ -16,8 +16,8 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_IMAGE_PATH = '/images/';
-        var BASE_AUDIO_PATH = '/audios/';
+        var BASE_IMAGE_PATH = '/prc-public/images/' ;
+        var BASE_AUDIO_PATH = '/prc-public/audios/';
         var fileList = [
             'le_huo_light.png',
             'loading_man1.png',

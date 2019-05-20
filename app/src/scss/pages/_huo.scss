@@ -84,7 +84,7 @@
             width: 45%;
             height: 40%;
             position: absolute;
-            top: 35%;
+            top: 37%;
             left: 29%;
             display: none;
             .branch1 {
@@ -94,8 +94,8 @@
             }
             .branch2 {
                 background: url('../images/le_huo_text_branch2.png') right;
-                width: 78%;
-                height: 15%;
+                width: 80%;
+                height: 17%;
             }
             .branch3 {
                 background: url('../images/le_huo_text_branch3.png') right;
@@ -349,6 +349,7 @@
         }
         .page2 {
             .branchBox {
+                top: 35%;
                 left: 26%;
                 .branch1,.branch2,.branch3,.branch4 {
                     transform: scale(0.9);
