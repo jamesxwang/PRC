@@ -1,6 +1,6 @@
 module.exports = {
     init: function() {
-        var baseUrl = "http://pernod-ricard-china.quantify.top/";
+        var baseUrl = "http://pernod-ricard-china.quantify.top/prc-public/";
         var wxData = {
             "imgUrl" : baseUrl + 'images/share.jpg',
             "link"   : baseUrl,

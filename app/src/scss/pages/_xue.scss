@@ -147,17 +147,6 @@
                 display: none;
             }
         }
-        .text2 {
-            background: url('../images/le_xue_text3.png') center;
-            @include rsc(no-repeat,contain,transparent);
-            width: 25%;
-            height: 14%;
-            position: absolute;
-            margin: 0 60% 0 15%;
-            top:65%;
-            z-index: 3;
-            display: none;
-        }
     }
     .page3 {
         .text1 {

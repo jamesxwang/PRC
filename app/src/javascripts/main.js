@@ -16,8 +16,8 @@
         var $btnMusic = $('#btn-music');
 
         // Images
-        var BASE_IMAGE_PATH = '/images/';
-        var BASE_AUDIO_PATH = '/audios/';
+        var BASE_IMAGE_PATH = '/prc-public/images/' ;
+        var BASE_AUDIO_PATH = '/prc-public/audios/';
         var fileList = [
             'le_huo_light.png',
             'loading_man1.png',
@@ -70,19 +70,12 @@
             'le_huo_type1.png',
             'le_huo_type2.png',
             'le_huo_type3.png',
-            'le_shang_arrow1.png',
             'le_shang_bullet1.png',
             'le_shang_bullet2.png',
             'le_shang_bullet3.png',
             'le_shang_circle1.png',
             'le_shang_circle2.png',
             'le_shang_circle3.png',
-            'le_shang_coin_bar1.png',
-            'le_shang_coin_bar2.png',
-            'le_shang_coin_bar3.png',
-            'le_shang_coin_bar4.png',
-            'le_shang_coin_bar5.png',
-            'le_shang_content.png',
             'le_shang_continue.png',
             'le_shang_girl_click1.png',
             'le_shang_girl_click2.png',
@@ -96,20 +89,9 @@
             'le_shang_pig.png',
             'le_shang_popup1.png',
             'le_shang_popup2.png',
-            'le_shang_popup3.png',
             'le_shang_popup4.png',
-            'le_shang_popup5.png',
-            'le_shang_popup6.png',
-            'le_shang_popup7.png',
             'le_shang_popup8.png',
-            'le_shang_popup9.png',
             'le_shang_question.png',
-            'le_shang_text1.png',
-            'le_shang_text2.png',
-            'le_shang_text3.png',
-            'le_shang_text4.png',
-            'le_shang_text5.png',
-            'le_shang_text6.png',
             'le_shang_text7.png',
             'le_shang_text8.png',
             'le_shang_text9.png',
