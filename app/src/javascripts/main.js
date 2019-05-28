@@ -164,7 +164,8 @@
             'main_page_logo2.png',
             'main_page_shang.png',
             'main_page_xiang.png',
-            'main_page_xue.png'
+            'main_page_xue.png',
+            'main_page_right.png'
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_IMAGE_PATH + fileList[i]);

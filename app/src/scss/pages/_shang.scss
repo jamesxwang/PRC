@@ -91,7 +91,7 @@
             z-index: 3;
             .bullet1 {
                 background: url('../images/le_shang_bullet1.png') left;
-                
+                margin-right: 7%;
             }
             .bullet2 {
                 background: url('../images/le_shang_bullet2.png') left;
@@ -122,7 +122,7 @@
     .page3 {
         .text1 {
             background: url('../images/le_shang_text7.png') center;
-            @include wh(80%, 20%);
+            @include wh(85%, 20%);
             top: 32%;
             margin: 0 10% 0 10%;
             z-index: 3;
@@ -142,9 +142,9 @@
         }
         .chance {
             background: url('../images/le_shang_text9.png') center;
-            @include wh(50%, 10%);
+            @include wh(66%, 10%);
             top: 62%;
-            margin: 0 25% 0 25%;
+            margin: 0 17% 0 17%;
             z-index: 3;
             position: absolute;
             @include rsc(no-repeat,contain,transparent);            

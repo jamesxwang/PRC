@@ -159,43 +159,33 @@
             z-index: 3;
             display: none;
         }
-        .text2 {
-            background: url('../images/le_xue_text6.png') center;
-            @include rsc(no-repeat,contain,transparent);
-            @include wh(80%,24%);
-            position: absolute;
-            margin: 0 10% 0 10%;
-            top:28%;
-            z-index: 3;
-            display: none;
-        }
         .coordinate {
             background: url('../images/le_xue_text7.png') center;
             @include rsc(no-repeat,contain,transparent);
-            @include wh(80%,30%);
+            @include wh(80%,40%);
             position: absolute;
             margin: 0 10% 0 10%;
-            top:45%;
+            top:35%;
             z-index: 3;
             display: none;
         }
         .coordinateScrew {
             background: url('../images/le_xue_text8.png') center;
             @include rsc(no-repeat,contain,transparent);
-            @include wh(80%,30%);
+            @include wh(80%,40%);
             position: absolute;
             margin: 0 10% 0 10%;
-            top:45%;
+            top:35%;
             z-index: 3;
             display: none;
         }
         .coordinateScrewText {
             background: url('../images/le_xue_text9.png') center;
             @include rsc(no-repeat,contain,transparent);
-            @include wh(80%,30%);
+            @include wh(80%,40%);
             position: absolute;
             margin: 0 10% 0 10%;
-            top:45%;
+            top:35%;
             z-index: 3;
             display: none;
         }

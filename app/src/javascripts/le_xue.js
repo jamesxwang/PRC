@@ -67,9 +67,6 @@ module.exports = {
     pageThreeAnimation: function(animationEnd) {
         var self = this;
         $('.xue .page3 .text1').one(animationEnd, function() {
-            $('.xue .page3 .text2').css('display','block');
-        });
-        $('.xue .page3 .text2').one(animationEnd, function() {
             $('.xue .page3 .coordinate').css('display','block');
         });
         $('.xue .page3 .coordinate').one(animationEnd, function() {
@@ -164,13 +161,11 @@ module.exports = {
                         $('.xue .page4').addClass('done');
 
                         $('.xue .page3 .text1').removeClass('flash');
-                        $('.xue .page3 .text2').removeClass('fadeIn');
                         $('.xue .page3 .coordinate').removeClass('fadeIn');
                         $('.xue .page3 .coordinateScrew').removeClass('fadeIn');
                         $('.xue .page3 .coordinateScrewText').removeClass('fadeIn');
 
                         $('.xue .page3 .text1').addClass('fadeOut');
-                        $('.xue .page3 .text2').addClass('fadeOut');
                         $('.xue .page3 .coordinate').addClass('fadeOut');
                         $('.xue .page3 .coordinateScrew').addClass('fadeOut');
                         $('.xue .page3 .coordinateScrewText').addClass('fadeOut');
@@ -223,17 +218,14 @@ module.exports = {
 
         // page3
         $('.xue .page3 .text1').removeClass('fadeOut');
-        $('.xue .page3 .text2').removeClass('fadeOut');
         $('.xue .page3 .coordinate').removeClass('fadeOut');
         $('.xue .page3 .coordinateScrew').removeClass('fadeOut');
         $('.xue .page3 .coordinateScrewText').removeClass('fadeOut');
         $('.xue .page3 .text1').addClass('flash');
-        $('.xue .page3 .text2').addClass('fadeIn');
         $('.xue .page3 .coordinate').addClass('fadeIn');
         $('.xue .page3 .coordinateScrew').addClass('fadeIn');
         $('.xue .page3 .coordinateScrewText').addClass('fadeIn');
         $('.xue .page3 .text1').css('display','none');
-        $('.xue .page3 .text2').css('display','none');
         $('.xue .page3 .coordinate').css('display','none');
         $('.xue .page3 .coordinateScrew').css('display','none');
         $('.xue .page3 .coordinateScrewText').css('display','none');
