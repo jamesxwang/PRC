@@ -41,7 +41,6 @@ module.exports = {
     autoplay: function() {
         var bgMusic = $('audio').get(0);
         wx.ready(function () {
-            bgMusic.volume = 0.7;
             bgMusic.play();
         });
     }

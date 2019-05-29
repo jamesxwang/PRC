@@ -38,6 +38,7 @@ module.exports = {
     },
     playClickSound: function() {
         var click_sound = document.getElementById("click_sound");
+        click_sound.volume = 0.4;
         click_sound.play();
     },
     playDoorSound: function() {
