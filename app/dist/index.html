@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>乐生活 只为你</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Add your keywords and description here for SEO. -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5a865e51318127e428f313434560c2f1";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!-- Don't delete this. It's needed for development workflow. -->
+    <link rel="stylesheet" href="stylesheets/bundle.min.css">
+</head>
+<body>
+<!-- 加载页 -->
+<div class="loading-overlay">
+    <div class="loading-wrapper">
+        <div class="loading"></div>
+    </div>
+    <div class="progressNumb" style="font-size: 16.4063px; line-height: 16.4063px;">0%</div>
+    <div class="ProgressWrap">
+        <div class="loadingProgress1 overlay"></div>
+        <div class="loadingProgress2 overlay" style="width: 100%;"></div>
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- 18岁 -->
+        <div class="swiper-slide checkage">
+           <div class="text"></div>
+           <div class="grid">
+               <div class="yes"></div>
+               <div class="no"></div>
+           </div>
+        </div>
+        <!-- 交互页 -->
+        <div class="swiper-slide interactive">
+            <div class="screenshot">
+                <div class="container">
+                    <div class="logo"></div>
+                    <div class="neon"></div>
+                </div>
+                <div class="doorBox">
+                    <div class="left_door animated"></div>
+                    <div class="right_door animated"></div>
+                </div>
+                <div class="rotateBox">
+                    <div class="arrow_blue"></div>
+                    <div class="rotate"></div>
+                    <div class="arrow_pink"></div>
+                    <div class="hint_1"></div>
+                    <div class="hint_2"></div>
+                </div>
+                <div class="endNeon animated fadeInUp"></div>
+                <div class="endText animated fadeInUp"></div>
+            </div>
+        </div>
+        <!-- 首页 -->
+        <div class="swiper-slide dark_background main" style="display:none">
+            <div class="logo"></div>
+            <div class="main_page_logo"></div>
+            <div class="theme">
+                <div class="leShang animated"></div>
+                <div class="leXiang animated"></div>
+                <div class="leHuo animated"></div>
+                <div class="leXue animated"></div>
+            </div>
+            <div class="hand"></div>
+            <div class="end"></div>
+            <div class="right"></div>
+        </div>
+        <!-- 乐赏 -->
+        <div class="swiper-slide dark_background shang" style="display:none">
+            <div class="logo"></div>
+            <div class="header"></div>
+            <span class="page1">
+                <div class="popup1 animated flash faster"></div>
+                <div class="circleBox faster">
+                    <div class="circle_1 animated fadeIn faster"></div>
+                    <div class="circle_2 animated fadeIn faster"></div>
+                    <div class="circle_3 animated fadeIn faster"></div>
+                </div>
+                <div class="popup2 animated flash faster"></div>
+            </span>
+            <span class="page2" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="question animated flash faster"></div>
+                <div class="grid faster">
+                    <div class="bullet1 animated flipInX faster"></div>
+                    <div class="bullet2 animated flipInX faster"></div>
+                    <div class="bullet3 animated flipInX faster"></div>
+                </div>
+                <div class="no animated flash faster"></div>
+            </span>
+            <span class="page3" style="display:none">
+                <div class="text1 animated fadeIn faster"></div>
+                <div class="text2 animated fadeIn faster"></div>
+                <div class="chance animated zoomIn faster"></div>
+            </span>
+            <span class="page4" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="pig animated fadeIn faster"></div>
+            </span>
+            <span class="page5" style="display:none">
+                <div class="continue animated zoomInDown faster"></div>
+                <div class="go animated flash faster"></div>
+            </span>
+            <div class="girl girlUnclick"></div>
+            <div class="hand"></div>
+        </div>
+        <!-- 乐享 -->
+        <div class="swiper-slide dark_background xiang" style="display:none">
+            <div class="logo"></div>
+            <div class="scene"></div>
+            <div class="big_logo_wrapper">
+                <div class="bigLogo"></div>
+            </div>
+            <span class="page1">
+                <div class="popup1 animated flash faster"></div>
+                <div class="grid faster">
+                    <div class="popup2 animated slideInLeft faster"></div>
+                    <div class="popup3 animated slideInRight faster"></div>
+                    <div class="popup4 animated slideInLeft faster"></div>
+                </div>
+            </span>
+            <span class="page2" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="grid faster">
+                    <div class="popup2 animated slideInLeft faster"></div>
+                    <div class="popup3 animated slideInRight faster"></div>
+                </div>
+            </span>
+            <span class="page3" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="grid faster">
+                    <div class="popup2 animated slideInLeft faster"></div>
+                    <div class="popup3 animated slideInRight faster"></div>
+                    <div class="popup4 animated slideInLeft faster"></div>
+                </div>
+            </span>
+            <span class="page4" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="popup2 animated fadeIn faster"></div>
+            </span>
+            <span class="page5" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="grid faster">
+                    <div class="popup2 animated slideInRight faster"></div>
+                    <div class="popup3 animated slideInLeft faster"></div>
+                    <div class="popup4 animated slideInRight faster"></div>
+                    <div class="popup5 animated slideInLeft faster"></div>
+                </div>
+            </span>
+            <span class="page6" style="display:none">
+                <div class="continue animated zoomInDown faster"></div>
+                <div class="go animated flash faster"></div>
+            </span>
+            <div class="bubble_wrapper">
+                <div class="bubble"></div>
+            </div>
+            <div class="clown clownUnclick"></div>
+            <div class="hand"></div>
+        </div>
+        <!-- 乐活 -->
+        <div class="swiper-slide dark_background huo" style="display:none">
+            <div class="logo"></div>
+            <div class="header"></div>
+            <span class="page1" style="display:none">
+                <div class="popup1 animated flash faster"></div>
+                <div class="pyramid animated fadeIn faster"></div>
+                <div class="boldText animated fadeIn faster">
+                    <div class="text1"></div>
+                    <div class="text2"></div>
+                    <div class="text3"></div>
+                    <div class="text4"></div>
+                    <div class="text5"></div>
+                </div>
+                
+            </span>
+            <span class="page2" style="display:none">
+                <div class="branchBox animated fadeIn faster">
+                    <div class="branch1"></div>
+                    <div class="branch2"></div>
+                    <div class="branch3"></div>
+                    <div class="branch4"></div>
+                    <div class="branch5"></div>
+                </div>
+            </span>
+            <span class="page3" style="display:none">
+                <div class="type">
+                    <div class="type1 animated faster flash" data-origin-class="type1 animated faster"></div>
+                    <div class="type2 animated faster flash" data-origin-class="type2 animated faster"></div>
+                    <div class="type3 animated faster flash" data-origin-class="type3 animated faster"></div>
+                </div>
+                <div class="light animated fadeIn faster"></div>
+                <div class="carousel animated zoomIn faster">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item-1"></div>
+                            <div class="swiper-slide item-2"></div>
+                            <div class="swiper-slide item-3"></div>
+                            <div class="swiper-slide item-4"></div>
+                            <div class="swiper-slide item-5"></div>
+                            <div class="swiper-slide item-6"></div>
+                            <div class="swiper-slide item-7"></div>
+                            <div class="swiper-slide item-8"></div>
+                            <div class="swiper-slide item-9"></div>
+                        </div>
+                    </div>
+                    <div class="hint_text">《左右滑动切换照片》</div>
+                </div>
+            </span>
+            <span class="page4" style="display:none">
+                <div class="continue animated zoomInDown faster"></div>
+                <div class="go animated flash faster"></div>
+            </span>
+            <div class="athlete athleteUnclick"></div>
+            <div class="hand"></div>
+        </div>
+        <!-- 乐学 -->
+        <div class="swiper-slide dark_background xue" style="display:none">
+            <div class="logo"></div>
+            <div class="header"></div>
+            <span class="page1">
+                <div class="text1 animated flash faster"></div>
+                <div class="pie animated fadeIn faster"></div>
+                <div class="grid faster">
+                    <div class="description2 animated fadeIn faster"></div>
+                    <div class="blank1">&nbsp;</div>
+                    <div class="description3 animated fadeIn faster"></div>
+                    <div class="blank2">&nbsp;</div>
+                    <div class="blank3">&nbsp;</div>
+                    <div class="description1 animated fadeIn faster"></div>
+                </div>
+            </span>
+            <span class="page2" style="display:none">
+                <div class="text1 animated flash faster"></div>
+                <div class="content_wrapper faster">
+                    <div class="content1 animated fadeIn faster"></div>
+                    <div class="content2 animated fadeIn faster"></div>
+                    <div class="content3 animated fadeIn faster"></div>
+                    <div class="content4 animated fadeIn faster"></div>
+                </div>
+                <div class="text2 animated fadeIn faster"></div>
+            </span>
+            <span class="page3" style="display:none">
+                <div class="text1 animated flash faster"></div>
+                <div class="coordinate animated fadeIn faster"></div>
+                <div class="coordinateScrew animated fadeIn faster"></div>
+                <div class="coordinateScrewText animated fadeIn faster"></div>
+            </span>
+            <span class="page4" style="display:none">
+                <div class="text1 animated flash faster"></div>
+                <div class="phone1 animated fadeInDown faster"></div>
+                <div class="phone2 animated fadeInDown faster"></div>
+            </span>
+            <span class="page5" style="display:none">
+                <div class="continue animated zoomInDown faster"></div>
+                <div class="go animated flash faster"></div>
+            </span>
+            <div class="teacher teacherUnclick"></div>
+            <div class="blackboard"></div>
+            <div class="hand"></div>
+        </div>
+    </div>
+</div>
+
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+    </div>
+</div>
+
+<button id="btn-music"></button>
+
+<audio loop>
+    <source src="audios/background.mp3" type="audio/mpeg">
+</audio>
+
+<audio src="audios/click.mp3" id="click_sound"></audio>
+<audio src="audios/door.mp3" id="door_sound"></audio>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> 
+<!-- Don't delete this. It's needed for development workflow. -->
+<script src="javascripts/bundle.min.js"></script>
+<script>
+    document.write("<script src='../accessToken/signPackage.php?originUrl=" + window.location.href + "' type='text/javascript'><\/script>");
+</script>
+</body>
+
+</html>
