@@ -38,10 +38,12 @@ module.exports = {
     },
     playClickSound: function() {
         var click_sound = document.getElementById("click_sound");
+        click_sound.volume = 0.4;
         click_sound.play();
     },
     playDoorSound: function() {
         var door_sound = document.getElementById("door_sound");
+        door_sound.volume = 0.15;
         door_sound.play();
     },
     handleCarousel: function(swiper) {
