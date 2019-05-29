@@ -188,7 +188,7 @@
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
                 if (bgMusic.paused) {
-                    bgMusic.volume = 0.3;
+                    bgMusic.volume = 0.7;
                     bgMusic.play();
                     $(this).removeClass('paused');
                 } else {
