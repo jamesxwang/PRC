@@ -327,9 +327,9 @@
         }
         .text3 {
             background: url('../images/le_shang_text10.png') center;
-            @include wh(40%, 13%);
+            @include wh(22%, 13%);
             top: 70%;
-            margin: 0 30% 0 30%;
+            margin: 0 39% 0 39%;
         }
         .text1, .content, .text2, .text3 {
             @include rsc(no-repeat,contain,transparent);
