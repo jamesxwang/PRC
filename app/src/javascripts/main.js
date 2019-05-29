@@ -113,6 +113,7 @@
             'le_shang_text7.png',
             'le_shang_text8.png',
             'le_shang_text9.png',
+            'le_shang_text10.png',
             'le_xiang_big_logo.png',
             'le_xiang_bubble1.png',
             'le_xiang_clown_click1.png',
@@ -141,7 +142,6 @@
             'le_xiang_popup16.png',
             'le_xiang_popup17.png',
             'le_xiang_popup18.png',
-            'le_xiang_popup19.png',
             'le_xiang_popup20.png',
             'le_xiang_popup21.png',
             'le_xiang_scene.png',
@@ -166,7 +166,6 @@
             'le_xue_text3.png',
             'le_xue_text4.png',
             'le_xue_text5.png',
-            'le_xue_text6.png',
             'le_xue_text7.png',
             'le_xue_text8.png',
             'le_xue_text9.png',
@@ -182,7 +181,8 @@
             'main_page_logo2.png',
             'main_page_shang.png',
             'main_page_xiang.png',
-            'main_page_xue.png'
+            'main_page_xue.png',
+            'main_page_right.png'
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_IMAGE_PATH + fileList[i]);

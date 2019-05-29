@@ -66,12 +66,21 @@
         width: 20%;
         height: 3%;
         position: absolute;
-        bottom: 1%;
+        bottom: 4%;
         margin: 0 40% 0 40%;
         animation: fade 2s infinite;
         -webkit-animation: fade 2s infinite;
     }
-    
+    .right {
+        background: url('../images/main_page_right.png') center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 3%;
+        position: absolute;
+        bottom: 1%;
+        margin: 0 25% 0 25%;
+    }
 }
 @keyframes fade {
     0% {

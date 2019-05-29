@@ -152,6 +152,9 @@ module.exports = {
             $('.shang .page7 .text2').css('display','block');
         });
         $('.shang .page7 .text2').one(animationEnd, function() {
+            $('.shang .page7 .text3').css('display','block');
+        });
+        $('.shang .page7 .text3').one(animationEnd, function() {
             self.showHand();
             self.onClickCoins();
         });
@@ -302,11 +305,13 @@ module.exports = {
                         $('.shang .page7 .text1').removeClass('fadeIn');
                         $('.shang .page7 .content').removeClass('fadeIn');
                         $('.shang .page7 .text2').removeClass('fadeIn');
+                        $('.shang .page7 .text3').removeClass('fadeIn');
 
                         $('.shang .page6 .popup1').addClass('bounceOutLeft');
                         $('.shang .page7 .text1').addClass('bounceOutLeft');
                         $('.shang .page7 .content').addClass('bounceOutLeft');
                         $('.shang .page7 .text2').addClass('bounceOutLeft');
+                        $('.shang .page7 .text3').addClass('bounceOutLeft');
 
                         setTimeout(function() {
                             $('.shang .page8').show();
@@ -413,12 +418,15 @@ module.exports = {
         $('.shang .page7 .text1').removeClass('bounceOutLeft');
         $('.shang .page7 .content').removeClass('bounceOutLeft');
         $('.shang .page7 .text2').removeClass('bounceOutLeft');
+        $('.shang .page7 .text3').removeClass('bounceOutLeft');
         $('.shang .page7 .text1').addClass('fadeIn');
         $('.shang .page7 .content').addClass('fadeIn');
         $('.shang .page7 .text2').addClass('fadeIn');
+        $('.shang .page7 .text3').addClass('fadeIn');
         $('.shang .page7 .text1').css('display','none');
         $('.shang .page7 .content').css('display','none');
         $('.shang .page7 .text2').css('display','none');
+        $('.shang .page7 .text3').css('display','none');
 
         // page8
         $('.shang .page8 .continue').css('display','none');

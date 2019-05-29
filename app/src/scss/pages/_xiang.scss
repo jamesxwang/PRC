@@ -75,23 +75,6 @@
                 background-repeat: no-repeat;
             }
         }
-        .popup5 {
-            background: url('../images/le_xiang_popup19.png') center;
-            position: absolute;
-            width: 60%;
-            height: 15%;
-            top: 43%;
-            left: 10%;
-            display: none;
-            background-size: contain;
-            background-repeat: no-repeat;
-            &.show {
-                // -webkit-animation-name: flashTwice;
-                // animation-name: flashTwice;
-                display: block;
-                z-index: 3;
-            }
-        }
     }
     .page2 {
         .popup1 {

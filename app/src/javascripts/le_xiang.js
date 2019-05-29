@@ -32,12 +32,8 @@ module.exports = {
             $('.xiang .page1 .popup4').css('display','block');
         });
         $('.xiang .page1 .popup4').one(animationEnd, function() {
-            self.showHandGuide1();
+            self.showHand();
             self.onClickClown();
-        });
-        $('.xiang .page1 .popup4').on('click', function() {
-            $('.xiang .hand').removeClass('guide1');
-            $('.xiang .page1 .popup5').toggleClass('show');
         });
     },
     pageTwoAnimation: function(animationEnd) {
@@ -112,10 +108,6 @@ module.exports = {
             general.showTada(animationEnd);
         });
     },
-    showHandGuide1: function() {
-        $('.xiang .hand').addClass('guide1');
-        $('.xiang .hand').css('display','block');        
-    },
     showHandGuide2: function() {
         $('.xiang .hand').addClass('guide2');
         $('.xiang .hand').css('display','block');        
@@ -158,11 +150,9 @@ module.exports = {
                         $('.xiang .page1 .popup2').removeClass('slideInLeft');
                         $('.xiang .page1 .popup3').removeClass('slideInRight');
                         $('.xiang .page1 .popup4').removeClass('slideInLeft');
-                        $('.xiang .page1 .popup5').removeClass('show');
 
                         $('.xiang .page1 .popup1').addClass('bounceOutLeft');
                         $('.xiang .page1 .grid').addClass('animated bounceOutLeft');
-                        $('.xiang .page1 .popup5').addClass('bounceOutLeft');
                         $('.xiang .page2').addClass('done');
                         setTimeout(function() {
                             $('.xiang .page2').show();
@@ -245,7 +235,6 @@ module.exports = {
         // page1
         $('.xiang .page1 .popup1').removeClass('bounceOutLeft');
         $('.xiang .page1 .grid').removeClass('animated bounceOutLeft');
-        $('.xiang .page1 .popup5').removeClass('bounceOutLeft');
         $('.xiang .page1 .popup1').addClass('flash');
         $('.xiang .page1 .popup2').addClass('slideInLeft');
         $('.xiang .page1 .popup3').addClass('slideInRight');

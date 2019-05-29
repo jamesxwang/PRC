@@ -73,10 +73,10 @@
         .text {
             background: url('../images/le_shang_text1.png') center;
             @include rsc(no-repeat,contain,transparent);
-            @include wh(42%, 10%);
+            @include wh(50%, 10%);
             position: absolute;
             top: 32%;
-            margin: 0 29% 0 29%;
+            margin: 0 25% 0 25%;
             z-index: 3;
             display: none;
         }
@@ -155,7 +155,7 @@
             z-index: 3;
             .bullet1 {
                 background: url('../images/le_shang_bullet1.png') left;
-                
+                margin-right: 7%;
             }
             .bullet2 {
                 background: url('../images/le_shang_bullet2.png') left;
@@ -186,7 +186,7 @@
     .page4 {
         .text1 {
             background: url('../images/le_shang_text7.png') center;
-            @include wh(80%, 20%);
+            @include wh(85%, 20%);
             top: 32%;
             margin: 0 10% 0 10%;
             z-index: 3;
@@ -206,9 +206,9 @@
         }
         .chance {
             background: url('../images/le_shang_text9.png') center;
-            @include wh(50%, 10%);
+            @include wh(66%, 10%);
             top: 62%;
-            margin: 0 25% 0 25%;
+            margin: 0 17% 0 17%;
             z-index: 3;
             position: absolute;
             @include rsc(no-repeat,contain,transparent);            
@@ -325,7 +325,13 @@
             top: 63%;
             margin: 0 10% 0 10%;
         }
-        .text1, .content, .text2 {
+        .text3 {
+            background: url('../images/le_shang_text10.png') center;
+            @include wh(40%, 13%);
+            top: 70%;
+            margin: 0 30% 0 30%;
+        }
+        .text1, .content, .text2, .text3 {
             @include rsc(no-repeat,contain,transparent);
             position: absolute;
             z-index: 3;
