@@ -13,7 +13,7 @@
 
 **使用手机**访问下面的地址或扫描下方二维码
 
-[http://html.quantify.site/dist][12]
+[http://pernod-ricard-china.quantify.top][12]
 
 ![Scan Me][13]
 
@@ -110,6 +110,6 @@
   [9]: http://npm.taobao.org/
   [10]: https://github.com/nodejs/node-gyp
   [11]: https://github.com/nodejs/node-gyp#installation
-  [12]: http://html.quantify.site/dist
+  [12]: http://pernod-ricard-china.quantify.top
   [13]: QRCode.png
   [22]: http://opensource.org/licenses/mit-license.html
